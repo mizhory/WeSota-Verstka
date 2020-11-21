@@ -1,0 +1,24 @@
+          <div class="tab-pane" id="invite" role="tabpanel" aria-labelledby="invite-tab">
+            <div class="row">
+              <p class="h6">Инвайт коды</p>
+            </div>
+            <div class="row">
+              <p>Инвайт коды Вы можете использовать для активации собственных платформ, либо подарить друзьям и близким</p>
+              <form class="invites-form">
+                <div class="form-group">
+                  <label for="inviteCode">Выбор инвайт кода</label>
+                  <input type="text" class="form-control" id="inviteCode">
+                </div>
+                <div class="form-group">
+                  <label for="enterEmail">Ввести email</label>
+                  <input type="email" class="form-control" id="enterEmail">
+                </div>
+                <div class="form-group">
+                  <label for="enterMessage">Ввести сообщение</label>
+                  <textarea class="form-control" id="enterMessage" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+<!-- invite-tab -->

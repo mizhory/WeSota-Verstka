@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Wesota</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+          <div class="sidebar-sticky pt-3">
+            <div>
+              <p>Wesota</p>
+              <p>avatar</p>
+              <p>name</p>
+              <p>full name</p>
+              <p>location</p>
+            </div>
+            <ul class="nav nav-tabs flex-column" id="sidebar" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="statistic-tab" data-toggle="tab" href="#statistic" role="tab" aria-controls="statistic" aria-selected="false">
+                  <span>icon</span>
+                  Статистика
+                </a>
+              </li>
+<!-- menu/statistic -->
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="invite-tab" data-toggle="tab" href="#invite" role="tab" aria-controls="invite" aria-selected="false">
+                  <span>icon</span>
+                  Инвайт коды
+                </a>
+              </li>
+<!-- menu/invite -->
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="platforms-tab" data-toggle="tab" href="#platforms" role="tab" aria-controls="platforms" aria-selected="false">
+                  <span></span>
+                  Платформы
+                </a>
+              </li>
+<!-- menu/platforms -->
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">
+                  <span>icon</span>
+                  Сообщения
+                </a>
+              </li>
+<!-- menu/messages -->
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">
+                  <span>icon</span>
+                  Настройки
+                </a>
+              </li>
+<!-- menu/settings -->
+              <li class="nav-item">
+                <a class="btn" href="#">
+                  <span>icon</span>
+                  Выход
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+<!-- .sidebarMenu-->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+          <div class="tab-content">
+
+<div class="tab-pane active" id="statistic" role="tabpanel" aria-labelledby="statistic-tab">
+              <div id="profileStatistic" class="row">
+                <p class="h6">Статистика профиля</p>
+              </div>
+              <div class="row">
+                <div class="col-md">
+                  RUB
+                </div>
+                <div class="col-md">
+                  Платформа 1$
+                </div>
+                <div class="col-md">
+                  Уровень 1$
+                </div>
+            </div>
+            <!-- profile statistic -->
+            <div id="systemStatistic" class="row">
+              <p class="h6">Статистика системы</p>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                Платформы
+              </div>
+              <div class="col-4">
+                Участники проекта
+              </div>
+              <div class="col-4">
+                Общий доход системы
+              </div>
+            </div>
+            <!-- system statistic -->
+</div>
+<!-- statistic-tab -->
+
+<div class="tab-pane" id="invite" role="tabpanel" aria-labelledby="invite-tab">
+  <div class="row">
+    <p class="h6">Инвайт коды</p>
+  </div>
+  <div class="row">
+    <p>Инвайт коды Вы можете использовать для активации собственных платформ, либо подарить друзьям и близким</p>
+    <form class="invites-form">
+      <div class="form-group">
+        <label for="inviteCode">Выбор инвайт кода</label>
+        <input type="text" class="form-control" id="inviteCode">
+      </div>
+      <div class="form-group">
+        <label for="enterEmail">Ввести email</label>
+        <input type="email" class="form-control" id="enterEmail">
+      </div>
+      <div class="form-group">
+        <label for="enterMessage">Ввести сообщение</label>
+        <textarea class="form-control" id="enterMessage" rows="5"></textarea>
+      </div>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+  </div>
+</div>
+<!-- invite-tab -->
+
+<div class="tab-pane" id="platforms" role="tabpanel" aria-labelledby="platforms-tab">
+  <div class="row"> 
+      <p class="h6">Платформы</p>
+  </div>
+  <div class="row">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="personal-tab" data-toggle="tab" href="#personal" role="tab" aria-controls="personal" aria-selected="true">Personal 1$</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pro-tab" data-toggle="tab" href="#pro" role="tab" aria-controls="pro" aria-selected="false">Pro 10$</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="team-tab" data-toggle="tab" href="#team" role="tab" aria-controls="team" aria-selected="false">Team 100$</a>
+        </li>
+    </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+          <div class="row">
+            <div class="col-4">
+              <p>Платформа заполнена на:</p>
+              круглый круг
+            </div>
+            <div class="col-4">
+              <p>Конечный доход:</p>
+              Большая сумма в долларах
+            </div>
+            <div class="col-6">
+              <p>Введите инвайт код:</p>
+              <form class="platform-invite">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="enterInvite">
+                  <button class="btn" type="submit">Активировать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">Уровни</div>
+            <div class="col-3">Умножение</div>
+            <div class="col-3">Доход</div>
+            <div class="col-3"></div>
+          </div>
+  <!-- table-header -->
+          <div class="row">
+            <div class="col-3">1$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">10$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#per1-10" aria-expanded="false" aria-controls="per1-10">Активировать</button></div>
+            <div class="collapse" id="per1-10">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">5$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">50$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#per5-50" aria-expanded="false" aria-controls="per5-50">Активировать</button></div>
+            <div class="collapse" id="per5-50">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">10$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">100$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#per10-100" aria-expanded="false" aria-controls="per10-100">Активировать</button></div>
+            <div class="collapse" id="per10-100">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">50$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">500$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#per50-500" aria-expanded="false" aria-controls="per50-500">Активировать</button></div>
+            <div class="collapse" id="per50-500">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">100$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">1000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#per100-1k" aria-expanded="false" aria-controls="per100-1k">Активировать</button></div>
+            <div class="collapse" id="per100-1k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">300$</div>
+            <div class="col-3">20</div>
+            <div class="col-3">6000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#per300-6k" aria-expanded="false" aria-controls="per300-6k">Активировать</button></div>
+            <div class="collapse" id="per300-6k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">500$</div>
+            <div class="col-3">20</div>
+            <div class="col-3">10000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#per500-10k" aria-expanded="false" aria-controls="per500-10k">Активировать</button></div>
+            <div class="collapse" id="per500-10k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">1000$</div>
+            <div class="col-3">20</div>
+            <div class="col-3">20000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#per1k-20k" aria-expanded="false" aria-controls="per1k-20k">Активировать</button></div>
+            <div class="collapse" id="per1k-20k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- personal -->
+        <div class="tab-pane fade" id="pro" role="tabpanel" aria-labelledby="pro-tab">
+          <div class="row">
+            <div class="col-4">
+              <p>Платформа заполнена на:</p>
+              круглый круг
+            </div>
+            <div class="col-4">
+              <p>Конечный доход:</p>
+              Большая сумма в долларах
+            </div>
+            <div class="col-6">
+              <p>Введите инвайт код:</p>
+              <form class="platform-invite">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="enterInvite">
+                  <button class="btn" type="submit">Активировать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">Уровни</div>
+            <div class="col-3">Умножение</div>
+            <div class="col-3">Доход</div>
+            <div class="col-3"></div>
+          </div>
+          <!-- table-header -->
+          <div class="row">
+            <div class="col-3">10$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">100$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#pro10-100" aria-expanded="false" aria-controls="pro10-100">Активировать</button></div>
+            <div class="collapse" id="pro10-100">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">50$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">500$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#pro50-500" aria-expanded="false" aria-controls="pro50-500">Активировать</button></div>
+            <div class="collapse" id="pro50-500">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">100$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">1000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#pro100-1k" aria-expanded="false" aria-controls="pro100-1k">Активировать</button></div>
+            <div class="collapse" id="pro100-1k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">500$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">5000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#pro500-5k" aria-expanded="false" aria-controls="pro500-5k">Активировать</button></div>
+            <div class="collapse" id="pro500-5k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">2000$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">20000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#pro2k-20k" aria-expanded="false" aria-controls="pro2k-20k">Активировать</button></div>
+            <div class="collapse" id="pro2k-20k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">5000$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">50000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#pro5k-50k" aria-expanded="false" aria-controls="pro5k-50k">Активировать</button></div>
+            <div class="collapse" id="pro5k-50k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+  <!-- pro -->
+    <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
+          <div class="row">
+            <div class="col-4">
+              <p>Платформа заполнена на:</p>
+              круглый круг
+            </div>
+            <div class="col-4">
+              <p>Конечный доход:</p>
+              Большая сумма в долларах
+            </div>
+            <div class="col-6">
+              <p>Введите инвайт код:</p>
+              <form class="platform-invite">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="enterInvite">
+                  <button class="btn" type="submit">Активировать</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">Уровни</div>
+            <div class="col-3">Умножение</div>
+            <div class="col-3">Доход</div>
+            <div class="col-3"></div>
+          </div>
+          <!-- table-header -->
+          <div class="row">
+            <div class="col-3">100$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">1000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#team100-1k" aria-expanded="false" aria-controls="team100-1k">Активировать</button></div>
+            <div class="collapse" id="team100-1k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">500$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">5000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#team500-5k" aria-expanded="false" aria-controls="team500-5k">Активировать</button></div>
+            <div class="collapse" id="team500-5k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">1000$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">10000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#team1k-10k" aria-expanded="false" aria-controls="team1k-10k">Активировать</button></div>
+            <div class="collapse" id="team1k-10k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">5000$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">50000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#team5k-50k" aria-expanded="false" aria-controls="team5k-50k">Активировать</button></div>
+            <div class="collapse" id="team5k-50k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">10000$</div>
+            <div class="col-3">10</div>
+            <div class="col-3">100000$</div>
+            <div class="col-3"><button class="btn" type="button" data-toggle="collapse" data-target="#team10k-100k" aria-expanded="false" aria-controls="team10k-100k">Активировать</button></div>
+            <div class="collapse" id="team10k-100k">
+              <div class="card card-body">
+                <div class="row no-gutters">
+                  <div class="col-3">Кому:</div>
+                  <div class="col-6">Стоимость активации:</div>
+                  <div class="col-3">К оплате:</div>
+                  <div class="row">
+                    <div class="col-2">Name+Surname</div>
+                    <div class="col-2">wallet number</div>
+                    <div class="col-2">amount</div>
+                    <div class="col-2">taxes</div>
+                    <div class="col-2">final amount</div>
+                    <div class="col-2"><button class="btn" type="button">Оплатить</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+<!-- team -->
+      </div>
+      <!-- platform-tabs-content -->
+</div>
+<!--platforms-tabs-content-body-->
+</div>
+<!-- platforms-tab -->
+
+<div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+  <div class="row">
+    1-3 из 3
+    <nav aria-label="messages-navigation">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&lsaquo;</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&rsaquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <input type="checkbox" name="selectAll" id="selectAll">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Выбрать все</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-1">avatar</div>
+    <div class="col-2">Name</div>
+    <div class="col">Name, перевод поступил, спасибо</div>
+    <div class="col-1">12 авг.</div>
+    <div class="col-1"><input type="checkbox" name="message-check" id="checkMessage"></div>
+  </div>
+  <div class="row">
+    <div class="col-1">avatar</div>
+    <div class="col-2">Name</div>
+    <div class="col">Name, перевод поступил, спасибо</div>
+    <div class="col-1">12 авг.</div>
+    <div class="col-1"><input type="checkbox" name="message-check" id="checkMessage"></div>
+  </div>
+  <div class="row">
+    <div class="col-1">avatar</div>
+    <div class="col-2">Name</div>
+    <div class="col">Name, перевод поступил, спасибо</div>
+    <div class="col-1">12 авг.</div>
+    <div class="col-1"><input type="checkbox" name="message-check" id="checkMessage"></div>
+  </div>
+<!-- messages list -->
+  <div class="row">
+    &#8592; Назад
+  </div>
+  <div class="row">
+    <div class="col-4 side">
+      <div class="row">
+        <form class="message-search">
+        <div class="form-group">
+          <input type="text" placeholder="Поиск...">
+        </div>
+        </form>
+      </div>
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <div class="row nav-link active" id="v-pills-name-tab" data-toggle="pill" href="#v-pills-name" role="tab" aria-controls="v-pills-name" aria-selected="true">
+          <div class="col-sm-3">
+            <img>
+          </div>
+          <div class="col">
+            <div class="row message-sender">Name Name</div>
+            <div class="row message-preview">Привет</div>
+          </div>
+          <div class="col-sm-3">
+            дд.мм.гг
+          </div>
+          </div>
+          <div class="row nav-link" id="v-pills-name-tab" data-toggle="pill" href="#v-pills-name" role="tab" aria-controls="v-pills-name" aria-selected="false">
+            <div class="col-sm-3">
+              <img>
+            </div>
+            <div class="col">
+              <div class="row message-sender">Name Name</div>
+              <div class="row message-preview">Привет</div>
+            </div>
+            <div class="col-sm-3">
+              дд.мм.гг
+            </div>
+          </div>
+          <div class="row nav-link" id="v-pills-name-tab" data-toggle="pill" href="#v-pills-name" role="tab" aria-controls="v-pills-name" aria-selected="false">
+            <div class="col-sm-3">
+              <img>
+            </div>
+            <div class="col">
+              <div class="row message-sender">Name Name</div>
+              <div class="row message-preview">Привет</div>
+            </div>
+            <div class="col-sm-3">
+              дд.мм.гг
+            </div>
+          </div>
+        </div>
+    </div>
+<!-- recievers list -->
+    <div class="col-8 conversation">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-name" role="tabpanel" aria-labelledby="v-pills-name-tab">
+          <div class="row message" id="conversation">
+            <div class="row message-body">
+                <div class="receiver">
+                  <div class="message-text">
+                  Привет, перевод получил
+                  </div>
+                  <span class="message-time pull-right">
+                    чч.мм
+                  </span>
+                </div>
+            </div>
+            <div class="row message-body">
+                <div class="sender">
+                  <div class="message-text">
+                    Привет
+                  </div>
+                  <span class="message-time pull-right">
+                    чч.мм
+                  </span>
+                </div>
+            </div>
+          </div>
+          <div class="row reply">
+              <textarea class="form-control" rows="1" id="messageText" placeholder="Введите сообщение..."></textarea>
+              <div class="col-sm-1 col-xs-1 reply-emojis">
+                smile-face
+              </div>
+              <button type="submit" class="btn btn-secondary">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- conversation -->
+  </div>
+<!-- chat window -->
+</div>
+<!-- messages -->
+
+<div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+  <div class="row">
+    <p class="h6">Настройки профиля</p>
+  </div>
+  <div class="row">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="pills-general-tab" data-toggle="pill" href="#pills-general" role="tab" aria-controls="pills-general" aria-selected="true">Общие</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-security-tab" data-toggle="pill" href="#pills-security" role="tab" aria-controls="pills-security" aria-selected="false">Безопасность</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-finance-tab" data-toggle="pill" href="#pills-finance" role="tab" aria-controls="pills-finance" aria-selected="false">Финансы</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-inegration-tab" data-toggle="pill" href="#pills-inegration" role="tab" aria-controls="pills-inegration" aria-selected="false">Интеграция</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-general" role="tabpanel" aria-labelledby="pills-general-tab">
+        <p class="h6">Личная информация</p>
+        <form class="general-form">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" class="form-control" id="name" placeholder="Пшек">
+          </div>
+          <div class="form-group">
+            <label for="surname">Фамилия</label>
+            <input type="text" class="form-control" id="surname" placeholder="Пшчичевич">
+          </div>
+          <div class="form-group">
+            <label for="nickname">Никнейм</label>
+            <input type="text" class="form-control" id="nickname" placeholder="Живе Польска">
+          </div>
+          <div class="form-group">
+            <label for="country">Страна</label>
+            <select class="form-control" id="country">
+              <option checked>Польша</option>
+              <option>Россия</option>
+              <option>Украина</option>
+              <option>Латвия</option>
+              <option>Литва</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="city">Город</label>
+            <select class="form-control" id="city">
+              <option checked>Варшава</option>
+              <option>Краков</option>
+              <option>Лодзь</option>
+              <option>Вроцлав</option>
+              <option>Гданьск</option>
+            </select>
+          </div>
+          <label>Пол</label>
+          <div class="form-group">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
+              <label class="form-check-label" for="inlineRadio1">Мужской</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+              <label class="form-check-label" for="inlineRadio2">Женский</label>
+            </div>
+          </div>
+          <label>Возраст</label>
+          <div class="form-group">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="age" id="to25" value="to25">
+              <label class="form-check-label" for="inlineRadio1">от 18 до 25</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="age" id="to50" value="to50">
+              <label class="form-check-label" for="inlineRadio1">от 25 до 50</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="age" id="more50" value="more50" checked>
+              <label class="form-check-label" for="inlineRadio2">от 50 и более</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Почта</label>
+            <input type="email" class="form-control" id="email" placeholder="garnuihlopec@mail.ru">
+          </div>
+          <div class="form-group">
+            <label for="pnone">Телефон</label>
+            <input type="pnone" class="form-control" id="phone" placeholder="8(800)555-35-35">
+          </div>
+          <button class="btn" type="button">Изменить</button>
+          <button class="btn" type="button">Сохранить</button>
+          <button class="btn" type="button">Удалить анкету</button>
+        </form>
+      </div>
+<!-- general tab -->
+      <div class="tab-pane fade" id="pills-security" role="tabpanel" aria-labelledby="pills-security-tab">
+        <p class="h6">Безопасность</p>
+        <form class="security-form">
+          <div class="form-group">
+            <label for="newPassword">Новый пароль</label>
+            <input type="email" class="form-control" id="newPassword">
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Подтвердите новый пароль</label>
+            <input type="password" class="form-control" id="confirmPassword">
+          </div>
+          <button type="button" class="btn btn-primary">Сменить</button>
+          <div class="form-group">
+            <label>Двухфакторная идентификация</label>
+            <button type="button" class="btn">Настроить</button>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="auth" id="mailRadio" value="mail" checked>
+              <label class="form-check-label" for="mailRadio">
+                Mail
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="auth" id="phoneRadio" value="phone">
+              <label class="form-check-label" for="phoneRadio">
+                Телефон
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="auth" id="telegramRadio" value="telegram">
+              <label class="form-check-label" for="telegramRadio">
+                Telegram
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="auth" id="googleRadio" value="google">
+              <label class="form-check-label" for="googleRadio">
+                Google-аутентификатор
+              </label>
+            </div>
+          </div>
+          <button class="btn" type="button">Изменить</button>
+          <button class="btn" type="button">Сохранить</button>
+        </form>
+      </div>
+<!-- security tab -->
+      <div class="tab-pane fade" id="pills-finance" role="tabpanel" aria-labelledby="pills-finance-tab">
+        <p class="h6">Финансы</p>
+        <form class="finance-form">
+          <div class="form-group">
+            <label for="payer">Payer кошелек</label>
+            <input type="text" class="form-control" id="payer">
+          </div>
+          <div class="form-group">
+            <label for="apiCode">Ввести api код</label>
+            <input type="text" class="form-control" id="apiCode">
+          </div>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="autopay">
+            <label class="custom-control-label" for="autopay">Активировать автоплатеж</label>
+          </div>
+          <button class="btn" type="button">Изменить</button>
+          <button class="btn" type="button">Сохранить</button>
+        </form>
+      </div>
+<!-- finance tab -->  
+      <div class="tab-pane fade" id="pills-inegration" role="tabpanel" aria-labelledby="pills-inegration-tab">
+        <p class="h6">Социальные сети</p>
+        <form class="integration-form">
+          <div class="form-group">
+            <label for="telegram">Telegram</label>
+            <input type="text" class="form-control" id="telegram">
+          </div>
+          <div class="form-group">
+            <label for="facebook">Facebook</label>
+            <input type="text" class="form-control" id="facebook">
+          </div>
+          <div class="form-group">
+            <label for="twitter">Twitter</label>
+            <input type="text" class="form-control" id="twitter">
+          </div>
+          <div class="form-group">
+            <label for="instagram">Instagram</label>
+            <input type="text" class="form-control" id="instagram">
+          </div>
+          <div class="form-group">
+            <label for="ok">Одноклассники</label>
+            <input type="text" class="form-control" id="ok">
+          </div>
+          <div class="form-group">
+            <label for="vk">ВКонтакте</label>
+            <input type="text" class="form-control" id="vk">
+          </div>
+          <div class="form-group">
+            <label for="linkedin">Linkedin</label>
+            <input type="text" class="form-control" id="linkedin">
+          </div>
+          <div class="form-group">
+            <label for="wechat">Wechat</label>
+            <input type="text" class="form-control" id="wechat">
+          </div>
+          <div class="form-group">
+            <label for="weibo">Weibo</label>
+            <input type="text" class="form-control" id="weibo">
+          </div>
+          <div class="form-group">
+            <label for="tiktok">TikTok</label>
+            <input type="text" class="form-control" id="tiktok">
+          </div>
+          <div class="form-group">
+            <label for="qq">QQ</label>
+            <input type="text" class="form-control" id="qq">
+          </div>
+          <button class="btn" type="button">Изменить</button>
+          <button class="btn" type="button">Сохранить</button>
+        </form>
+      </div>
+<!-- integration tab -->
+    </div>
+  </div>
+</div>
+<!-- profile settings -->
+
+          </div>  
+<!-- tab-content (all pages) -->
+        </main>
+    </div>
+  </div>
+    <!-- .container -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wesota - Registration</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="registration-form">
+        <div class="row">
+          <div class="col d-flex flex-column align-items-center">
+            <img src="img/logo.png" alt="Wesota logo">
+            <p class="text-wrap text-center" style="width: 12rem;">Мы рады видеть Вас в проекте 
+              WESOTA</p>
+              <p class="text-wrap text-center" style="width: 12rem;">Уважаемый участник, просим Вас
+                заполнить предварительную анкету</p>
+            <form name ="registerForm" class="d-flex flex-column align-items-stretch"  action="#" enctype="application/x-www-form-urlencoded" method="POST">
+              <div class="form-group">
+                <label for="registerForm_nameInput">Имя</label>
+                <input type="text" class="form-control text-center" id="registerForm_nameInput">
+              </div>
+              <div class="form-group">
+                <label for="registerForm_surnameInput">Фамилия</label>
+                <input type="password" class="form-control text-center" id="registerForm_surnameInput">
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="registerForm_countrySelect">
+                  <option value="country" selected disabled>Страна</option>
+                </select>
+                <select class="form-control" id="registerForm_citySelect">
+                  <option value="city" selected disabled>Город</option>
+                </select>
+                <select class="form-control" id="registerForm_langSelect">
+                  <option value="language" selected disabled>Язык</option>
+                </select>
+              </div>
+              <button type="submit" class="btn">Подтвердить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>
