@@ -80,7 +80,7 @@ body{
   border-radius: 50%;
 }
 
-.active-state::before{
+.active-state::before, .active-state::after{
   background-color: #33cc33;
 }
 .close-state::before{
@@ -111,7 +111,7 @@ body{
   height: 10px;
   border-radius: 50%;
 }
-.not-active::before{
+.not-active::before, .not-active::after{
   background-color: #999;
 }
 
@@ -128,24 +128,6 @@ body{
   border: 10px solid #033848;
 }
 
-.mod-window-right{
-  position: fixed;
-  top: 7%;
-  right: 1%;
-  width: 30vw;
-  height: 90vh;
-  max-height: 88%;
-  overflow: scroll;
-}
-
-.mod-window-left{
-  position: fixed;
-  top: 7%;
-  left: 17%;
-  width: 25vw;
-  height: 88vh;
-}
-
 .overflow-scroll{
   overflow: scroll;
 }
@@ -159,40 +141,158 @@ body{
   height: 24px;
 }
 
-@media(max-height: 768px){
-  .sidebar-menu ul li a{
-    font-size: 0.75rem;
-    text-align: center;
-    padding-right: 0;
-  }
-  .sidebar-menu .nav-tabs .nav-item.show .nav-link, .sidebar-menu .nav-tabs .nav-link.active{
-    padding-right: 0;
-  }
-  .sidebar-menu{
-    margin-top: 0;
-  }
-  .sidebar-menu .nav-tabs .nav-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.blue-bg{
+  background-color: #0494d5;
 }
 
-@media(max-width: 1280px) and (max-height: 870px){
-  .sidebar-menu{
-    padding-bottom: 5rem;
-  }
-  .user-card{
-    margin-top: 5rem;
-  }
+.ai-active::after{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 55px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
-/*for lg and smaller*/
+.online-state::after{
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 120px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: none;
+  border-bottom: 3px solid coral;
+  color: #000;
+  border-radius: 0;
+}
+
+.nav-pills .nav-link{
+  color: #666 ;
+}
+
+.page-link{
+  color: #000;
+  border: none;
+}
+
+.light-bg{
+  background: #efefef;
+}
+
+.left-mod-window{
+  position: fixed;
+  z-index: 1000;
+  left: 245px;
+  bottom: 45px;
+  overflow-y: scroll;
+  width: 25vw;
+  height: calc(100vh - 100px);
+}
+
+.right-mod-window{
+  position: fixed;
+  z-index: 1000;
+  right: 10px;
+  bottom: 45px;
+  overflow: hidden;
+  width: 25vw;
+  height: calc(100vh - 100px);
+}
+
+.messenger-window{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: calc(100vh - 108px);
+}
+
+.scrollable{
+  overflow: scroll;
+  display: block;
+  flex-direction: column;
+  flex: 1;
+}
+
+.body-mod{
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-height: 100%;
+}
+
+
+
+.grey-border{
+  border-right: 1px solid #dee2e6;
+}
+
+/*for lg and smaller - tablets*/
 @media (max-width: 1199px){
 
 .menu-icon{
   width: 48px;
   height: 48px;
   }
+.left-mod-window{
+  position: fixed;
+  bottom: 45px;
+  left: 135px;
+  width: 35vw;
+  }
+.right-mod-window{
+  position: fixed;
+  right: 10px;
+  bottom: 45px;
+  width: 35vw;
+  }
+}
+
+/*for md and smaller - phones*/
+@media (max-width: 767px){
+.footer-menu .nav-tabs .nav-item.show .nav-link, .footer-menu .nav-tabs .nav-link.active{
+  background-color: #022e3b;
+  border-color: #022e3b;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+  
+.footer-menu .nav-tabs .nav-item .nav-link:hover{
+  border: none;
+  background-color: #022e3b;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+.footer-row, .sidebar{
+  display: none;
+  }
+.menu-icon{
+  width: 22px;
+  height: 20px;
+  }
+.personal-progress, .pro-progress, .team-progress {
+  width: 100px;
+  height: 100px;
+  }
+.left-mod-window{
+    position: fixed;
+    bottom: 65px;
+    left: 5px;
+    width: 300px;
+    height: calc(100vh - 120px);
+  }
+
+.right-mod-window{
+  position: fixed;
+  right: 5px;
+  bottom: 65px;
+  width: 300px;
+  height: calc(100vh - 120px);
+}
+
+.grey-border{
+  border: none;
+}
 }

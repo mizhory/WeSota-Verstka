@@ -87,3 +87,77 @@ profileLink.onclick = function(){
   settingsIcon.src = "icons/menu-white/settings.png";
   profileIcon.src = "icons/menu-color/profile.png";
 };
+
+//footer-menu
+let fstatisticLink = document.querySelector('.f-statistic-link');
+let fstatisticIcon = document.querySelector('.f-statistic-icon');
+let ffinanceLink = document.querySelector('.f-finance-link');
+let ffinanceIcon = document.querySelector('.f-finance-icon');
+let fplatformLink = document.querySelector('.f-platform-link');
+let fplatformIcon = document.querySelector('.f-platform-icon');
+let fmessagesLink = document.querySelector('.f-messages-link');
+let fmessagesIcon = document.querySelector('.f-messages-icon');
+let fsettingsLink = document.querySelector('.f-settings-link');
+let fsettingsIcon = document.querySelector('.f-settings-icon');
+let fprofileLink = document.querySelector('.f-profile-link');
+let fprofileIcon = document.querySelector('.f-profile-icon');
+
+if (fstatisticLink.classList.contains('active')) {
+  fstatisticIcon.src = "icons/menu-color/statistic.png";
+}
+
+
+fstatisticLink.onclick = function(){
+  fstatisticIcon.src = "icons/menu-color/statistic.png";
+  ffinanceIcon.src = "icons/menu-white/finance.png";
+  fplatformIcon.src = "icons/menu-white/platform.png";
+  fmessagesIcon.src = "icons/menu-white/message.png";
+  fsettingsIcon.src = "icons/menu-white/settings.png";
+  fprofileIcon.src = "icons/menu-white/profile.png";
+};
+
+ffinanceLink.onclick = function(){
+  fstatisticIcon.src = "icons/menu-white/statistic.png";
+  ffinanceIcon.src = "icons/menu-color/finance.png";
+  fplatformIcon.src = "icons/menu-white/platform.png";
+  fmessagesIcon.src = "icons/menu-white/message.png";
+  fsettingsIcon.src = "icons/menu-white/settings.png";
+  fprofileIcon.src = "icons/menu-white/profile.png";
+};
+
+
+fplatformLink.onclick = function(){
+  fstatisticIcon.src = "icons/menu-white/statistic.png";
+  ffinanceIcon.src = "icons/menu-white/finance.png";
+  fplatformIcon.src = "icons/menu-color/platform.png";
+  fmessagesIcon.src = "icons/menu-white/message.png";
+  fsettingsIcon.src = "icons/menu-white/settings.png";
+  fsettprofile.src = "icons/menu-white/profile.png";
+};
+
+fmessagesLink.onclick = function(){
+  fstatisticIcon.src = "icons/menu-white/statistic.png";
+  ffinanceIcon.src = "icons/menu-white/finance.png";
+  fplatformIcon.src = "icons/menu-white/platform.png";
+  fmessagesIcon.src = "icons/menu-color/message.png";
+  fsettingsIcon.src = "icons/menu-white/settings.png";
+  fsettprofile.src = "icons/menu-white/profile.png";
+};
+
+fsettingsLink.onclick = function(){
+  fstatisticIcon.src = "icons/menu-white/statistic.png";
+  ffinanceIcon.src = "icons/menu-white/finance.png";
+  fplatformIcon.src = "icons/menu-white/platform.png";
+  fmessagesIcon.src = "icons/menu-white/message.png";
+  fsettingsIcon.src = "icons/menu-color/settings.png";
+  fsettprofile.src = "icons/menu-white/profile.png";
+};
+
+fprofileLink.onclick = function(){
+  fstatisticIcon.src = "icons/menu-white/statistic.png";
+  ffinanceIcon.src = "icons/menu-white/finance.png";
+  fplatformIcon.src = "icons/menu-white/platform.png";
+  fmessagesIcon.src = "icons/menu-white/message.png";
+  fsettingsIcon.src = "icons/menu-white/settings.png";
+  fprofileIcon.src = "icons/menu-color/profile.png";
+};

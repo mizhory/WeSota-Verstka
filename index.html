@@ -35,7 +35,7 @@
       </header>
       <!--header-->
 
-      <div class="row">
+      <div class="row px-1 px-md-0">
 
         <nav class="sidebar col-2 wesota-bg py-xl-5 px-0 flex-column align-items-stretch position-fixed h-100">
           <div class="user-card d-none d-xl-block">
@@ -57,10 +57,10 @@
           </div>
           <!--user card-->
           <div class="sidebar-menu mt-xl-5 mb-5">
-            <ul class="nav nav-tabs d-flex flex-column">
+            <ul class="nav nav-tabs d-flex flex-column mb-5 pb-5">
               <li class="nav-item my-1 d-xl-none d-block w-100">
                 <a class="profile-link nav-link text-white text-xl-left pl-0 pl-xl-4 text-center" data-toggle="tab" href="#profile">
-                  <img src="icons/menu-white/profile.png" alt="icon: profile" class="menu-icon profile profile-icon mr-xl-1 mr-1">
+                  <img src="icons/menu-white/profile.png" alt="icon: profile" class="menu-icon profile profile-icon mr-xl-1">
                   <span class="position-relative h-xl-6 font-weight-lighter d-block d-xl-inline">Профиль</span>
                 </a>
               </li>
@@ -105,12 +105,82 @@
           <!--navigation tabs-->
         </nav>
   
-        <main class="col-10 offset-2 mb-5">
+        <main class="col offset-md-2 mb-5 col-md-10">
           <div class="tab-content">
+            <div class="tab-pane fade d-md-none" id="profile">
+              <div class="d-flex flex-column wesota-bg text-white">
+                <div class="profile-info d-flex align-items-center p-3">
+                  <img src="img/photo.jpeg" alt="user avatar" class="user-avatar rounded-circle mr-3" width="120px" height="120px">
+                  <div class="profile-info text-center ml-3">
+                    <p class="h5 mb-0">
+                      <span>Павел</span>
+                      <span>Канищев</span>
+                    </p>
+                    <p class="mb-0">
+                      <span class="user-country">Россия,</span>
+                      <span class="user-city">Москва</span>
+                      <img src="img/rus.png" alt="icon: country" width="15px" height="15px" class="rounded-circle">
+                    </p>
+                    <p class="mb-0">30 лет</p>
+                  </div>
+                </div>
+                <div class="rewards-info w-100 text-center">
+                <div class="shadow wesota-bg reward-border mb-0 d-flex justify-content-between px-2">
+                  <p class="mb-0">Награды:</p>
+                  <p class="mb-0">Закрыто: <span>3</span> платформы</p>
+                </div>
+                <div class="rewards my-3 d-flex justify-content-around px-3">
+                  <figure class="figure text-center mb-0">
+                    <img src="img/reward.png" alt="icon: achievement">
+                    <figcaption class="figure-caption text-center font-weight-bolder">Personal: 1</figcaption>
+                  </figure>
+                  <figure class="figure text-center mb-0">
+                    <img src="img/reward.png" alt="icon: achievement">
+                    <figcaption class="figure-caption text-center font-weight-bolder">Pro: 1</figcaption>
+                  </figure>
+                  <figure class="figure text-center mb-0">
+                    <img src="img/reward.png" alt="icon: achievement">
+                    <figcaption class="figure-caption text-center font-weight-bolder">Team: 1</figcaption>
+                  </figure>
+                </div>
+                </div>
+                <div class="statistic-info w-100 text-center">
+                <p class="shadow wesota-bg reward-border mb-0 text-left px-2">Статистика проекта:</p>
+                <div class="row text-white text-center d-flex align-items-center px-3">
+                    <div class="col my-1" style="font-size: 0.6rem;">Активные платформы</div>
+                    <div class="col my-1" style="font-size: 0.6rem;">Участники проекта</div>
+                    <div class="col my-1" style="font-size: 0.6rem;">Доход проекта</div>
+                </div>
+                <div class="row text-white text-center px-3">
+                    <div class="col h4">100М</div>
+                    <div class="col h4">790М</div>
+                    <div class="col h4">7.9BL</div>
+                </div>
+                </div>
+                <div class="account-info w-100 text-center">
+                  <p class="shadow wesota-bg reward-border mb-0 text-left px-2">Мой счёт:</p>
+                  <div class="px-3 py-1">
+                    <p class="text-right mb-0">P1010100110</p>
+                    <p class="mb-0 h1 font-weight-lighter text-left">$ <span>690К</span></p>
+                    <p class="text-right mb-0 h5 font-weight-lighter">USD</p>
+                  </div>
+                </div>
+                <div class="invite-code w-100 text-center pb-3">
+                <p class="shadow wesota-bg reward-border px-2 mb-0 text-left">Инвайт код:</p>
+                <div class="form-group px-3 mb-0 pt-3">
+                  <input type="email" placeholder="Введите Email..." class="form-control wesota-bg" aria-label="Large">
+                  <button type="button" class="btn btn-light border shadow-sm mt-3"><img src="icons/message-black.png" alt="icon: message" height="20px"> ОТПРАВИТЬ</button>
+                </div>
+                </div>
+              </div>
+            </div>
+            <!--profile tab-->
+
             <div class="tab-pane fade show active" id="statistic">
               <div class="profile-statistics">
-                <p class="shadow-sm border-bottom py-1 m-0">Статистика профиля</p>
-                <div class="row d-flex shadow-sm border-bottom py-2 px-2">
+                <p class="shadow-sm border-bottom py-1 m-0 d-none d-md-flex">Статистика профиля</p>
+                <p class="py-1 m-0 d-md-none text-center font-weight-normal">Статистика профиля</p>
+                <div class="row d-md-flex shadow-sm border-bottom py-2 px-2 d-none">
                   <div class="col border-right text-center">
                     <p class="table-heading font-weight-normal">Закрыто платформ</p>
                     <p class="font-weight-bolder h3">12M</p>
@@ -133,15 +203,7 @@
                   </div>
                 </div>
                 <div class="row d-flex shadow-sm border-bottom py-2 px-2">
-                  <div class="col-3 d-flex flex-column align-items-center justify-content-between border-right">
-                    <div class="d-flex justify-content-between align-self-stretch">
-                      <span class="currency d-inline-block">USD</span>
-                      <span class="account-number d-inline-block">P11000121</span>
-                    </div>
-                    <p class="amount font-weight-bolder h1">$ 200K</p>
-                    <button type="button" class="btn btn-light border shadow-sm">Пополнить</button>
-                  </div>
-                  <div class="col-3 border-right">
+                  <div class="col-md-3 col-4 grey-border">
                     <div class="d-flex flex-column align-items-center">
                       <svg class="personal-progress" viewbox="0 0 200 200" width="140px" height="140px">
                         <defs>
@@ -163,7 +225,7 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="col-3 border-right">
+                  <div class="col-md-3 col-4 grey-border">
                     <div class="d-flex flex-column align-items-center">
                       <svg class="pro-progress" viewbox="0 0 200 200" width="140px" height="140px">
                         <defs>
@@ -185,7 +247,7 @@
                       </svg>
                     </div>
                   </div>
-                  <div class="col-3">
+                  <div class="col-md-3 col-4">
                     <div class="d-flex flex-column align-items-center">
                       <svg class="team-progress" viewbox="0 0 200 200" width="140px" height="140px">
                         <defs>
@@ -207,13 +269,115 @@
                       </svg>
                     </div>
                   </div>
+                  <div class="col-md-3 d-flex flex-column align-items-center justify-content-between grey-border col-sm-12 order-md-first mt-2 mt-md-0">
+                    <div class="d-flex justify-content-between align-self-stretch">
+                      <span class="currency d-inline-block">USD</span>
+                      <span class="account-number d-inline-block">P11000121</span>
+                    </div>
+                    <p class="amount font-weight-bolder h1">$ 200K</p>
+                    <button type="button" class="btn btn-light border shadow-sm d-none d-md-block">Пополнить</button>
+                  </div>
                 </div>
               </div>
               <!--profile statistics-->
               <div class="project-statistics">
-                <p class="shadow-sm border-bottom py-1 m-0">Статистика проекта</p>
+                <p class="shadow-sm border-bottom py-1 m-0 d-none d-md-flex">Статистика проекта</p>
+                <div class="row shadow-sm border-bottom py-2 px-2 d-md-none">
+                  <div class="col-12 text-center">
+                    <p class="table-heading font-weight-normal">Ваши достижения</p>
+                    <div class="row d-flex">
+                      <div class="col-6">
+                        <p class="mb-0 small">Закрыто платформ</p>
+                        <p class="mb-0 h3 font-weight-lighter">13</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="mb-0 small">Общий доход</p>
+                        <p class="mb-0 h3 font-weight-lighter">180М</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="py-1 m-0 d-md-none text-center shadow-sm border-bottom">
+                  <a data-toggle="collapse" href="#collapseDown" role="button" aria-expanded="false" aria-controls="collapseDown">
+                    <img src="icons/arrow-down.png" alt="icon: arrow down" width="30rem">
+                  </a>
+                </p>
+                <div class="collapse d-md-none" id="collapseDown">
+                  <div class="card card-body border-0 p-0">
+                    <div class="table-heading">
+                      <div class="row text-center shadow-sm py-2 px-2">
+                        <div class="col-4 text-center">Платформа</div>
+                        <div class="col-4 text-center">Доход</div>
+                        <div class="col-4 text-center">Дата</div>
+                      </div>
+                    </div>
+                    <div class="statistic-cards">
+                      <div class="row font-weight-bolder h5 my-2 py-2 border-bottom shadow-sm">
+                        <div class="col-4 text-center">
+                          <svg class="number-icon" viewbox="0 0 100 100" width="30px" height="30px">
+                            <circle r="47" cx="50" cy="50" fill="none" stroke-width="3" stroke="#000" stroke-linecap="round"/>
+                            <text class="number-icon-text" x="50" y="70" font-family="Roboto" font-size="64px" text-anchor="middle">1</text>
+                          </svg>
+                        <span class="ml-3">Personal</span>
+                        </div>
+                        <div class="col-4 text-center">35700$</div>
+                        <div class="col-4 text-center">01.09.2020</div>
+                    </div>
+                      <div class="row font-weight-bolder h5 my-2 py-2 border-bottom shadow-sm">
+                    	  <div class="col-4 text-center">
+                    	    <svg class="number-icon" viewbox="0 0 100 100" width="30px" height="30px">
+                    	      <circle r="47" cx="50" cy="50" fill="none" stroke-width="3" stroke="#000" stroke-linecap="round"/>
+                    	      <text class="number-icon-text" x="50" y="70" font-family="Roboto" font-size="64px" text-anchor="middle">2</text>
+                    	    </svg>
+                    	    <span class="ml-3">Personal</span>
+                    	  </div>
+                    	  <div class="col-4 text-center">35700$</div>
+                    	  <div class="col-4 text-center">01.09.2020</div>
+                      </div>
+                      <div class="row font-weight-bolder h5 my-2 py-2 border-bottom shadow-sm">
+                    	  <div class="col-4 text-center">
+                    	    <svg class="number-icon" viewbox="0 0 100 100" width="30px" height="30px">
+                    	      <circle r="47" cx="50" cy="50" fill="none" stroke-width="3" stroke="#000" stroke-linecap="round"/>
+                    	      <text class="number-icon-text" x="50" y="70" font-family="Roboto" font-size="64px" text-anchor="middle">3</text>
+                    	    </svg>
+                    	    <span class="ml-3">Personal</span>
+                    	  </div>
+                    	  <div class="col-4 text-center">35700$</div>
+                    	  <div class="col-4 text-center">01.09.2020</div>
+                      </div>
+                      <div class="row font-weight-bolder h5 my-2 py-2 border-bottom shadow-sm">
+                    	  <div class="col-4 text-center">
+                    	    <svg class="number-icon" viewbox="0 0 100 100" width="30px" height="30px">
+                    	      <circle r="47" cx="50" cy="50" fill="none" stroke-width="3" stroke="#000" stroke-linecap="round"/>
+                    	      <text class="number-icon-text" x="50" y="70" font-family="Roboto" font-size="64px" text-anchor="middle">49</text>
+                    	    </svg>
+                    	    <span class="ml-3">Personal</span>
+                    	  </div>
+                    	  <div class="col-4 text-center">35700$</div>
+                    	  <div class="col-4 text-center">01.09.2020</div>
+                      </div>
+                      <div class="row font-weight-bolder h5 my-2 py-2 border-bottom shadow-sm">
+                    	  <div class="col-4 text-center">
+                    	    <svg class="number-icon" viewbox="0 0 100 100" width="30px" height="30px">
+                    	      <circle r="47" cx="50" cy="50" fill="none" stroke-width="3" stroke="#000" stroke-linecap="round"/>
+                    	      <text class="number-icon-text" x="50" y="70" font-family="Roboto" font-size="64px" text-anchor="middle">50</text>
+                    	    </svg>
+                    	    <span class="ml-3">Personal</span>
+                    	  </div>
+                    	  <div class="col-4 text-center">35700$</div>
+                    	  <div class="col-4 text-center">01.09.2020</div>
+                      </div>
+                    </div>
+                    <p class="mb-0 text-center">
+                      <a data-toggle="collapse" href="#collapseDown" role="button" aria-expanded="false" aria-controls="collapseDown">
+                        <img src="icons/arrow-up.png" alt="icon: arrow up" width="30rem">
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <p class="py-1 m-0 d-md-none text-center font-weight-normal">Общая статистика</p>
                 <div class="row shadow-sm border-bottom py-2 px-2">
-                  <div class="col-4 text-center border-right">
+                  <div class="col-12 col-md-4 text-center">
                     <p class="table-heading font-weight-normal">Платформы</p>
                     <div class="row d-flex">
                       <div class="col-6">
@@ -226,7 +390,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-4 text-center border-right">
+                  <div class="col-12 col-md-4 text-center">
                     <p class="table-heading font-weight-normal">Участники проекта</p>
                     <div class="row d-flex">
                       <div class="col-6">
@@ -238,15 +402,15 @@
                       <p class="mb-0 all-state states-dot position-relative d-inline-block">Всего</p>
                     </div>
                     </div>
-                </div>
-                  <div class="col-4 text-center">
+                  </div>
+                  <div class="col-12 col-md-4 text-center">
                     <p class="table-heading font-weight-normal">Общий доход системы</p>
-                    <p class="font-weight-bolder h3 mb-0">200BL</p>
-                </div>
+                    <p class="font-weight-bolder h3 mb-md-0 mb-3">$200BL</p>
+                  </div>
                 </div>
               </div>
               <!--project statistics-->
-              <div class="platforms-statistics">
+              <div class="platforms-statistics d-none d-md-block">
                 <div class="table-heading">
                   <div class="row text-center shadow-sm border-bottom py-2 px-2">
                     <div class="col-4">Платформа</div>
@@ -322,7 +486,7 @@
             <!--statistis tab-->
 
             <div class="tab-pane fade" id="finance">
-              <div class="profile-statistics">
+              <div class="profile-statistics d-none d-md-block">
                 <p class="shadow-sm border-bottom py-1 m-0">Статистика профиля</p>
                 <div class="row d-flex shadow-sm border-bottom py-2 px-2">
                   <div class="col border-right text-center">
@@ -472,46 +636,54 @@
                       </div>
                     </div>
                   </div>
-    
                 </div>
                 <div class="col">
-                  <p class="shadow-sm border-bottom py-1 m-0">Финансы</p>
+                  <p class="shadow-sm border-bottom py-1 m-0 d-none d-md-flex">Финансы</p>
+                  <div class="account-card d-md-none text-white blue-bg mx-n3 shadow">
+                    <p class="account-number shadow-sm p-2 mb-0 d-flex justify-content-between">
+                      <span>Мой счёт:</span>
+                      <span>P1010100110</span>
+                    </p>
+                    <div class="account-info p-3">
+                      <p class="mb-0">USD</p>
+                      <div class="row mb-2">
+                        <div class="col offset-1">
+                          <span class="display-3">$</span>
+                          <span class="display-3">0 <sup>.00</sup></span>
+                        </div>
+                        <div class="col-4 pr-0">
+                          <svg class="currensy-icon" viewbox="0 0 100 100" width="40px" height="40px">
+                            <circle r="47" cx="50" cy="50" fill="none" stroke-width="3" stroke="#fff" stroke-linecap="round"/>
+                            <text class="currensy-icon-text" x="50" y="70" font-family="Roboto" font-size="64px" text-anchor="middle" fill="white">$</text>
+                          </svg>
+                          <button class="btn dropdown-toggle text-white" type="button" id="dropdownButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        </div>
+                      </div>
+                      <div class="button-group d-flex justify-content-around">
+                        <button type="button" class="btn border-white border-rounded text-white">Пополнить</button>
+                        <button type="button" class="btn border-white border-rounded text-white">Вывести</button>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="py-1 m-0 d-md-none text-center font-weight-normal">История транзакций</p>
                   <div class="finance-cards">
                   <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
                     <div class="col-1 offset-md-1">
                     <img src="img/payeer.png" alt="logo: payeer">
                     </div>
-                    <div class="col">
-                    <div class="transactions d-flex align-items-center">
-                    <span class="value font-weight-lighter h4 text-danger mr-5">-1$</span>
-                    <span class="comission ml-5 h6 small">Комиссия: 0.10$</span>
+                    <div class="col pr-0">
+                      <div class="transactions d-flex align-items-center">
+                        <span class="value font-weight-lighter h4 text-danger mr-md-5 ml-5 ml-md-0">-1$</span>
+                        <span class="comission ml-5 h6 small">Комиссия: 0.10$</span>
+                      </div>
+                      <div class="transaction-details d-flex ml-5 ml-md-0">
+                        <span class="mr-5">Кому: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                        <span class="m-md-auto"><img src="icons/wallet.png" alt="icon: wallet" height="14px"> P11002100</span>
+                        <!-- <span>10 июн. 2020, 12:00</span> -->
+                      </div>
                     </div>
-                    <div class="transaction-details d-flex justify-content-between">
-                    <span>Кому: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
-                    <span><img src="icons/wallet.png" alt="icon: wallet" height="14px"> P11002100</span>
-                    <span>03 апр. 2020, 10:00</span>
-                    </div>
-                    </div>
-                    <div class="col-1">
-                    <img src="img/done.png" alt="logo: done">
-                    </div>
-                    <div class="col-1"></div>
-                  </div>
-                  <!--finance-card-->
-                  <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
-                    <div class="col-1 offset-md-1">
-                    <img src="img/payeer.png" alt="logo: payeer">
-                    </div>
-                    <div class="col">
-                    <div class="transactions d-flex align-items-center">
-                    <span class="value font-weight-lighter h4 text-success mr-5">+10$</span>
-                    <span class="comission ml-5 d-none h6 small">Комиссия: 0.10$</span>
-                    </div>
-                    <div class="transaction-details d-flex justify-content-between">
-                    <span>От кого: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
-                    <span><img src="icons/wallet.png" alt="icon: wallet" height="14px"> P11002100</span>
-                    <span>10 июн. 2020, 12:00</span>
-                    </div>
+                    <div class="col-2 d-flex align-self-center text-center">
+                      <span>03 апр. 2020, 10:00</span>
                     </div>
                     <div class="col-1">
                     <img src="img/done.png" alt="logo: done">
@@ -523,37 +695,17 @@
                     <div class="col-1 offset-md-1">
                     <img src="img/payeer.png" alt="logo: payeer">
                     </div>
-                    <div class="col">
-                    <div class="transactions d-flex align-items-center">
-                    <span class="value font-weight-lighter h4 text-danger mr-5">-1$</span>
-                    <span class="comission ml-5 h6 small">Комиссия: 0.10$</span>
+                    <div class="col pr-0">
+                      <div class="transactions d-flex align-items-center">
+                        <span class="value font-weight-lighter h4 text-success mr-md-5 ml-5 ml-md-0">+10$</span>
+                      </div>
+                      <div class="transaction-details d-flex ml-5 ml-md-0">
+                        <span class="mr-5">Кому: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                        <span class="m-md-auto"><img src="icons/wallet.png" alt="icon: wallet" height="14px"> P11002100</span>
+                      </div>
                     </div>
-                    <div class="transaction-details d-flex justify-content-between">
-                    <span>Кому: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
-                    <span><img src="icons/wallet.png" alt="icon: wallet" height="14px">  P11002100</span>
-                    <span>03 апр. 2020, 10:00</span>
-                    </div>  
-                    </div>
-                    <div class="col-1">
-                    <img src="img/done.png" alt="logo: done">
-                    </div>
-                    <div class="col-1"></div>
-                  </div>
-                  <!--finance-card-->
-                  <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
-                    <div class="col-1 offset-md-1">
-                    <img src="img/payeer.png" alt="logo: payeer">
-                    </div>
-                    <div class="col">
-                    <div class="transactions d-flex align-items-center">
-                    <span class="value font-weight-lighter h4 text-success mr-5">+10$</span>
-                    <span class="comission ml-5 d-none h6 small">Комиссия: 0.10$</span>
-                    </div>
-                    <div class="transaction-details d-flex justify-content-between">
-                    <span>От кого: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
-                    <span><img src="icons/wallet.png" alt="icon: wallet" height="14px">  P11002100</span>
-                    <span>10 июн. 2020, 12:00</span>
-                    </div>
+                    <div class="col-2 d-flex align-self-center text-center">
+                      <span>03 апр. 2020, 10:00</span>
                     </div>
                     <div class="col-1">
                     <img src="img/done.png" alt="logo: done">
@@ -565,16 +717,85 @@
                     <div class="col-1 offset-md-1">
                     <img src="img/payeer.png" alt="logo: payeer">
                     </div>
-                    <div class="col">
-                    <div class="transactions d-flex align-items-center">
-                    <span class="value font-weight-lighter h4 text-success mr-5">+10$</span>
-                    <span class="comission ml-5 d-none h6 small">Комиссия: 0.10$</span>
+                    <div class="col pr-0">
+                      <div class="transactions d-flex align-items-center">
+                        <span class="value font-weight-lighter h4 text-danger mr-md-5 ml-5 ml-md-0">-1$</span>
+                        <span class="comission ml-5 h6 small">Комиссия: 0.10$</span>
+                      </div>
+                      <div class="transaction-details d-flex ml-5 ml-md-0">
+                        <span class="mr-5">Кому: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                        <span class="m-md-auto"><img src="icons/wallet.png" alt="icon: wallet" height="14px"> P11002100</span>
+                        <!-- <span>10 июн. 2020, 12:00</span> -->
+                      </div>
                     </div>
-                    <div class="transaction-details d-flex justify-content-between">
-                    <span>От кого: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
-                    <span><img src="icons/wallet.png" alt="icon: wallet" height="14px">  P11002100</span>
-                    <span>10 июн. 2020, 12:00</span>
+                    <div class="col-2 d-flex align-self-center text-center">
+                      <span>03 апр. 2020, 10:00</span>
                     </div>
+                    <div class="col-1">
+                    <img src="img/done.png" alt="logo: done">
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                  <!--finance-card-->
+                  <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-1 offset-md-1">
+                    <img src="img/payeer.png" alt="logo: payeer">
+                    </div>
+                    <div class="col pr-0">
+                      <div class="transactions d-flex align-items-center">
+                        <span class="value font-weight-lighter h4 text-danger mr-md-5 ml-5 ml-md-0">-1$</span>
+                      </div>
+                      <div class="transaction-details d-flex ml-5 ml-md-0">
+                        <span class="mr-5">Кому: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                        <span class="m-md-auto"><img src="icons/wallet.png" alt="icon: wallet" height="14px"> P11002100</span>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex align-self-center text-center">
+                      <span>03 апр. 2020, 10:00</span>
+                    </div>
+                    <div class="col-1">
+                    <img src="img/done.png" alt="logo: done">
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                  <!--finance-card-->
+                  <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-1 offset-md-1">
+                    <img src="img/payeer.png" alt="logo: payeer">
+                    </div>
+                    <div class="col pr-0">
+                      <div class="transactions d-flex align-items-center">
+                        <span class="value font-weight-lighter h4 text-success mr-md-5 ml-5 ml-md-0">+10$</span>
+                      </div>
+                      <div class="transaction-details d-flex ml-5 ml-md-0">
+                        <span class="mr-5">Кому: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                        <span class="m-md-auto"><img src="icons/wallet.png" alt="icon: wallet" height="14px"> P11002100</span>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex align-self-center text-center">
+                      <span>03 апр. 2020, 10:00</span>
+                    </div>
+                    <div class="col-1">
+                    <img src="img/done.png" alt="logo: done">
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                  <!--finance-card-->
+                  <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-1 offset-md-1">
+                    <img src="img/payeer.png" alt="logo: payeer">
+                    </div>
+                    <div class="col pr-0">
+                      <div class="transactions d-flex align-items-center">
+                        <span class="value font-weight-lighter h4 text-success mr-md-5 ml-5 ml-md-0">+10$</span>
+                      </div>
+                      <div class="transaction-details d-flex ml-5 ml-md-0">
+                        <span class="mr-5">Кому: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                        <span class="m-md-auto"><img src="icons/wallet.png" alt="icon: wallet" height="14px"> P11002100</span>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex align-self-center text-center">
+                      <span>03 апр. 2020, 10:00</span>
                     </div>
                     <div class="col-1">
                     <img src="img/done.png" alt="logo: done">
@@ -715,7 +936,7 @@
             <!--invite codes tab-->
 
             <div class="tab-pane fade" id="platforms">
-              <div class="profile-statistics">
+              <div class="profile-statistics d-none d-md-block">
                 <p class="shadow-sm border-bottom py-1 m-0">Статистика профиля</p>
                 <div class="row d-flex shadow-sm border-bottom py-2 px-2">
                   <div class="col border-right text-center">
@@ -817,8 +1038,8 @@
                 </div>
               </div>
               <!--profile statistics-->
-              <p class="shadow-sm border-bottom py-1 m-0">Платформы</p>
-              <div class="row">
+              <p class="shadow-sm border-bottom py-1 m-0 d-none d-md-block">Платформы</p>
+              <div class="row d-none d-md-flex">
                 <div class="col border-right text-center">
                   <p class="table-heading pt-2 active-state state-dot position-relative d-inline-block">
                     Personal 1$
@@ -949,11 +1170,278 @@
                   <button type="button" class="btn btn-light border shadow-sm">Активировать</button>
                 </div>
               </div>
+              <div class="row d-md-none">
+                <div class="col">
+                  <ul class="nav nav-pills mb-3 border-bottom shadow-sm d-flex justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item border-right" role="presentation">
+                      <a class="nav-link active" id="pills-personal-tab" data-toggle="pill" href="#pills-personal" role="tab" aria-controls="pills-personal" aria-selected="true">Personal</a>
+                    </li>
+                    <li class="nav-item border-right" role="presentation">
+                      <a class="nav-link" id="pills-pro-tab" data-toggle="pill" href="#pills-pro" role="tab" aria-controls="pills-pro" aria-selected="false">Pro</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="pills-team-tab" data-toggle="pill" href="#pills-team" role="tab" aria-controls="pills-team" aria-selected="false">Team</a>
+                    </li>
+                  </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-personal" role="tabpanel" aria-labelledby="pills-personal-tab">
+                    <div class="row">
+                      <div class="col text-center">
+                        <div class="row d-flex flex-column align-items-center">
+                          <p class="mb-0">Платформа <span>Personal</span></p>
+                          <p class="small text-muted font-weight-lighter position-relative states-dot not-active">Не активирована</p>
+                        </div>
+                        <div class="row border-bottom shadow-sm pb-3">
+                          <div class="col-5 text-center">
+                            <svg class="m-platform-personal" viewbox="0 0 200 200" width="100px" height="100px">
+                              <defs>
+                                <linearGradient id="strokeG" y2="45%">
+                                  <stop offset="10%" stop-color="#6633cc"/>
+                                  <stop offset="35%" stop-color="#3366cc"/>
+                                  <stop offset="60%" stop-color="#3399cc"/>
+                                  <stop offset="85%" stop-color="#ffcc66"/>
+                                  <stop offset="100%" stop-color="#ff3366"/>
+                                </linearGradient>
+                              </defs>
+                              <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                              <circle class="m-platform-personal__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#strokeG)" stroke-linecap="round"/>
+                              <text class="m-platform-personal__percent" x="100" y="120" font-family="Roboto" font-size="4rem" font-weight="500" text-anchor="middle">93%</text>
+                            </svg>
+                            <span class="text-muted small">заполнение платформы Personal</span>
+                          </div>
+                          <div class="col-7">
+                            <p class="mb-0 text-muted small">Доход платформы</p>
+                            <p class="h4">35.000 $</p>
+                            <p class="mb-0 text-muted small">Активные платформы</p>
+                            <p>
+                              <span class="mr-3 border-bottom border-warning">1$</span>
+                              <span class="mr-3 text-muted">10$</span>
+                              <span class="mr-3 text-muted">100$</span>
+                          </p>
+                          </div>
+                        </div>
+                        <div class="row border-bottom shadow-sm d-flex align-items-center pl-2 pr-4 py-1">
+                              <img src="icons/ai.png" alt="icon: ai" width="40px"> 
+                              <span class="small font-weight-lighter">Нейросеть</span>
+                            <span class="small font-weight-lighter ml-auto position-relative ai-active active-state">Активна</span>
+                        </div>
+                        <div class="row d-flex flex-column align-items-center mt-3">
+                          <p class="mb-0">Уровень <span>1$</span></p>
+                          <p class="small text-muted font-weight-lighter position-relative states-dot not-active">Не активирован</p>
+                        </div>
+                        <div class="row border-bottom shadow-sm pb-3">
+                          <div class="col-5 text-center">
+                            <svg class="m-level-personal" viewbox="0 0 200 200" width="100px" height="100px">
+                              <defs>
+                                <linearGradient id="str" y2="45%">
+                                  <stop offset="10%" stop-color="#6633cc"/>
+                                  <stop offset="35%" stop-color="#3366cc"/>
+                                  <stop offset="60%" stop-color="#3399cc"/>
+                                  <stop offset="85%" stop-color="#ffcc66"/>
+                                  <stop offset="100%" stop-color="#ff3366"/>
+                                </linearGradient>
+                              </defs>
+                              <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                              <circle class="m-level-personal__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#str)" stroke-linecap="round"/>
+                              <text class="m-level-personal__percent" x="100" y="120" font-family="Roboto" font-size="4rem" font-weight="500" text-anchor="middle">54%</text>
+                            </svg>
+                            <span class="text-muted small">заполнение 1 уровня</span>
+                          </div>
+                          <div class="col-7">
+                            <p class="mb-0 text-muted small">Доход уровня</p>
+                            <p class="h4">10 $</p>
+                            <p class="mb-0 text-muted small">Все уровни</p>
+                            <p>
+                              <span class="mr-1 border-bottom border-warning">1</span>
+                              <span class="mr-1">2</span>
+                              <span class="mr-1">3</span>
+                              <span class="mr-1">4</span>
+                              <span class="mr-1">5</span>
+                              <span class="mr-1">6</span>
+                              <span class="mr-1">7</span>
+                          </p>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-light border shadow-sm mt-3 mb-5" disabled>Активирировать платформу</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--personal tab-->
+                  <div class="tab-pane fade" id="pills-pro" role="tabpanel" aria-labelledby="pills-pro-tab">
+                    <div class="row">
+                      <div class="col text-center">
+                        <div class="row d-flex flex-column align-items-center">
+                          <p class="mb-0">Платформа <span>Pro</span></p>
+                          <p class="small text-muted font-weight-lighter position-relative states-dot not-active">Не активирована</p>
+                        </div>
+                        <div class="row border-bottom shadow-sm pb-3">
+                          <div class="col-5 text-center">
+                            <svg class="m-platform-pro" viewbox="0 0 200 200" width="100px" height="100px">
+                              <defs>
+                                <linearGradient id="strok" y2="45%">
+                                  <stop offset="10%" stop-color="#6633cc"/>
+                                  <stop offset="35%" stop-color="#3366cc"/>
+                                  <stop offset="60%" stop-color="#3399cc"/>
+                                  <stop offset="85%" stop-color="#ffcc66"/>
+                                  <stop offset="100%" stop-color="#ff3366"/>
+                                </linearGradient>
+                              </defs>
+                              <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                              <circle class="m-platform-pro__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#strok)" stroke-linecap="round"/>
+                              <text class="m-platform-pro__percent" x="100" y="120" font-family="Roboto" font-size="4rem" font-weight="500" text-anchor="middle">0%</text>
+                            </svg>
+                            <span class="text-muted small">заполнение платформы Pro</span>
+                          </div>
+                          <div class="col-7">
+                            <p class="mb-0 text-muted small">Доход платформы</p>
+                            <p class="h4">0 $</p>
+                            <p class="mb-0 text-muted small">Активные платформы</p>
+                            <p>
+                              <span class="mr-3 border-bottom border-warning">1$</span>
+                              <span class="mr-3 text-muted">10$</span>
+                              <span class="mr-3 text-muted">100$</span>
+                          </p>
+                          </div>
+                        </div>
+                        <div class="row border-bottom shadow-sm d-flex align-items-center pl-2 pr-4 py-1">
+                              <img src="icons/ai.png" alt="icon: ai" width="40px"> 
+                              <span class="small font-weight-lighter">Нейросеть</span>
+                            <span class="small font-weight-lighter ml-auto position-relative ai-active active-state">Активна</span>
+                        </div>
+                        <div class="row d-flex flex-column align-items-center mt-3">
+                          <p class="mb-0">Уровень <span>1$</span></p>
+                          <p class="small text-muted font-weight-lighter position-relative states-dot not-active">Не активирован</p>
+                        </div>
+                        <div class="row border-bottom shadow-sm pb-3">
+                          <div class="col-5 text-center">
+                            <svg class="m-level-pro" viewbox="0 0 200 200" width="100px" height="100px">
+                              <defs>
+                                <linearGradient id="strok" y2="45%">
+                                  <stop offset="10%" stop-color="#6633cc"/>
+                                  <stop offset="35%" stop-color="#3366cc"/>
+                                  <stop offset="60%" stop-color="#3399cc"/>
+                                  <stop offset="85%" stop-color="#ffcc66"/>
+                                  <stop offset="100%" stop-color="#ff3366"/>
+                                </linearGradient>
+                              </defs>
+                              <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                              <circle class="m-level-pro__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#strok)" stroke-linecap="round"/>
+                              <text class="m-level-pro__percent" x="100" y="120" font-family="Roboto" font-size="4rem" font-weight="500" text-anchor="middle">4%</text>
+                            </svg>
+                            <span class="text-muted small">заполнение 1 уровня</span>
+                          </div>
+                          <div class="col-7">
+                            <p class="mb-0 text-muted small">Доход уровня</p>
+                            <p class="h4">10 $</p>
+                            <p class="mb-0 text-muted small">Все уровни</p>
+                            <p>
+                              <span class="mr-1 border-bottom border-warning">1</span>
+                              <span class="mr-1">2</span>
+                              <span class="mr-1">3</span>
+                              <span class="mr-1">4</span>
+                              <span class="mr-1">5</span>
+                              <span class="mr-1">6</span>
+                              <span class="mr-1">7</span>
+                          </p>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-light border shadow-sm mt-3 mb-5" disabled>Активирировать платформу</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--pro tab-->
+                  <div class="tab-pane fade" id="pills-team" role="tabpanel" aria-labelledby="pills-team-tab">
+                    <div class="row">
+                      <div class="col text-center">
+                        <div class="row d-flex flex-column align-items-center">
+                          <p class="mb-0">Платформа <span>Team</span></p>
+                          <p class="small text-muted font-weight-lighter position-relative states-dot not-active">Не активирована</p>
+                        </div>
+                        <div class="row border-bottom shadow-sm pb-3">
+                          <div class="col-5 text-center">
+                            <svg class="m-platform-team" viewbox="0 0 200 200" width="100px" height="100px">
+                              <defs>
+                                <linearGradient id="stroke" y2="45%">
+                                  <stop offset="10%" stop-color="#6633cc"/>
+                                  <stop offset="35%" stop-color="#3366cc"/>
+                                  <stop offset="60%" stop-color="#3399cc"/>
+                                  <stop offset="85%" stop-color="#ffcc66"/>
+                                  <stop offset="100%" stop-color="#ff3366"/>
+                                </linearGradient>
+                              </defs>
+                              <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                              <circle class="m-platform-team__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#stroke)" stroke-linecap="round"/>
+                              <text class="m-platform-team__percent" x="100" y="120" font-family="Roboto" font-size="4rem" font-weight="500" text-anchor="middle">3%</text>
+                            </svg>
+                            <span class="text-muted small">заполнение платформы Team</span>
+                          </div>
+                          <div class="col-7">
+                            <p class="mb-0 text-muted small">Доход платформы</p>
+                            <p class="h4">35.000 $</p>
+                            <p class="mb-0 text-muted small">Активные платформы</p>
+                            <p>
+                              <span class="mr-3 border-bottom border-warning">1$</span>
+                              <span class="mr-3 text-muted">10$</span>
+                              <span class="mr-3 text-muted">100$</span>
+                          </p>
+                          </div>
+                        </div>
+                        <div class="row border-bottom shadow-sm d-flex align-items-center pl-2 pr-4 py-1">
+                              <img src="icons/ai.png" alt="icon: ai" width="40px"> 
+                              <span class="small font-weight-lighter">Нейросеть</span>
+                            <span class="small font-weight-lighter ml-auto position-relative ai-active active-state">Активна</span>
+                        </div>
+                        <div class="row d-flex flex-column align-items-center mt-3">
+                          <p class="mb-0">Уровень <span>1$</span></p>
+                          <p class="small text-muted font-weight-lighter position-relative states-dot not-active">Не активирован</p>
+                        </div>
+                        <div class="row border-bottom shadow-sm pb-3">
+                          <div class="col-5 text-center">
+                            <svg class="m-level-team" viewbox="0 0 200 200" width="100px" height="100px">
+                              <defs>
+                                <linearGradient id="strk" y2="45%">
+                                  <stop offset="10%" stop-color="#6633cc"/>
+                                  <stop offset="35%" stop-color="#3366cc"/>
+                                  <stop offset="60%" stop-color="#3399cc"/>
+                                  <stop offset="85%" stop-color="#ffcc66"/>
+                                  <stop offset="100%" stop-color="#ff3366"/>
+                                </linearGradient>
+                              </defs>
+                              <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                              <circle class="m-level-team__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#strk)" stroke-linecap="round"/>
+                              <text class="m-level-team__percent" x="100" y="120" font-family="Roboto" font-size="4rem" font-weight="500" text-anchor="middle">5%</text>
+                            </svg>
+                            <span class="text-muted small">заполнение 1 уровня</span>
+                          </div>
+                          <div class="col-7">
+                            <p class="mb-0 text-muted small">Доход уровня</p>
+                            <p class="h4">10 $</p>
+                            <p class="mb-0 text-muted small">Все уровни</p>
+                            <p>
+                              <span class="mr-1 border-bottom border-warning">1</span>
+                              <span class="mr-1">2</span>
+                              <span class="mr-1">3</span>
+                              <span class="mr-1">4</span>
+                              <span class="mr-1">5</span>
+                              <span class="mr-1">6</span>
+                              <span class="mr-1">7</span>
+                          </p>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-light border shadow-sm mt-3 mb-5" disabled>Активирировать платформу</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--team tab-->
+                </div>
+                <!--pills content-->
+                </div>
+              </div>
             </div>
             <!--platforms tab-->
 
             <div class="tab-pane fade" id="messages">
-              <div class="row d-flex justify-content-between shadow-sm border-bottom pl-3 align-items-center">
+              <div class="row d-md-flex justify-content-between shadow-sm border-bottom pl-3 align-items-center d-none">
                 <p class="mb-0">Сообщения</p>
                 <div class="checkbox-group">
                   <button class="btn dropdown-toggle py-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -961,9 +1449,11 @@
                   </button>
                 </div>
               </div>
-              <div class="messages-cards">
+              <div class="messages-cards d-md-block d-none">
                 <div class="row message-card my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
-                  <div class="sender-avatar cursor-pointer col-1 offset-md-1"><img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px"></div>
+                  <div class="sender-avatar cursor-pointer col-1 offset-md-1">
+                    <img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px">
+                  </div>
                   <div class="col-2 text-wrap font-weight-bolder">Имя Фамилия</div>
                   <div class="col">Name, перевод поступил, спасибо</div>
                   <div class="col-2">12 авг.</div>
@@ -1026,6 +1516,177 @@
                   <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
                 </div>
               </div>
+
+              <div class="row d-flex flex-column d-md-none">
+                <ul class="nav nav-tabs d-flex justify-content-center mt-1 w-100" id="conversation" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="msg-tab" data-toggle="tab" href="#msg" role="tab" aria-controls="msg" aria-selected="true">Мои сообщения</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="chat-tab" data-toggle="tab" href="#chat" role="tab" aria-controls="chat" aria-selected="false">Чаты</a>
+                  </li>
+                </ul>
+                <div class="tab-content d-flex" id="conversationContent">
+                  <div class="tab-pane fade show active px-1" id="msg" role="tabpanel" aria-labelledby="msg-tab">
+                    <div class="d-flex shadow-sm border-bottom align-items-center py-2">
+                        <img src="icons/left-arrow.png" alt="icon: left arrow" height="15px" class="ml-auto">
+                        <span class="mx-3">1</span>
+                        <img src="icons/right-arrow.png" alt="icon: right arrow" height="15px">
+                        <span class="text-muted mx-3 mr-auto">...100</span>
+                        <button type="button" class="btn p-0"><img src="icons/trash.png" alt="icon: trashcan" height="12px"></button>
+                        <div class="checkbox-group">
+                          <button class="btn dropdown-toggle py-0" type="button" id="dropdownMenuBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <input class="messages-checkbox position-static" type="checkbox" value="selectAll">
+                          </button>
+                        </div>
+                    </div>
+                    <div class="message-list px-2">
+                      <div class="row message-item my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                        <div class="sender-avatar cursor-pointer col-1">
+                          <img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px">
+                        </div>
+                        <div class="col offset-1">
+                          <p class="mb-0">
+                            <span>Name</span>
+                            <span class="country-icon"><img src="img/rus.png" alt="icon: country" width="15px" height="15px" class="rounded-circle"></span>
+                          </p>
+                          <p class="mb-0">перевод поступил, спасибо</p>
+                        </div>
+                        <div class="col-2 text-right">
+                          <span class="d-block">00:00</span>
+                          <input class="messages-checkbox position-static" type="checkbox" disabled>
+                        </div>
+                      </div>
+                      <div class="row message-item my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                        <div class="sender-avatar cursor-pointer col-1">
+                          <img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px">
+                        </div>
+                        <div class="col offset-1">
+                          <p class="mb-0">
+                            <span>Name</span>
+                            <span class="country-icon"><img src="img/rus.png" alt="icon: country" width="15px" height="15px" class="rounded-circle"></span>
+                          </p>
+                          <p class="mb-0">перевод поступил, спасибо</p>
+                        </div>
+                        <div class="col-2 text-right">
+                          <span class="d-block">00:00</span>
+                          <input class="messages-checkbox position-static" type="checkbox" disabled>
+                        </div>
+                      </div>
+                      <div class="row message-item my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                        <div class="sender-avatar cursor-pointer col-1">
+                          <img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px">
+                        </div>
+                        <div class="col offset-1">
+                          <p class="mb-0">
+                            <span>Name</span>
+                            <span class="country-icon"><img src="img/rus.png" alt="icon: country" width="15px" height="15px" class="rounded-circle"></span>
+                          </p>
+                          <p class="mb-0">перевод поступил, спасибо</p>
+                        </div>
+                        <div class="col-2 text-right">
+                          <span class="d-block">00:00</span>
+                          <input class="messages-checkbox position-static" type="checkbox" disabled>
+                        </div>
+                      </div>
+                      <div class="row message-item my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                        <div class="sender-avatar cursor-pointer col-1">
+                          <img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px">
+                        </div>
+                        <div class="col offset-1">
+                          <p class="mb-0">
+                            <span>Name</span>
+                            <span class="country-icon"><img src="img/rus.png" alt="icon: country" width="15px" height="15px" class="rounded-circle"></span>
+                          </p>
+                          <p class="mb-0">перевод поступил, спасибо</p>
+                        </div>
+                        <div class="col-2 text-right">
+                          <span class="d-block">00:00</span>
+                          <input class="messages-checkbox position-static" type="checkbox" disabled>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="chat" role="tabpanel" aria-labelledby="chat-tab">
+                    <div class="messenger-window flex-column d-flex">
+                      <div class="chat-header d-flex align-items-center p-2 shadow-sm border-bottom bg-white">
+                        <div class="arrow mr-3">
+                          <img src="icons/arrow-left-black.png" alt="icon: arrow" width="30px">
+                        </div>
+                        <img src="img/photo.jpeg" alt="avatar" height="50px" width="50px" class="rounded-circle mr-3">
+                        <div>
+                          <p class="mb-0 active-state online-state position-relative">Павел Канищев</p>
+                          <p class="mb-0 small">
+                            <span class="font-weight-lighter">Москва</span> 
+                            <span class="country-icon"><img src="img/rus.png" alt="icon: country" width="15px" height="15px" class="rounded-circle"></span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="scrollable">
+                        <div class="body-mod d-flex flex-column light-bg p-2">
+                          <div class="date text-center mb-1">4 октября 2020</div>
+                          <div class="chat-messages d-flex flex-column">
+                            <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                              <div class="message-text">Да, спасибо большое</div>
+                              <div class="message-time small text-right">00:00</div>
+                            </div>
+                            <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                              <div class="message-text">Да, спасибо большое</div>
+                              <div class="message-time small text-right">00:00</div>
+                            </div>
+                            <div class="chat-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                              <div class="chat-message p-2 rounded align-self-start shadow" >
+                                <div class="message-text">Перевод прошел?</div>
+                                <div class="message-time small text-right">00:00</div>
+                              </div>
+                            </div>
+                            <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                              <div class="message-text">Да, спасибо большое</div>
+                              <div class="message-time small text-right">00:00</div>
+                            </div>
+                            <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                              <div class="message-text">Да, спасибо большое</div>
+                              <div class="message-time small text-right">00:00</div>
+                            </div>
+                            <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                              <div class="message-text">Да, спасибо большое</div>
+                              <div class="message-time small text-right">00:00</div>
+                            </div>
+                            <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                              <div class="message-text">Да, спасибо большое</div>
+                              <div class="message-time small text-right">00:00</div>
+                            </div>
+                            <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                              <div class="message-text">Да, спасибо большое</div>
+                              <div class="message-time small text-right">00:00</div>
+                            </div>
+                            <div class="chat-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                              <div class="chat-message p-2 rounded align-self-start shadow" >
+                                <div class="message-text">Перевод прошел?</div>
+                                <div class="message-time small text-right">00:00</div>
+                              </div>
+                            </div>
+                            <div class="chat-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                              <div class="chat-message p-2 rounded align-self-start shadow" >
+                                <div class="message-text">Перевод прошел?</div>
+                                <div class="message-time small text-right">00:00</div>
+                              </div>
+                            </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="answer-field d-flex justify-content-center align-items-center pt-2 pb-4 mb-4">
+                        <button class="btn"><img src="icons/smile.png" alt="icon: smile"></button>
+                        <textarea name="support-send-answer" id="textareaSupport" class="w-75 border-0 light-bg" placeholder="Текст сообщения..."></textarea>
+                        <button class="btn"><img src="icons/message-purple.png" alt="icon: send" width="40px"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
             </div>
             <!--messages tab-->
 
@@ -1082,20 +1743,19 @@
                         <p class="small mb-0">Телефон</p>
                         <p>+7(999)885-76-45</p>
                       </div>
-                      <div class="button-group d-flex justify-content-between">
+                      <div class="button-group d-flex justify-content-between mb-3">
                         <button type="submit" class="btn btn-edit btn-light border shadow-sm mr-3">Редактировать</button>
                         <button type="submit" class="btn btn-light btn-delete border shadow-sm ml-3">Удалить</button>
                       </div>
                     </div>
                     <div class="profile-changes d-none flex-column align-items-center">
                       <div class="avatar d-flex">
-                      	  <img src="img/photo.jpeg" alt="user avatar" class="rounded-circle mx-3" width="80px" height="80px">
-                      	  <div class="button-group d-flex flex-column">
-                      	    <button class="btn btn-light border shadow-sm my-1" type="button">
-                      	      Загрузить 
-                      	      <img src="icons/load.png" alt="icon: load">
-                      	    </button>
-                      	    <button class="btn btn-light border shadow-sm my-1" disabled type="button">
+                      	<img src="img/photo.jpeg" alt="user avatar" class="rounded-circle mx-3" width="80px" height="80px">
+                      	<div class="button-group d-flex flex-column">
+                      	  <button class="btn btn-light border shadow-sm my-1" type="button">Загрузить 
+                      	  <img src="icons/load.png" alt="icon: load">
+                      	  </button>
+                      	  <button class="btn btn-light border shadow-sm my-1" disabled type="button">
                       	      Удалить
                       	      <img src="icons/delete.png" alt="icon: delete" height="20px">
                       	    </button>
@@ -1111,9 +1771,9 @@
                       	    <input type="password" class="form-control text-center" id="userSettings_surnameInput">
                         </div>
                         <div class="form-group">
-                      	    <select class="form-control my-2" id="userSettings_countrySelect">
-                      	      <option value="country" selected disabled>Страна</option>
-                      	    </select>
+                      	  <select class="form-control my-2" id="userSettings_countrySelect">
+                      	  <option value="country" selected disabled>Страна</option>
+                      	  </select>
                       	    <select class="form-control my-2" id="userSettings_citySelect">
                       	      <option value="city" selected disabled>Город</option>
                       	    </select>
@@ -1204,7 +1864,7 @@
                         <input type="checkbox" class="custom-control-input" id="autopay">
                         <label class="custom-control-label" for="autopay">Активировать автоплатеж</label>
                       </div>
-                      <button class="btn btn-light border shadow-sm align-self-center mt-2" type="button">Сохранить</button>
+                      <button class="btn btn-light border shadow-sm align-self-center mt-2 mb-3" type="button">Сохранить</button>
                     </form>
                   </div>
                 </div>
@@ -1242,7 +1902,7 @@
                         <p class="social-username mb-0 h6">@KanishevP</p>
                         </div>
                       </div>
-                      <button class="btn btn-change btn-light border shadow-sm align-self-center mt-4" type="button">Изменить</button>
+                      <button class="btn btn-change btn-light border shadow-sm align-self-center mt-4 mb-3" type="button">Изменить</button>
                     </div>
                     <form name ="integrationSettings" class="form-integration d-none flex-column align-items-stretch"  action="#" enctype="application/x-www-form-urlencoded" method="POST">
                         <div class="group-social d-flex align-items-center">
@@ -1355,7 +2015,7 @@
                             <img src="icons/reset.png" alt="icon: reset">
                           </button>
                         </div>
-                        <button class="btn btn-save btn-light border shadow-sm align-self-center" type="button">Сохранить</button>
+                        <button class="btn btn-save btn-light border shadow-sm align-self-center mb-3" type="button">Сохранить</button>
                       </form>
                   </div>
                 </div>
@@ -1364,7 +2024,7 @@
                 <div class="tab-pane fade" id="instructions">
                   <div class="instructions mt-4 d-flex flex-column align-items-center">
                     <p>Инструкции</p>
-                    <div class="slider w-75">
+                    <div class="slider w-sm-100">
                       <div id="carousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -1506,14 +2166,14 @@
 
       <!--modal windows-->
       <!--support-->
-      <div class="support-window mod-window-right mod-border d-none wesota-bg">
-        <div class="header-mod d-flex align-items-center justify-content-around text-white wesota-bg border-0 pt-2 pb-0 position-fixed" style="width: 51vh;">
+      <div class="support-window right-mod-window mod-border flex-column wesota-bg d-none">
+        <div class="header-mod d-flex align-items-center justify-content-around text-white wesota-bg pb-2">
           <img src="img/logo.png" alt="logo: wesota" height="50px">
-          <p class="support-header text-center">WESOTA </br> Администрация</p>
+          <p class="support-header text-center mb-0">WESOTA </br> Администрация</p>
           <div class="arrow"><img src="icons/arrow.png" alt="icon: arrow"></div>
         </div>
-        <div class="mod-body p-0 pt-5 mt-3">
-          <div class="chat-field bg-white p-2 mod-border overflow-auto">
+        <div class="scrollable">
+          <div class="body-mod d-flex flex-column bg-white p-2">
             <div class="date text-center mb-1">4 октября 2020</div>
             <div class="support-messages d-flex flex-column">
               <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
@@ -1594,11 +2254,13 @@
               </div>
             </div>
           </div>
-          <div class="answer-field mod-border">
+        </div>
+        <div class="footer-mod wesota-bg d-flex flex-column p-2">
+          <div class="answer-field">
             <textarea name="support-send-answer" id="textareaSupport" class="w-100 border-0"></textarea>
           </div>
-          <div class="button-group d-flex align-items-center justify-content-between wesota-bg mod-border">
-            <button class="btn"><img src="icons/smile.png" alt="icon: smile"></button>
+          <div class="button-group d-flex align-items-center justify-content-between">
+            <button class="btn p-0"><img src="icons/smile.png" alt="icon: smile"></button>
             <button class="btn btn-light"><img src="icons/send.png" alt="icon: send"> Отправить</button>
           </div>
         </div>
@@ -1606,198 +2268,109 @@
 
 
       <!--notifications-->
-      <div class="notifications-window mod-window-right mod-border bg-white d-none">
-  <div class="notification-heading d-flex justify-content-between align-items-center px-3 py-1 border-bottom shadow">
-    <p class="mb-0">Оповещения</p>
-    <button class="btn border-dark rounded-0 px-2 py-0" type="button">&#215;</button>
-  </div>
-  <div class="notification-cards overflow-auto">
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
+      <div class="notifications-window right-mod-window mod-border flex-column bg-white d-none">
+        <div class="notification-heading d-flex justify-content-between align-items-center px-3 py-1 border-bottom shadow">
+          <p class="mb-0">Оповещения</p>
+          <button class="btn btn-close border-dark rounded-0 px-2 py-0" type="button">&#215;</button>
         </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
+        <div class="scrollable">
+          <div class="notification-cards body-mod d-flex flex-column bg-white p-2">
+            <div class="notification-card border-bottom shadow my-1">
+              <div class="row">
+                <div class="col-8 pl-4">
+                  <p class="mb-0">Подтвердите активацию уровня 10$, Платформы Personal</p>
+                </div>
+                <div class="col-4 pl-1">
+                <p class="small mb-0">4 октября 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="notification-card border-bottom shadow my-1">
+              <div class="row">
+                <div class="col-8 pl-4">
+                  <p class="mb-0">Подтвердите активацию уровня 10$, Платформы Personal</p>
+                </div>
+                <div class="col-4 pl-1">
+                <p class="small mb-0">4 октября 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="notification-card border-bottom shadow my-1">
+              <div class="row">
+                <div class="col-8 pl-4">
+                  <p class="mb-0">Подтвердите активацию уровня 10$, Платформы Personal</p>
+                </div>
+                <div class="col-4 pl-1">
+                <p class="small mb-0">4 октября 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="notification-card border-bottom shadow my-1">
+              <div class="row">
+                <div class="col-8 pl-4">
+                  <p class="mb-0">Подтвердите активацию уровня 10$, Платформы Personal</p>
+                </div>
+                <div class="col-4 pl-1">
+                <p class="small mb-0">4 октября 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="notification-card border-bottom shadow my-1">
+              <div class="row">
+                <div class="col-8 pl-4">
+                  <p class="mb-0">Подтвердите активацию уровня 10$, Платформы Personal</p>
+                </div>
+                <div class="col-4 pl-1">
+                <p class="small mb-0">4 октября 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="notification-card border-bottom shadow my-1">
+              <div class="row">
+                <div class="col-8 pl-4">
+                  <p class="mb-0">Подтвердите активацию уровня 10$, Платформы Personal</p>
+                </div>
+                <div class="col-4 pl-1">
+                <p class="small mb-0">4 октября 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="notification-card border-bottom shadow my-1">
+              <div class="row">
+                <div class="col-8 pl-4">
+                  <p class="mb-0">Подтвердите активацию уровня 10$, Платформы Personal</p>
+                </div>
+                <div class="col-4 pl-1">
+                <p class="small mb-0">4 октября 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="notification-card border-bottom shadow my-1">
+              <div class="row">
+                <div class="col-8 pl-4">
+                  <p class="mb-0">Подтвердите активацию уровня 10$, Платформы Personal</p>
+                </div>
+                <div class="col-4 pl-1">
+                <p class="small mb-0">4 октября 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="notification-card border-bottom shadow my-1">
+              <div class="row">
+                <div class="col-8 pl-4">
+                  <p class="mb-0">Подтвердите активацию уровня 10$, Платформы Personal</p>
+                </div>
+                <div class="col-4 pl-1">
+                <p class="small mb-0">4 октября 2020</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-    <div class="notification-card border-bottom shadow my-1">
-      <div class="row">
-        <div class="col-8 pl-4">
-          <p class="mb-0">
-            Подтвердите активацию уровня 10$, Платформы Personal
-          </p>
-        </div>
-        <div class="col-4 pl-1">
-          <p class="small mb-0">4 октября 2020</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
       </div>
 
       <!--chat-->
-      <div class="entry-window mod-window-right wesota-bg d-none">
+      <div class="entry-window right-mod-window wesota-bg d-none" style="overflow-y: scroll;">
         <div class="text-white d-flex flex-column align-items-center wesota-bg py-5">
         <img src="img/logo.png" alt="Wesota logo" class="mt-5 pt-5 mb-3">
           <p class="text-wrap text-center mt-2 mx-5 mb-4">Добро пожаловать  в международное сообщество проекта  WESOTA</p>
@@ -1819,328 +2392,326 @@
         </div>
       </div>
 
-      <div class="chat-window mod-window-right wesota-bg d-none">
-  <div class="header-mod d-flex align-items-center justify-content-around text-white wesota-bg border-0 pb-0">
-    <div class="arrow"><img src="icons/arrow-left.png" alt="icon: arrow"></div>
-    <img src="img/rus.png" alt="logo: rus" height="50px" width="50px" class="rounded-circle">
-    <p class="support-header text-center">Российская Федерация</br> <small>Москва, 1299 чел</small></p>
-    
-  </div>
-  <div class="mod-body p-0">
-    <div class="chat-field bg-white p-2 mod-border">
-      <div class="date text-center mb-1">4 октября 2020</div>
-      <div class="chat-messages d-flex flex-column">
-        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
-          <div class="message-text">Да, спасибо большое</div>
-          <div class="message-time small text-right">00:00</div>
+      <div class="chat-window right-mod-window wesota-bg mod-border flex-column d-none">
+        <div class="header-mod d-flex align-items-center text-white wesota-bg pb-2">
+          <div class="arrow"><img src="icons/arrow-left.png" alt="icon: arrow" class="mr-3"></div>
+          <img src="img/rus.png" alt="logo: rus" height="50px" width="50px" class="rounded-circle mr-3">
+          <p class="support-header text-center mb-0">Российская Федерация</br> <small>Москва, 1299 чел</small></p>
         </div>
-        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
-          <div class="message-text">Да, спасибо большое</div>
-          <div class="message-time small text-right">00:00</div>
-        </div>
-        <div class="chat-answer d-flex align-items-center mb-2" style="max-width: 80%;">
-          <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
-          <div class="chat-message p-2 rounded align-self-start shadow" >
-            <p class="font-weight-bolder mb-0" style="color: #6666cc;">Виктор Семенов</p>
-            <div class="message-text">Перевод прошел?</div>
-            <div class="message-time small text-right">00:00</div>
+        <div class="scrollable">
+          <div class="body-mod d-flex flex-column bg-white p-2">
+            <div class="date text-center mb-1">4 октября 2020</div>
+            <div class="chat-messages d-flex flex-column">
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+              <div class="chat-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+                <div class="chat-message p-2 rounded align-self-start shadow" >
+                  <p class="font-weight-bolder mb-0" style="color: #6666cc;">Виктор Семенов</p>
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="chat-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+                <div class="chat-message p-2 rounded align-self-start shadow">
+                  <p class="font-weight-bolder mb-0" style="color: #6666cc;">Сергей Иванов</p>
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="chat-answer d-flex align-items-center mb-2" style="max-width: 80%;">
-          <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
-          <div class="chat-message p-2 rounded align-self-start shadow">
-            <p class="font-weight-bolder mb-0" style="color: #6666cc;">Сергей Иванов</p>
-            <div class="message-text">Перевод прошел?</div>
-            <div class="message-time small text-right">00:00</div>
+        <div class="footer-mod wesota-bg d-flex flex-column p-2">
+          <div class="answer-field">
+            <textarea name="support-send-answer" id="textareaSupport" class="w-100 border-0"></textarea>
+          </div>
+          <div class="button-group d-flex align-items-center justify-content-between wesota-bg">
+            <button class="btn p-0"><img src="icons/smile.png" alt="icon: smile"></button>
+            <button class="btn btn-light"><img src="icons/send.png" alt="icon: send">Отправить</button>
           </div>
         </div>
-        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
-          <div class="message-text">Да, спасибо большое</div>
-          <div class="message-time small text-right">00:00</div>
-        </div>
-        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
-          <div class="message-text">Да, спасибо большое</div>
-          <div class="message-time small text-right">00:00</div>
-        </div>
-        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
-          <div class="message-text">Да, спасибо большое</div>
-          <div class="message-time small text-right">00:00</div>
-        </div>
-        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
-          <div class="message-text">Да, спасибо большое</div>
-          <div class="message-time small text-right">00:00</div>
-        </div>
-        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
-          <div class="message-text">Да, спасибо большое</div>
-          <div class="message-time small text-right">00:00</div>
-        </div>
-      </div>
-    </div>
-    <div class="answer-field mod-border">
-      <textarea name="support-send-answer" id="textareaSupport" class="w-100 border-0"></textarea>
-    </div>
-    <div class="button-group d-flex align-items-center justify-content-between wesota-bg mod-border">
-      <button class="btn"><img src="icons/smile.png" alt="icon: smile"></button>
-      <button class="btn btn-light"><img src="icons/send.png" alt="icon: send"> Отправить</button>
-    </div>
-  </div>
       </div>
 
       <!--messenger-->
-      <div class="messenger-window mod-window-right d-none">
-  <div class="header-mod d-flex align-items-center justify-content-around text-white wesota-bg border-0 pb-0">
-    <img src="img/receiver.jpeg" alt="photo: user" height="65px" width="65px" class="rounded-circle">
-    <p class="support-header text-center"><strong class="font-weight-bold">Джон Уолш</strong></br> 
-      <small>
-        <img src="img/usa.jpg" alt="icon: country" width="15px" height="15px" class="rounded-circle">
-        CША, Нью-Йорк
-      </small>
-    </p>
-    <img src="icons/reset.png" alt="icon: close" class="align-self-start">
-  </div>
-  <div class="mod-body p-0">
-    <div class="messenger-field bg-white p-2 mod-border">
-      <div class="date text-center mb-1">4 октября 2020</div>
-      <div class="messenger-messages d-flex flex-column">
-        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
-          <div class="message-text">Да, спасибо большое</div>
-          <div class="message-time small text-right">00:00</div>
+      <div class="messenger-window right-mod-window mod-border flex-column d-none">
+        <div class="header-mod d-flex align-items-center justify-content-between text-white wesota-bg pb-2">
+          <img src="img/receiver.jpeg" alt="photo: user" height="65px" width="65px" class="rounded-circle">
+          <p class="support-header text-center mb-0"><strong class="font-weight-bold">Джон Уолш</strong></br> 
+          <small>
+            <img src="img/usa.jpg" alt="icon: country" width="15px" height="15px" class="rounded-circle">
+            CША, Нью-Йорк
+          </small>
+          </p>
+          <button class="btn btn-close align-self-start"><img src="icons/reset.png" alt="icon: close"></button>
         </div>
-        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
-          <div class="message-text">Да, спасибо большое</div>
-          <div class="message-time small text-right">00:00</div>
-        </div>
-        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
-          <div class="messenger-message p-2 rounded align-self-start shadow" >
-            <div class="message-text">Перевод прошел?</div>
-            <div class="message-time small text-right">00:00</div>
+        <div class="scrollable">
+          <div class="body-mod d-flex flex-column bg-white p-2">
+            <div class="date text-center mb-1">4 октября 2020</div>
+            <div class="messenger-messages d-flex flex-column">
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+              <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <div class="messenger-message p-2 rounded align-self-start shadow" >
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <div class="messenger-message p-2 rounded align-self-start shadow" >
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <div class="messenger-message p-2 rounded align-self-start shadow" >
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <div class="messenger-message p-2 rounded align-self-start shadow" >
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <div class="messenger-message p-2 rounded align-self-start shadow" >
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <div class="messenger-message p-2 rounded align-self-start shadow" >
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
-          <div class="messenger-message p-2 rounded align-self-start shadow" >
-            <div class="message-text">Перевод прошел?</div>
-            <div class="message-time small text-right">00:00</div>
+        <div class="footer-mod wesota-bg d-flex flex-column p-2">
+          <div class="answer-field">
+            <textarea name="support-send-answer" id="textareaSupport" class="w-100 border-0"></textarea>
+          </div>
+          <div class="button-group d-flex align-items-center justify-content-between">
+            <button class="btn p-0"><img src="icons/smile.png" alt="icon: smile"></button>
+            <button class="btn btn-light"><img src="icons/send.png" alt="icon: send"> Отправить</button>
           </div>
         </div>
-        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
-          <div class="messenger-message p-2 rounded align-self-start shadow" >
-            <div class="message-text">Перевод прошел?</div>
-            <div class="message-time small text-right">00:00</div>
-          </div>
-        </div>
-        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
-          <div class="messenger-message p-2 rounded align-self-start shadow" >
-            <div class="message-text">Перевод прошел?</div>
-            <div class="message-time small text-right">00:00</div>
-          </div>
-        </div>
-        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
-          <div class="messenger-message p-2 rounded align-self-start shadow" >
-            <div class="message-text">Перевод прошел?</div>
-            <div class="message-time small text-right">00:00</div>
-          </div>
-        </div>
-        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
-          <div class="messenger-message p-2 rounded align-self-start shadow" >
-            <div class="message-text">Перевод прошел?</div>
-            <div class="message-time small text-right">00:00</div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="answer-field mod-border">
-      <textarea name="support-send-answer" id="textareaSupport" class="w-100 border-0"></textarea>
-    </div>
-    <div class="button-group d-flex align-items-center justify-content-between wesota-bg mod-border">
-      <button class="btn"><img src="icons/smile.png" alt="icon: smile"></button>
-      <button class="btn btn-light"><img src="icons/send.png" alt="icon: send"> Отправить</button>
-    </div>
-  </div>
       </div>
 
       <!--settings: payeer sertificate-->
-      <div class="payeer-success bg-white mod-window-left flex-column align-items-center justify-content-around shadow p-4 d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota">
-<p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
-<div class="congrats-text text-justify pb-4">Платёжная система Payeer по Вашему номеру: <strong>Р01119901</strong> успешно подключена. Функция автоплатёж подключена. Сертификат Payeer merchant подтвержден. Желаем Вам успехов в проекте WESOTA.
-</div>
+      <div class="payeer-success bg-white left-mod-window flex-column align-items-center shadow p-4 d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mt-3 mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-3">
+        <p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
+        <div class="congrats-text text-justify pb-4 mt-5">Платёжная система Payeer по Вашему номеру: <strong>Р01119901</strong> успешно подключена. Функция автоплатёж подключена. Сертификат Payeer merchant подтвержден. Желаем Вам успехов в проекте WESOTA.
+        </div>
       </div>
 
-      <div class="payeer-warning bg-white mod-window-left flex-column align-items-center justify-content-between shadow p-4 d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota">
-<p class="warning h5 font-weight-lighter my-4">Сожалеем, <strong>Павел</strong>!</p>
-<div class="warning-text text-justify pb-4">Сертификат не подтвержден. Использование платформы WESOTA невозможно. Просим Вас заполнить все необходимые поля  и подтвердить сертификат платежной системы Payeer.
-</div>
+      <div class="payeer-warning bg-white left-mod-window flex-column align-items-center shadow p-4 d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mt-3 mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-3">
+        <p class="warning h5 font-weight-lighter my-4">Сожалеем, <strong>Павел</strong>!</p>
+        <div class="warning-text text-justify pb-4 mt-5">Сертификат не подтвержден. Использование платформы WESOTA невозможно. Просим Вас заполнить все необходимые поля  и подтвердить сертификат платежной системы Payeer.
+        </div>
       </div>
 
       <!--settings: security-->
-      <div class="fa-warning bg-white mod-window-left flex-column align-items-center justify-content-between shadow p-4 d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota">
-<p class="warning h5 font-weight-lighter my-4">Сожалеем, <strong>Павел</strong>!</p>
-<div class="warning-text text-justify pb-4">fa идентификация Telegram не подтверждена. Код подтверждения не верен.
-</div>
+      <div class="fa-warning bg-white left-mod-window flex-column align-items-center shadow p-4 d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mt-3 mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-3">
+        <p class="warning h5 font-weight-lighter my-4">Сожалеем, <strong>Павел</strong>!</p>
+        <div class="warning-text text-justify pb-4 mt-5">fa идентификация Telegram не подтверждена. Код подтверждения не верен.
+        </div>
       </div>
 
-      <div class="fa-success bg-white mod-window-left flex-column align-items-center justify-content-between shadow p-4 d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota">
-<p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
-<div class="congrats-text text-justify pb-4">fa идентификация  Telegram  успешно активирована.
-</div>
+      <div class="fa-success bg-white left-mod-window flex-column align-items-center shadow p-4 d-none">
+        <button class="btn border-dark rounded-0 px-2 py-0 align-self-end mt-3 mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-3">
+        <p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
+        <div class="congrats-text text-justify pb-4 mt-5">fa идентификация  Telegram  успешно активирована.
+        </div>
       </div>
 
-      <div class="fa-settings bg-white mod-window-left flex-column align-items-center justify-content-between shadow p-4 d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota">
-<p class="confirm h5 font-weight-lighter my-4">Уважаемый <strong>Павел</strong>!</p>
-<div class="confirm-text text-justify pb-4">
-Вы подключаете fa идентификацию, пожалуйста, подтвердите код идентификации выбранной Вами системы Telegram.
-</div>
-<div class="form-group">
-<label for="settingsfa">Вставьте код идентификации</label>
-<input type="text" class="form-control" id="settingsfa">
-</div>
-<button type="submit" class="btn btn-light border shadow-sm">Подтвердить</button>
+      <div class="fa-settings bg-white left-mod-window flex-column align-items-center shadow p-4 d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mt-3 mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-3">
+        <p class="confirm h5 font-weight-lighter my-4">Уважаемый <strong>Павел</strong>!</p>
+        <div class="confirm-text text-justify pb-4 mt-5">
+          Вы подключаете fa идентификацию, пожалуйста, подтвердите код идентификации выбранной Вами системы Telegram.
+        </div>
+        <div class="form-group">
+          <label for="settingsfa">Вставьте код идентификации</label>
+          <input type="text" class="form-control" id="settingsfa">
+        </div>
+        <button type="submit" class="btn btn-light border shadow-sm">Подтвердить</button>
       </div>
 
-      <div class="change-password bg-white mod-window-left flex-column align-items-center justify-content-between shadow p-4 d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota">
-<p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
-<div class="congrats-text text-justify pb-4">
-Ваш пароль успешно изменен. Не сообщайте пароль от личного кабинета посторонним лицам и не пересылайте его публично в социальных сетях.
-</div>
+      <div class="change-password bg-white left-mod-window flex-column align-items-center shadow p-4 d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mt-3 mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-3">
+        <p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
+        <div class="congrats-text text-justify pb-4 mt-5">
+          Ваш пароль успешно изменен. Не сообщайте пароль от личного кабинета посторонним лицам и не пересылайте его публично в социальных сетях.
+        </div>
       </div>
 
       <!--platform activation-->
-      <div class="platform-activation mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota" class="mt-5">
-<p class="platform-activation h5 font-weight-lighter my-4 font-weight-bolder">Активация платформы Personal</p>
-<div class="form-group">
-  <label for="invite-activate">Активация инвайт кодом:</label>
-  <input type="text" class="form-control text-center" id="invite-activate" placeholder="Введите инвайт код">
-</div>
-<button type="submit" class="btn btn-light border shadow-sm">Активировать</button>
-<div class="standart-activation mt-3 text-center">
-<p class="text-center">Стандартная активация:</p>
-<p class="small">Стоимость активации: <span class="h6">1$</span></p>
-<p class="small">Комиссия проекта: <span>10%</span></p>
-<p class="mt-3">Итого к оплате: <span class="h6">1.10$</span></p>
-</div>
-<button type="submit" class="btn btn-light border shadow-sm">Активировать</button>
-      </div>
-
-      <div class="activation-success mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota" class="mt-5 pt-5">
-<p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
-<div class="congrats-text text-center">
-<p class="congrats">
-  Активация платформы Personal  выполнена успешно!
-</p>
-<p class="code h4 font-weight-lighter">D767 787V HH66 78GH</p>
-<p class="small mt-4">Секретный ключ инвайт кода подтвержден</p>
-<p class="key">v66B77nm78HJ6778nm78HJ6778</p>
-</div>
-      </div>
-
-      <div class="activation-warning mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota" class="mt-5">
-<p class="warning h5 font-weight-lighter my-4">Извините, <strong>Павел</strong>!</p>
-<div class="warning-text text-center">
-<p class="warning">Активация платформы Personal не выполнена.</p>
-<p class="code h4 font-weight-lighter">D767 787V HH66 78GH</p>
-<p class="mt-4">Инвайт код не действителен. Секретный ключ не подтвержден</p>
-</div>
-      </div>
-
-      <div class="account-lack mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota" class="mt-5">
-<p class="warning h5 font-weight-lighter my-4">Извините, <strong>Павел</strong>!</p>
-<div class="warning-text text-center">
-<p>Активация платформы Personal не выполнена,  на вашем счёте недостаточно средств</p>
-<p class="account-number h4 font-weight-lighter">Р11000511</p>
-<p class="mt-4">Пожалуйста, пополните ваш счёт</p>
-<button type="button" class="btn btn-light border shadow-sm">Пополнить</button>
-</div>
-      </div>
-
-      <div class="transaction-warning mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota" class="mt-5">
-<p class="warning h5 font-weight-lighter my-4">Извините, <strong>Павел</strong>!</p>
-<div class="warning-text text-center">
-<p>Активация уровня 5$, платформы Personal не выполнена. Для активации необходимо подтвердить транзакцию</p>
-<p class="h4 font-weight-lighter">Подвердить транзакцию?</p>
-<div class="buttons d-flex justify-content-around mt-3">
-  <button type="button" class="btn btn-light border shadow-sm">Да</button>
-  <button type="button" class="btn btn-light border shadow-sm">Нет</button>
-</div>
-</div>
-      </div>
-
-      <div class="transaction-confirm mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota" class="mt-5">
-<p class="confirm h5 font-weight-lighter my-4">Уважаемый <strong>Павел</strong>!</p>
-<div class="confirm-text text-center">
-<p>
-  Для перехода на уровень 5$, платформы Personal, с Вашего личного счёта <strong>Р11000551118</strong> будет списана сумма в размере:  <strong>5.10$</strong> с учётом комиссии. Будет выполнена транзакция на счёт участника <strong>Р01119901</strong> 
-</p>
-<p class="h4 font-weight-lighter">Подвердить транзакцию?</p>
-<div class="buttons d-flex justify-content-around mt-3">
-  <button type="button" class="btn btn-light border shadow-sm">Да</button>
-  <button type="button" class="btn btn-light border shadow-sm">Нет</button>
-</div>
-</div>
-      </div>
-
-      <div class="transaction-success mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
-<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-0" type="button">&#215;</button>
-<img src="img/logo.png" alt="logo: wesota" class="mt-5">
-<p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
-<div class="congrats-text text-center">
-<p>Активация уровня 5$,  платформы Personal выполнена успешно!</p>
-<p class="small">Средства в размере 5$ переведены на счёт  участника: </p>
-<p class="h6 mb-0">Р01119901</p>
-<div class="user-receiver">
-  <img src="img/receiver.jpeg" alt="photo: user" height="65px" width="65px" class="rounded-circle my-2">
-    <p class="text-center">Джон Уолш</br> 
-      <small>
-        CША, Нью-Йорк
-        <img src="img/usa.jpg" alt="icon: country" width="15px" height="15px" class="rounded-circle">
-      </small>
-    </p>
-</div>
-<button type="button" class="btn btn-light border shadow-sm">Написать</button>
-</div>
-      </div>
-
-      <!--settings: general-->
-      <div class="fill-success mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+      <div class="platform-activation left-mod-window flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
         <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
-        <div class="body d-flex flex-column align-items-center mt-5 pt-5">
-        <img src="img/logo.png" alt="logo: wesota">
-          <p class="congrats h5 font-weight-lighter my-4">Благодарим, <strong>Павел</strong>!</p>
-          <div class="congrats-text text-center">
-  <p class="congrats">
-    Ваш профиль заполнен, желаем Вам успехов в проекте  WESOTA
-  </p>
-  <p class="small mt-4">С уважением,  администрация проекта</p>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-3">
+        <p class="platform-activation h5 my-4 font-weight-bolder text-center">Активация платформы Personal</p>
+        <div class="form-group text-center">
+          <label for="invite-activate">Активация инвайт кодом:</label>
+          <input type="text" class="form-control text-center" id="invite-activate" placeholder="Введите инвайт код">
+        </div>
+        <button type="submit" class="btn btn-light border shadow-sm">Активировать</button>
+        <div class="standart-activation mt-5 text-center">
+          <p class="text-center">Стандартная активация:</p>
+          <p class="small">Стоимость активации: <span class="h6">1$</span></p>
+          <p class="small">Комиссия проекта: <span>10%</span></p>
+          <p class="mt-3">Итого к оплате: <span class="h6">1.10$</span></p>
+        </div>
+        <button type="submit" class="btn btn-light border shadow-sm">Активировать</button>
+      </div>
+
+      <div class="activation-success left-mod-window flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-5 pt-5">
+        <p class="congrats h5 font-weight-lighter my-4 text-center">Поздравляем, <strong>Павел</strong>!</p>
+        <div class="congrats-text text-center">
+          <p class="congrats px-4">
+            Активация платформы Personal  выполнена успешно!
+          </p>
+          <p class="code h4 font-weight-lighter px-4">D767 787V HH66 78GH</p>
+          <p class="small mt-4 px-4">Секретный ключ инвайт кода подтвержден</p>
+          <p class="key px-4">v66B77nm78HJ6778nm78HJ6778</p>
+        </div>
+      </div>
+
+      <div class="activation-warning left-mod-window flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-5 pt-5">
+        <p class="warning h5 font-weight-lighter my-4 text-center">Извините, <strong>Павел</strong>!</p>
+        <div class="warning-text text-center">
+          <p class="warning px-4">Активация платформы Personal не выполнена.</p>
+          <p class="code h4 font-weight-lighter px-4">D767 787V HH66 78GH</p>
+          <p class="mt-4 px-4">Инвайт код не действителен. Секретный ключ не подтвержден</p>
+        </div>
+      </div>
+
+      <div class="account-lack left-mod-window flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+        <button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-5 pt-5">
+        <p class="warning h5 font-weight-lighter my-4 text-center">Извините, <strong>Павел</strong>!</p>
+        <div class="warning-text text-center">
+          <p class="px-4">Активация платформы Personal не выполнена,  на вашем счёте недостаточно средств</p>
+          <p class="account-number h4 font-weight-lighter px-4">Р11000511</p>
+          <p class="mt-4 px-4">Пожалуйста, пополните ваш счёт</p>
+          <button type="button" class="btn btn-light border shadow-sm">Пополнить</button>
+        </div>
+      </div>
+
+      <div class="transaction-warning left-mod-window flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-5 pt-5">
+        <p class="warning h5 font-weight-lighter my-4 text-center">Извините, <strong>Павел</strong>!</p>
+        <div class="warning-text text-center">
+          <p class="px-4">Активация уровня 5$, платформы Personal не выполнена. Для активации необходимо подтвердить транзакцию</p>
+          <p class="h4 font-weight-lighter">Подвердить транзакцию?</p>
+          <div class="buttons d-flex justify-content-around mt-3">
+            <button type="button" class="btn btn-light border shadow-sm">Да</button>
+            <button type="button" class="btn btn-light border shadow-sm">Нет</button>
           </div>
         </div>
       </div>
-      <div class="delete-success mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+
+      <div class="transaction-confirm left-mod-window flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-5">
+        <p class="confirm h5 font-weight-lighter my-4 text-center">Уважаемый <strong>Павел</strong>!</p>
+        <div class="confirm-text text-center">
+          <p>Для перехода на уровень 5$, платформы Personal, с Вашего личного счёта <strong>Р11000551118</strong> будет списана сумма в размере:  <strong>5.10$</strong> с учётом комиссии. Будет выполнена транзакция на счёт участника <strong>Р01119901</strong> 
+          </p>
+          <p class="h4 font-weight-lighter">Подвердить транзакцию?</p>
+          <div class="buttons d-flex justify-content-around mt-3">
+            <button type="button" class="btn btn-light border shadow-sm">Да</button>
+            <button type="button" class="btn btn-light border shadow-sm">Нет</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="transaction-success left-mod-window flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mb-0" type="button">&#215;</button>
+        <img src="img/logo.png" alt="logo: wesota" class="mt-5">
+        <p class="congrats h5 font-weight-lighter my-4 text-center">Поздравляем, <strong>Павел</strong>!</p>
+        <div class="congrats-text text-center">
+          <p>Активация уровня 5$,  платформы Personal выполнена успешно!</p>
+          <p class="small">Средства в размере 5$ переведены на счёт  участника: </p>
+          <p class="h6 mb-0">Р01119901</p>
+          <div class="user-receiver">
+            <img src="img/receiver.jpeg" alt="photo: user" height="65px" width="65px" class="rounded-circle my-2">
+            <p class="text-center">Джон Уолш</br> 
+            <small>CША, Нью-Йорк
+            <img src="img/usa.jpg" alt="icon: country" width="15px" height="15px" class="rounded-circle">
+            </small>
+            </p>
+          </div>
+          <button type="button" class="btn btn-light border shadow-sm">Написать</button>
+        </div>
+      </div>
+
+      <!--settings: general-->
+      <div class="fill-success left-mod-window flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+        <div class="body d-flex flex-column align-items-center mt-5 pt-5">
+        <img src="img/logo.png" alt="logo: wesota">
+          <p class="congrats h5 font-weight-lighter my-4 text-center">Благодарим, <strong>Павел</strong>!</p>
+          <div class="congrats-text text-center">
+            <p class="congrats">Ваш профиль заполнен, желаем Вам успехов в проекте  WESOTA</p>
+            <p class="small mt-4">С уважением,  администрация проекта</p>
+          </div>
+        </div>
+      </div>
+      <div class="delete-success left-mod-window flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
       <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
       <img src="img/logo.png" alt="logo: wesota" class="mt-5 pt-5">
-      <p class="confirm h5 font-weight-lighter my-4">Уважаемый <strong>Павел</strong>!</p>
+      <p class="confirm h5 font-weight-lighter my-4 text-center">Уважаемый <strong>Павел</strong>!</p>
       <div class="confirm-text text-center">
         <p class="confirm">
           Ваш профиль успешно удалён все Ваши данные были полностью очищены. 
@@ -2151,7 +2722,7 @@
       </div>
 
       <!--user card-->
-      <div class="user-card-mod mod-window-left flex-column align-items-center justify-content-between shadow py-4 login-bg text-white shadow d-none">
+      <div class="user-card-mod left-mod-window flex-column align-items-center shadow py-4 login-bg text-white shadow d-none">
         <button class="btn-close btn border-white rounded-0 px-2 py-0 align-self-end text-white mr-4" type="button">&#215;</button>
         <div class="user-block">
         <div class="user-info d-flex flex-column align-items-center">
@@ -2167,42 +2738,42 @@
         </div>
         <div class="message-block w-100 text-center login-bg">
         <p class="shadow wesota-bg reward-border px-5 mb-0"><span style="color:#033848;">text</span></p>
-        <button type="button" class="btn btn-light border shadow-sm my-3"><img src="icons/message-dark.png" alt="icon: message"> НАПИСАТЬ</button>
+        <button type="button" class="btn btn-light border shadow-sm my-3"><img src="icons/message-dark.png" alt="icon: message">НАПИСАТЬ</button>
         </div>
         <div class="socials-block w-100 text-center login-bg">
-<p class="shadow wesota-bg reward-border px-5 mb-0 text-left">Социальные сети</p>
-<div class="social-links my-3 d-flex justify-content-around">
-  <a href="#"><img src="icons/socials-white/telegram.png" alt="icon: telegram"></a>
-  <a href="#"><img src="icons/socials-white/linkedin.png" alt="icon: linkedin"></a>
-  <a href="#"><img src="icons/socials-white/twitter.png" alt="icon: twitter"></a>
-  <a href="#"><img src="icons/socials-white/fb.png" alt="icon: facebook"></a>
-</div>
+          <p class="shadow wesota-bg reward-border px-5 mb-0 text-left">Социальные сети</p>
+          <div class="social-links my-3 d-flex justify-content-around">
+            <a href="#"><img src="icons/socials-white/telegram.png" alt="icon: telegram"></a>
+            <a href="#"><img src="icons/socials-white/linkedin.png" alt="icon: linkedin"></a>
+            <a href="#"><img src="icons/socials-white/twitter.png" alt="icon: twitter"></a>
+            <a href="#"><img src="icons/socials-white/fb.png" alt="icon: facebook"></a>
+          </div>
         </div>
         <div class="rewards-block w-100 text-center login-bg">
-<p class="shadow wesota-bg reward-border px-5 mb-0 text-left">Достижения</p>
-<div class="rewards my-3 d-flex justify-content-around">
-  <figure class="figure text-center mb-0">
+          <p class="shadow wesota-bg reward-border px-5 mb-0 text-left">Достижения</p>
+          <div class="rewards my-3 d-flex justify-content-around">
+            <figure class="figure text-center mb-0">
     <img src="img/reward.png" alt="icon: achievement">
     <figcaption class="figure-caption text-center">Personal: 1</figcaption>
-  </figure>
-  <figure class="figure text-center mb-0">
-    <img src="img/reward.png" alt="icon: achievement">
-    <figcaption class="figure-caption text-center">Pro: 1</figcaption>
-  </figure>
-  <figure class="figure text-center mb-0">
-    <img src="img/reward.png" alt="icon: achievement">
-    <figcaption class="figure-caption text-center">Team: 1</figcaption>
-  </figure>
-  </div>
+            </figure>
+            <figure class="figure text-center mb-0">
+              <img src="img/reward.png" alt="icon: achievement">
+              <figcaption class="figure-caption text-center">Pro: 1</figcaption>
+            </figure>
+            <figure class="figure text-center mb-0">
+              <img src="img/reward.png" alt="icon: achievement">
+              <figcaption class="figure-caption text-center">Team: 1</figcaption>
+            </figure>
+          </div>
         </div>
         <div class="account-block w-100 text-center login-bg">
-        <p class="shadow wesota-bg reward-border px-5 mb-0 text-left">Счет</p>
-        <p class="account-number h5 my-3">P1010100110</p>
+          <p class="shadow wesota-bg reward-border px-5 mb-0 text-left">Счет</p>
+          <p class="account-number h5 my-3">P1010100110</p>
         </div>
       </div>
 
       <!--profile card-->
-      <div class="profile-card-mod mod-window-left flex-column align-items-center shadow pt-4 login-bg text-white shadow d-none">
+      <div class="profile-card-mod left-mod-window flex-column align-items-center shadow pt-4 login-bg text-white shadow d-none">
         <div class="profile-info d-flex align-items-center px-1 mb-3">
           <img src="img/photo.jpeg" alt="user avatar" class="user-avatar rounded-circle mr-3" width="120px" height="120px">
           <div class="profile-info text-center ml-3">
@@ -2259,7 +2830,7 @@
             <p class="text-right mb-0 h5 font-weight-lighter">USD</p>
           </div>
         </div>
-        <div class="invite-code w-100 text-center login-bg">
+        <div class="invite-code w-100 text-center login-bg pb-3">
         <p class="shadow wesota-bg reward-border px-1 mb-0 text-left">Инвайт код:</p>
         <div class="form-group px-3 mb-0 pt-3">
           <input type="email" placeholder="Введите Email..." class="form-control wesota-bg" aria-label="Large">
@@ -2267,10 +2838,70 @@
         </div>
         </div>
       </div>
+
+      <!--finance: payments-->
+      <div class="input-payment left-mod-window text-center bg-white align-items-center flex-column d-none">
+        <img src="img/logo.png" alt="logo: wesota" class="mt-5">
+          <div class="text-center mb-3">
+          <p class="h5 mt-3">Входящий платеж</p>
+          </div>
+          <div class="payment-info row">
+            <div class="col text-right">
+              <p class="mb-1">Сумма:</p>
+              <p class="mb-1">От:</p>
+              <p class="mb-1">Со счета:</p>
+              <p class="mb-1">Дата:</p>
+              <p class="mb-1">Время:</p>
+            </div>
+            <div class="col text-left">
+              <p class="mb-1 h5">$100</p>
+              <p class="mb-1 font-weight-normal">Джон Уолш</p>
+              <p class="mb-1 font-weight-normal">Р1101120</p>
+              <p class="mb-1 font-weight-normal">12.11.2020</p>
+              <p class="mb-1 font-weight-normal">20:20</p>
+            </div>
+          </div>
+          <div class="row text-center mb-3">
+            <div class="col px-5">
+              Если желаеете, Вы можете оставить отзыв в личных сообщениях участнику <span>Джон Уолш</span>
+            </div> 
+          </div>
+          <button type="button" class="btn btn-light border shadow-sm mb-4">Написать</button>
+      </div>
+      <div class="output-payment left-mod-window text-center bg-white align-items-center flex-column d-none">
+        <img src="img/logo.png" alt="logo: wesota" class="mt-5">
+          <div class="text-center mb-3">
+          <p class="h5 mt-3">Исходящий платеж</p>
+          </div>
+          <div class="payment-info row">
+            <div class="col text-right">
+              <p class="mb-1">Сумма:</p>
+              <p class="mb-1">От:</p>
+              <p class="mb-1">Со счета:</p>
+              <p class="mb-1">Дата:</p>
+              <p class="mb-1">Время:</p>
+            </div>
+            <div class="col text-left">
+              <p class="mb-1 h5">$100</p>
+              <p class="mb-1 font-weight-normal">Джон Уолш</p>
+              <p class="mb-1 font-weight-normal">Р1101120</p>
+              <p class="mb-1 font-weight-normal">12.11.2020</p>
+              <p class="mb-1 font-weight-normal">20:20</p>
+            </div>
+          </div>
+          <div class="row text-center mb-3">
+            <div class="col px-5">
+              Если желаеете, Вы можете оставить отзыв в личных сообщениях участнику <span>Джон Уолш</span>
+            </div> 
+          </div>
+          <button type="button" class="btn btn-light border shadow-sm mb-4">Написать</button>
+      </div>
       <!--modal windows-->
 
-      <footer class="footer fixed-bottom">
-        <div class="row wesota-bg px-3">
+
+
+      <footer class="footer fixed-bottom wesota-bg">
+        <div class="row wesota-bg px-3 d-none d-md-flex">
           <div class="col-3">
             <div class="neural">
               <img src="icons/ai.svg" alt="icon: ai">
@@ -2283,6 +2914,46 @@
               <img src="icons/chat.png" alt="icon: chat" height="26px">
             </button>
           </div>
+        </div>
+        <div class="row footer-menu wesota-bg d-md-none px-4 d-flex">
+          <ul class="nav nav-tabs border-0 row justify-content-center">
+            <li class="nav-item my-1 col-2">
+              <a class="f-profile-link nav-link text-white px-0 text-center d-flex flex-column align-items-center" data-toggle="tab" href="#profile">
+                <img src="icons/menu-white/profile.png" alt="icon: profile" class="menu-icon profile f-profile-icon">
+                <span class="font-weight-lighter d-block" style="font-size: 0.25rem;">Профиль</span>
+              </a>
+            </li>
+            <li class="nav-item my-1 col-2">
+              <a class="f-statistic-link nav-link active text-white px-0 text-center d-flex flex-column align-items-center" data-toggle="tab" href="#statistic">
+                <img src="icons/menu-white/statistic.png" alt="icon: statistic" class="menu-icon f-statistic-icon">
+                <span class="font-weight-lighter d-block" style="font-size: 0.25rem;">Статистика</span>
+              </a>
+            </li>
+            <li class="nav-item my-1 col-2">
+              <a class="f-finance-link nav-link text-white px-0 text-center d-flex flex-column align-items-center" data-toggle="tab" href="#finance">
+                <img src="icons/menu-white/finance.png" alt="icon: finance" class="menu-icon f-finance-icon">
+                <span class="font-weight-lighter d-block" style="font-size: 0.25rem;">Кошелек</span>
+              </a>
+            </li>
+            <li class="nav-item my-1 col-2">
+              <a class="f-platform-link nav-link text-white px-0 text-center d-flex flex-column align-items-center" data-toggle="tab" href="#platforms">
+                <img src="icons/menu-white/platform.png" alt="icon: platforms" class="menu-icon f-platform-icon">
+                <span class="font-weight-lighter d-block" style="font-size: 0.25rem;">Платформы</span>
+              </a>
+            </li>
+            <li class="nav-item my-1 col-2">
+              <a class="f-messages-link nav-link text-white px-0 text-center d-flex flex-column align-items-center" data-toggle="tab" href="#messages">
+                <img src="icons/menu-white/message.png" alt="icon: messages" class="menu-icon f-messages-icon">
+                <span class="font-weight-lighter d-block" style="font-size: 0.25rem;">Сообщения</span>
+              </a>
+            </li>
+            <li class="nav-item my-1 col-2">
+              <a class="f-settings-link nav-link text-white px-0 text-center d-flex flex-column align-items-center" data-toggle="tab" href="#settings">
+                <img src="icons/menu-white/settings.png" alt="icon: settings" class="menu-icon f-settings-icon">
+                <span class="font-weight-lighter d-block" style="font-size: 0.25rem;">Настройки</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
       <!--footer-->
