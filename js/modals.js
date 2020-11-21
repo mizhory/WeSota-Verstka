@@ -8,6 +8,7 @@ let btnSave = document.querySelectorAll('.btn-save');
 let btnEdit = document.querySelector('.btn-edit');
 let btnDlt = document.querySelector('.btn-delete');
 let btnEnter = document.querySelector('.btn-enter');
+let btnProfile = document.querySelector('.profile-link');
 
 //modal windows
 let supportWindow = document.querySelector('.support-window');
@@ -35,6 +36,7 @@ let accLack = document.querySelector('.account-lack');
 let transWng = document.querySelector('.transaction-warning');
 let transConfirm = document.querySelector('.transaction-confirm');
 let transScs = document.querySelector('.transaction-success');
+let profileCard = document.querySelector('.profile-card-mod');
 
 
 
@@ -146,4 +148,9 @@ for (let c of close){
     transScs.classList.add('d-none');
     transScs.classList.remove('d-flex');
   };
+};
+
+btnProfile.onclick = function(){
+  profileCard.classList.toggle('d-none');
+  profileCard.classList.toggle('d-flex');
 };

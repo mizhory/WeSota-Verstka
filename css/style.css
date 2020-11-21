@@ -70,58 +70,6 @@ body{
   border: none;
 }
 
-/* .sidebar-menu .nav-tabs .nav-item .nav-link img{
-  height: 24px;
-  max-width: 30px;
-} */
-
-/* .sidebar .nav-tabs .nav-item .profile-link{
-  background: url("/icons/menu-white/profile.png") no-repeat left 10% center / 26px 24px;
-} */
-
-.sidebar .nav-tabs .nav-item .statistic-link{
-  background: url("/icons/menu-white/statistic.png") no-repeat left 10% center / 26px 24px;
-}
-.sidebar .nav-tabs .nav-item .finance-link{
-  background: url("/icons/menu-white/finance.png") no-repeat left 10% center / 26px 24px;
-}
-.sidebar .nav-tabs .nav-item .invite-link{
-  background: url("/icons/menu-white/invite.png") no-repeat left 10% center / 26px 24px;
-}
-.sidebar .nav-tabs .nav-item .platform-link{
-  background: url("/icons/menu-white/platform.png") no-repeat left 10% center / 26px 24px;
-}
-.sidebar .nav-tabs .nav-item .messages-link{
-  background: url("/icons/menu-white/message.png") no-repeat left 10% center / 26px 24px;
-}
-.sidebar .nav-tabs .nav-item .settings-link{
-  background: url("/icons/menu-white/settings.png") no-repeat left 10% center / 26px 24px;
-}
-
-/* .sidebar .nav-tabs .nav-item .nav-link.active.profile-link{
-  background: url("/icons/menu-color/profile.png") no-repeat left 10% center / 26px 24px;
-} */
-.sidebar .nav-tabs .nav-item .nav-link.active.statistic-link{
-  background: url("/icons/menu-color/statistic.png") no-repeat left 10% center / 26px 24px;
-}
-.sidebar .nav-tabs .nav-item .nav-link.active.finance-link{
-  background: url("/icons/menu-color/finance.png") no-repeat left 10% center / 26px 24px;
-}
-
-.sidebar .nav-tabs .nav-item .nav-link.active.invite-link{
-  background: url("/icons/menu-color/invite.png") no-repeat left 10% center / 26px 24px;
-}
-
-.sidebar .nav-tabs .nav-item .nav-link.active.platform-link{
-  background: url("/icons/menu-color//platform.png") no-repeat left 10% center / 26px 24px;
-}
-.sidebar .nav-tabs .nav-item .nav-link.active.messages-link{
-  background: url("/icons/menu-color//message.png") no-repeat left 10% center / 26px 24px;
-}
-.sidebar .nav-tabs .nav-item .nav-link.active.settings-link{
-  background: url("/icons/menu-color//settings.png") no-repeat left 10% center / 26px 24px;
-}
-
 .states-dot::before{
   content: "";
   position: absolute;
@@ -206,7 +154,10 @@ body{
   margin-top: -16rem;
 }
 
-
+.menu-icon{
+  width: 26px;
+  height: 24px;
+}
 
 @media(max-height: 768px){
   .sidebar-menu ul li a{
@@ -237,197 +188,11 @@ body{
   }
 }
 
+/*for lg and smaller*/
 @media (max-width: 1199px){
-.sidebar .nav-tabs .nav-link{
-  margin-top: 0.6rem;
-  margin-bottom: 0.6rem;
-}
 
-  .span-profile::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-white//profile.png") no-repeat left 10% center / contain;
+.menu-icon{
+  width: 48px;
+  height: 48px;
   }
-  
-  .sidebar .nav-tabs .nav-item .nav-link.active .span-profile::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-color/profile.png") no-repeat left 10% center / contain;
-  }
-  
-  .span-statistic::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-white//statistic.png") no-repeat left 10% center / contain;
-  }
-  
-  .sidebar .nav-tabs .nav-item .nav-link.active .span-statistic::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-color/statistic.png") no-repeat left 10% center / contain;
-  }
-  
-  .span-finance::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-white//finance.png") no-repeat left 10% center / contain;
-  }
-  
-  .sidebar .nav-tabs .nav-item .nav-link.active .span-finance::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-color/finance.png") no-repeat left 10% center / contain;
-  }
-  
-  .span-invite::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-white//invite.png") no-repeat left 10% center / contain;
-  }
-  
-  .sidebar .nav-tabs .nav-item .nav-link.active .span-invite::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-color/invite.png") no-repeat left 10% center / contain;
-  }
-  
-  .span-platform::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-white//platform.png") no-repeat left 10% center / contain;
-  }
-  
-  .sidebar .nav-tabs .nav-item .nav-link.active .span-platform::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-color/platform.png") no-repeat left 10% center / contain;
-  }
-  
-  .span-message::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-white//message.png") no-repeat left 10% center / contain;
-  }
-  
-  .sidebar .nav-tabs .nav-item .nav-link.active .span-message::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-color/message.png") no-repeat left 10% center / contain;
-  }
-  
-  .span-settings::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-white//settings.png") no-repeat left 10% center / contain;
-  }
-  
-  .sidebar .nav-tabs .nav-item .nav-link.active .span-settings::before{
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    background: url("/icons/menu-color/settings.png") no-repeat left 10% center / contain;
-  }
-
-  /* .sidebar .nav-tabs .nav-item .profile-link{
-  background: url("/icons/menu-white/profile.png") no-repeat left 10% center / 26px 24px;
-} */
-
-.sidebar .nav-tabs .nav-item .statistic-link{
-  background-image: none;
-}
-.sidebar .nav-tabs .nav-item .finance-link{
-  background-image: none;
-}
-.sidebar .nav-tabs .nav-item .invite-link{
-  background-image: none;
-}
-.sidebar .nav-tabs .nav-item .platform-link{
-  background-image: none;
-}
-.sidebar .nav-tabs .nav-item .messages-link{
-  background-image: none;
-}
-.sidebar .nav-tabs .nav-item .settings-link{
-  background-image: none;
-}
-
-/* .sidebar .nav-tabs .nav-item .nav-link.active.profile-link{
-  background-image: none;
-} */
-.sidebar .nav-tabs .nav-item .nav-link.active.statistic-link{
-  background-image: none;
-}
-.sidebar .nav-tabs .nav-item .nav-link.active.finance-link{
-  background-image: none;
-}
-
-.sidebar .nav-tabs .nav-item .nav-link.active.invite-link{
-  background-image: none;
-}
-
-.sidebar .nav-tabs .nav-item .nav-link.active.platform-link{
-  background-image: none;
-}
-.sidebar .nav-tabs .nav-item .nav-link.active.messages-link{
-  background-image: none;
-}
-.sidebar .nav-tabs .nav-item .nav-link.active.settings-link{
-  background-image: none;
-}
-
 }
