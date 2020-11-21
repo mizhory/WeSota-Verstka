@@ -264,3 +264,109 @@ let ppProV = parseInt(ppProP.textContent.slice(0,-1));
 let ppTeamV = parseInt(ppTeamP.textContent.slice(0,-1));
 
 pplatformProgress(ppPersonalV,ppProV,ppTeamV);
+
+/*mobile platform progress*/
+//circles
+const mPersonalC = document.querySelector('.m-platform-personal__circle');
+const mProC = document.querySelector('.m-platform-pro__circle');
+const mTeamC = document.querySelector('.m-platform-team__circle');
+//radius
+const mPersonalR = mPersonalC.r.baseVal.value;
+const mProR = mProC.r.baseVal.value;
+const mTeamR = mTeamC.r.baseVal.value;
+//percent value
+const mPersonalP = document.querySelector('.m-platform-personal__percent');
+const mProP = document.querySelector('.m-platform-pro__percent');
+const mTeamP = document.querySelector('.m-platform-team__percent');
+//circumference
+const mPersonalCF = 2 * Math.PI * mPersonalR;
+const mProCF = 2 * Math.PI * mProR;
+const mTeamCF = 2 * Math.PI * mTeamR;
+
+//stroke dashes
+//personal
+mPersonalC.style.strokeDasharray = `${mPersonalCF} ${mPersonalCF}`;
+mPersonalC.style.strokeDashoffset = mPersonalCF;
+mPersonalC.style.transformOrigin = "center";
+mPersonalC.style.transform = "rotate(-90deg)"; 
+//pro
+mProC.style.strokeDasharray = `${mProCF} ${mProCF}`;
+mProC.style.strokeDashoffset = mProCF;
+mProC.style.transformOrigin = "center";
+mProC.style.transform = "rotate(-90deg)";  
+//team
+mTeamC.style.strokeDasharray = `${mTeamCF} ${mTeamCF}`;
+mTeamC.style.strokeDashoffset = mTeamCF;
+mTeamC.style.transformOrigin = "center";
+mTeamC.style.transform = "rotate(-90deg)";  
+
+//percents
+function mobileProgress(mpercentPer, mpercentPro, mpercentTeam){
+  const mPersonalO = mPersonalCF - mpercentPer / 100 * mPersonalCF;
+  mPersonalC.style.strokeDashoffset = mPersonalO;
+
+  const mProO = mProCF - mpercentPro / 100 * mProCF;
+  mProC.style.strokeDashoffset = mProO;
+
+  const mTeamO = mTeamCF - mpercentTeam / 100 * mTeamCF;
+  mTeamC.style.strokeDashoffset = mTeamO;
+};
+
+let mPersonalV = parseInt(mPersonalP.textContent.slice(0,-1));
+let mProV = parseInt(mProP.textContent.slice(0,-1));
+let mTeamV = parseInt(mTeamP.textContent.slice(0,-1));
+
+mobileProgress(mPersonalV,mProV,mTeamV);
+
+/*mobile level progress */
+//circles
+const lPersonalC = document.querySelector('.m-level-personal__circle');
+const lProC = document.querySelector('.m-level-pro__circle');
+const lTeamC = document.querySelector('.m-level-team__circle');
+//radius
+const lPersonalR = lPersonalC.r.baseVal.value;
+const lProR = lProC.r.baseVal.value;
+const lTeamR = lTeamC.r.baseVal.value;
+//percent value
+const lPersonalP = document.querySelector('.m-level-personal__percent');
+const lProP = document.querySelector('.m-level-pro__percent');
+const lTeamP = document.querySelector('.m-level-team__percent');
+//circumference
+const lPersonalCF = 2 * Math.PI * lPersonalR;
+const lProCF = 2 * Math.PI * lProR;
+const lTeamCF = 2 * Math.PI * lTeamR;
+
+//stroke dashes
+//personal
+lPersonalC.style.strokeDasharray = `${lPersonalCF} ${lPersonalCF}`;
+lPersonalC.style.strokeDashoffset = lPersonalCF;
+lPersonalC.style.transformOrigin = "center";
+lPersonalC.style.transform = "rotate(-90deg)"; 
+//pro
+lProC.style.strokeDasharray = `${lProCF} ${lProCF}`;
+lProC.style.strokeDashoffset = lProCF;
+lProC.style.transformOrigin = "center";
+lProC.style.transform = "rotate(-90deg)";  
+//team
+lTeamC.style.strokeDasharray = `${lTeamCF} ${lTeamCF}`;
+lTeamC.style.strokeDashoffset = lTeamCF;
+lTeamC.style.transformOrigin = "center";
+lTeamC.style.transform = "rotate(-90deg)";  
+
+//percents
+function levelProgress(lpercentPer, lpercentPro, lpercentTeam){
+  const lPersonalO = lPersonalCF - lpercentPer / 100 * lPersonalCF;
+  lPersonalC.style.strokeDashoffset = lPersonalO;
+
+  const lProO = lProCF - lpercentPro / 100 * lProCF;
+  lProC.style.strokeDashoffset = lProO;
+
+  const lTeamO = lTeamCF - lpercentTeam / 100 * lTeamCF;
+  lTeamC.style.strokeDashoffset = lTeamO;
+};
+
+let lPersonalV = parseInt(lPersonalP.textContent.slice(0,-1));
+let lProV = parseInt(lProP.textContent.slice(0,-1));
+let lTeamV = parseInt(lTeamP.textContent.slice(0,-1));
+
+levelProgress(lPersonalV,lProV,lTeamV);

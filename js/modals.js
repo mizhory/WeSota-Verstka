@@ -43,17 +43,17 @@ let profileCard = document.querySelector('.profile-card-mod');
 
 support.onclick = function(){
   supportWindow.classList.toggle('d-none');
-  supportWindow.classList.toggle('d-block');
+  supportWindow.classList.toggle('d-flex');
 };
 
 notif.onclick = function(){
   notifWindow.classList.toggle('d-none');
-  notifWindow.classList.toggle('d-block');
+  notifWindow.classList.toggle('d-flex');
 };
 
 chat.onclick = function(){
   entryWindow.classList.toggle('d-none');
-  entryWindow.classList.toggle('d-block');
+  entryWindow.classList.toggle('d-flex');
   if(chatWindow.classList.contains('d-flex')){
     chatWindow.classList.remove('d-flex');
     chatWindow.classList.add('d-none');
@@ -64,7 +64,7 @@ chat.onclick = function(){
 
 btnEnter.onclick = function(){
   entryWindow.classList.add('d-none');
-  entryWindow.classList.remove('d-block');
+  entryWindow.classList.remove('d-flex');
   chatWindow.classList.add('d-flex');
   chatWindow.classList.remove('d-none');
 };
