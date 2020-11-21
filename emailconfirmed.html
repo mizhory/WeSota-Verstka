@@ -9,21 +9,46 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="registration-form">
+    <div class="container-fluid">
+      <header class="header">
+          <div class="row d-flex justify-content-between align-items-center py-2 px-3 wesota-bg">
+            <div class="home cursor-pointer">
+              <img src="icons/home.png" alt="icon: home" height="26px">
+            </div>
+            <div class="wesota-logo">
+              <img src="img/logo.png" alt="Wesota logo" width="31px" height="33px">
+              <span class="text-white font-weight-lighter h5">WESOTA</span>
+            </div>
+            <div class="icon-buttons d-flex">
+              <div class="icon-button mr-4 position-relative cursor-pointer d-none">
+                <span class="notification">5</span>
+                <img src="icons/bell.png" alt="icon: bell" height="26px">
+              </div>
+              <div class="icon-button mr-4 cursor-pointer">
+                <img src="icons/support.png" alt="icon: support" height="26px">
+              </div>
+              <div class="icon-button cursor-pointer">
+                <img src="icons/exit.png" alt="icon: exit" height="26px">
+              </div>
+            </div>
+          </div>
+      </header>
+      <!--header-->
+      <div class="row text-white d-flex flex-column align-items-center login-bg vh-95 pt-5">
         <div class="row">
           <div class="col d-flex flex-column align-items-center">
             <img src="img/logo.png" alt="Wesota logo">
-            <p class="text-wrap text-center" style="width: 12rem;">Добро пожаловать  в международный проект  WESOTA</p>
+            <p class="text-wrap text-center mt-2" style="width: 12rem;">Добро пожаловать  в международный проект  WESOTA</p>
               <p class="text-wrap text-center" style="width: 24rem;">Поздравляем! Ваш Email успешно подтвержден. Для доступа в личный кабинет необходимо принять соглашение договора оферты. Так же убедительно просим Вас ознакомиться с инструкцией в разделе настройки.</p>
-              <button type="submit" class="btn">Перейти</button>
+              <button type="submit" class="btn btn-light border shadow-sm">Перейти</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
 </html>
+
