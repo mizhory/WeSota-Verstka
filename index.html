@@ -3,793 +3,2267 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>Wesota</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   </head>
   <body>
     <div class="container-fluid">
-      <header class="header">
-      <div class="row d-flex justify-content-between wesota-bg">
-        <div class="home">
-          <img src="icons/home.png" alt="icon: home">
-        </div>
-        <div class="wesota-logo">
-          <img src="img/logo.png" alt="Wesota logo">
-          <span class="text-white">WESOTA</span>
-        </div>
-        <div class="icon-buttons d-flex">
-          <div class="icon-button">
-            <span class="notification">5</span>
-            <img src="icons/bell.png" alt="icon: bell">
+      <header class="header sticky-top">
+        <div class="row d-flex justify-content-between align-items-center py-2 px-3 wesota-bg">
+          <div class="home cursor-pointer">
+            <img src="icons/home.png" alt="icon: home" height="26px">
           </div>
-          <div class="icon-button">
-            <img src="icons/support.png" alt="icon: support">
+          <div class="wesota-logo">
+            <img src="img/logo.png" alt="Wesota logo" width="31px" height="33px">
+            <span class="text-white font-weight-lighter h5">WESOTA</span>
           </div>
-          <div class="icon-button">
-            <img src="icons/exit.png" alt="icon: exit">
+          <div class="icon-buttons d-flex">
+            <div class="notif-btn icon-button mr-4 position-relative cursor-pointer">
+              <span class="notification">5</span>
+              <img src="icons/bell.png" alt="icon: bell" height="26px">
+            </div>
+            <div class="support-btn icon-button mr-4 cursor-pointer">
+              <img src="icons/support.png" alt="icon: support" height="26px">
+            </div>
+            <div class="exit-btn icon-button cursor-pointer">
+              <img src="icons/exit.png" alt="icon: exit" height="26px">
+            </div>
           </div>
         </div>
-      </div>
       </header>
       <!--header-->
-      
-    <div class="row">
-      <nav class="sidebar col-2 wesota-bg">
-      <div class="user-card">
-        <div class="user-info text-white">
-          <img src="img/" alt="User avatar" class="user-avatar">
-          <p class="user-name">Павел</p>
-          <p class="user-surname">Канишев</p>
-          <p class="user-location">
-            <span class="user-country">Россия,</span>
-            <span class="user-city">Москва</span>
-            <span class="country-icon">рус</span>
-          </p>
-        </div>
-        <div class="rewards d-flex justify-content-between">
-        <img src="icons/achievement.png" alt="icon: achievement">
-        <img src="icons/achievement.png" alt="icon: achievement">
-        <img src="icons/achievement.png" alt="icon: achievement">
-        </div>
-      </div>
-      <div class="sidebar-menu">
-        <ul class="nav nav-tabs flex-column" role="tablist">
-          <li class="nav-item" role="presentation">
-            <a href="#statistics" class="nav-link" data-toggle="tab" role="tab" id="statistics-tab" aria-controls="statistics" aria-selected="true">
-              Статистика 
-              <img src="icons/statistic" alt="icon: statistic">
-            </a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a href="#finance" class="nav-link" data-toggle="tab" role="tab" id="finance-tab" aria-controls="finance" aria-selected="false">
-              Финансы 
-              <img src="icons/finance.png" alt="icon: finance">
-            </a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a href="#invites" class="nav-link" data-toggle="tab" role="tab" id="invites-tab" aria-controls="invites" aria-selected="false">
-              Инвайт коды 
-              <img src="icons/invite.png" alt="icon: invite codes">
-            </a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a href="#platforms" class="nav-link" data-toggle="tab" role="tab" id="platforms-tab" aria-controls="platforms" aria-selected="false">
-              Платформы 
-              <img src="icons/platforms" alt="icon: platforms">
-            </a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a href="#messages" class="nav-link" data-toggle="tab" role="tab" id="messages-tab" aria-controls="messages" aria-selected="false">
-              Сообщения 
-              <img src="icons/message.png" alt="icon: messages">
-            </a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a href="#settings" class="nav-link" data-toggle="tab" role="tab" id="settings-tab" aria-controls="settings" aria-selected="false">
-              Настройки 
-              <img src="icons/settings.png" alt="icon: settings">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="neural">
-        <img src="icons/ai.svg" alt="icon: ai">
-        <span class="text-white">Нейросеть</span>
-      </div>
-      </nav>
-      <!--sidebar-->
-      <!--main-->
-      <main class="col-10" role="main">
-      <div class="tab-content">
-        <div class="tab-pane" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
-        <div class="profile-statistics">
-          <p>Статистика профиля</p>
-          <div class="rows">
-            <div class="col">
-              <p>Платформы</p>
-            </div>
-          </div>
-          <div class="rows d-flex">
-            <div class="col">
-              <p class="table-heading">Закрыто платформ</p>
-              <p>12M</p>
-            </div>
-            <div class="col">
-              <p class="table-heading">Общий доход</p>
-              <p>5M</p>
-            </div>
-            <div class="col">
-              <p class="table-heading">Дата регистрации</p>
-              <p>03.04.2019</p>
-            </div>
-            <div class="col">
-              <p class="table-heading">Время в проекте</p>
-              <p>7 мес.</p>
-            </div>
-            <div class="col">
-              <p class="table-heading">Статус</p>
-              <p>Партнер</p>
-            </div>
-          </div>
-          <div class="rows d-flex">
-            <div class="col-3 d-flex flex-column align-items-center">
-              <div class="d-flex justify-content-between align-self-stretch">
-                <span class="currency d-inline-block">USD</span>
-                <span class="account-number d-inline-block">P11000121</span>
-              </div>
-              <p class="amount">$ 200K</p>
-              <button type="button" class="btn">Пополнить</button>
-            </div>
-            <div class="col-3">
-              <div class="d-flex flex-column align-items-center border border-secondary rounded-circle">
-                <p>93%</p>
-                <p>Personal 10$</p>
-                <p>Доход</p>
-                <p>35.000$</p>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="d-flex flex-column align-items-center border border-secondary rounded-circle">
-                <p>27%</p>
-                <p>Personal 10$</p>
-                <p>Доход</p>
-                <p>28.000$</p>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="d-flex flex-column align-items-center border border-secondary rounded-circle">
-                <p>0%</p>
-                <p>Team 100$</p>
-                <p>Доход</p>
-                <p>0$</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--profile statistics-->
-        <div class="project-statistics">
-          <p>Статистика проекта</p>
-          <div class="row">
-            <div class="col-4 text-center">
-              <p class="table-heading">Платформы</p>
-              <div class="row d-flex">
-                <div class="col-6">
-                  <p>3M</p>
-                  <p>Активные</p>
-                </div>
-                <div class="col-6">
-                  <p>700K</p>
-                  <p>Закрытые</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 text-center">
-              <p class="table-heading">Участники проекта</p>
-              <div class="row d-flex">
-                <div class="col-6">
-                <p>2M</p>
-                <p>Активные</p>
-              </div>
-                <div class="col-6">
-                <p>50M</p>
-                <p>Всего</p>
-              </div>
-              </div>
-          </div>
-            <div class="col-4 text-center">
-              <p class="table-heading">Общий доход системы</p>
-              <p>200BL</p>
-          </div>
-          </div>
-        </div>
-        <!--project statistics-->
-        <div class="platforms-statistics">
-          <div class="table-heading">
-            <div class="row text-center">
-              <div class="col-4">Платформа</div>
-              <div class="col-2">Доход</div>
-              <div class="col-3">Дата открытия</div>
-              <div class="col-3">Дата закрытия</div>
-            </div>
-          </div>
-          <div class="platforms-statistics-cards text-center">
-            <div class="row">
-              <div class="col-4"><span class="border border-dark rounded-circle">1</span> Personal</div>
-              <div class="col-2">35.700$</div>
-              <div class="col-3">01.09.2020</div>
-              <div class="col-3">12.11.2020</div>
-            </div>
-            <div class="row">
-              <div class="col-4"><span class="border border-dark rounded-circle">1</span> Personal</div>
-              <div class="col-2">35.700$</div>
-              <div class="col-3">01.09.2020</div>
-              <div class="col-3">12.11.2020</div>
-            </div>
-            <div class="row">
-              <div class="col-4"><span class="border border-dark rounded-circle">1</span> Personal</div>
-              <div class="col-2">35.700$</div>
-              <div class="col-3">01.09.2020</div>
-              <div class="col-3">12.11.2020</div>
-            </div>
-            <div class="row">
-              <div class="col-4"><span class="border border-dark rounded-circle">1</span> Personal</div>
-              <div class="col-2">35.700$</div>
-              <div class="col-3">01.09.2020</div>
-              <div class="col-3">12.11.2020</div>
-            </div>
-            <div class="row">
-              <div class="col-4"><span class="border border-dark rounded-circle">1</span> Personal</div>
-              <div class="col-2">35.700$</div>
-              <div class="col-3">01.09.2020</div>
-              <div class="col-3">12.11.2020</div>
-            </div>
-          </div>
-        </div>
-        <!--platforms statistics-->
-        </div>
-        <!--statistis tab-->
 
-        <div class="tab-pane" id="finance" role="tabpanel" aria-labelledby="finance-tab">
-          <p>Финансы</p>
-          <div class="finance-cards">
-            <div class="row finance-card">
-              <div class="col-1">
-                <img src="img/payeer.png" alt="logo: payeer">
-              </div>
-              <div class="col">
-                <div class="transactions d-flex">
-                  <span class="value text-danger">-1$</span>
-                  <span class="comission align-self-center">Комиссия: 0.10$</span>
+      <div class="row vh-90">
 
-                </div>
-                <div class="transaction-details">
-                  <span>Кому: icon</span>
-                  <span>icon P11002100</span>
-                  <span>03 апр. 2020, 10:00</span>
-                </div>
-
-              </div>
-              <div class="col-1">
-                <img src="img/" alt="">
-              </div>
-            </div>
-            <div class="row finance-card">
-              <div class="col-1">
-                <img src="img/payeer.png" alt="logo: payeer">
-              </div>
-              <div class="col">
-                <div class="transactions d-flex">
-                  <span class="value text-success">+10$</span>
-                  <span class="comission align-self-center d-none">Комиссия: 0.10$</span>
-                </div>
-                <div class="transaction-details">
-                  <span>Кому: icon</span>
-                  <span>icon P11002100</span>
-                  <span>10 июн. 2020, 12:00</span>
-                </div>
-
-              </div>
-              <div class="col-1">
-                <img src="img/" alt="">
-              </div>
-            </div>
-            <div class="row finance-card">
-              <div class="col-1">
-                <img src="img/payeer.png" alt="logo: payeer">
-              </div>
-              <div class="col">
-                <div class="transactions d-flex">
-                  <span class="value text-danger">-1$</span>
-                  <span class="comission align-self-center">Комиссия: 0.10$</span>
-
-                </div>
-                <div class="transaction-details">
-                  <span>Кому: icon</span>
-                  <span>icon P11002100</span>
-                  <span>03 апр. 2020, 10:00</span>
-                </div>
-
-              </div>
-              <div class="col-1">
-                <img src="img/" alt="">
-              </div>
-            </div>
-            <div class="row finance-card">
-              <div class="col-1">
-                <img src="img/payeer.png" alt="logo: payeer">
-              </div>
-              <div class="col">
-                <div class="transactions d-flex">
-                  <span class="value text-success">+10$</span>
-                  <span class="comission align-self-center d-none">Комиссия: 0.10$</span>
-                </div>
-                <div class="transaction-details">
-                  <span>Кому: icon</span>
-                  <span>icon P11002100</span>
-                  <span>10 июн. 2020, 12:00</span>
-                </div>
-
-              </div>
-              <div class="col-1">
-                <img src="img/" alt="">
-              </div>
-            </div>
-            <div class="row finance-card">
-              <div class="col-1">
-                <img src="img/payeer.png" alt="logo: payeer">
-              </div>
-              <div class="col">
-                <div class="transactions d-flex">
-                  <span class="value text-success">+10$</span>
-                  <span class="comission align-self-center d-none">Комиссия: 0.10$</span>
-                </div>
-                <div class="transaction-details">
-                  <span>Кому: icon</span>
-                  <span>icon P11002100</span>
-                  <span>10 июн. 2020, 12:00</span>
-                </div>
-
-              </div>
-              <div class="col-1">
-                <img src="img/" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--finance tab-->
-
-        <div class="tab-pane" id="invites" role="tabpanel" aria-labelledby="invites-tab">
-          <p class="text-center">Инвайт коды</p>
-          <div class="row">
-            <div class="col-4 offset-4">
-              <p class="text-center">Инвайт коды Вы можете использовать для подарка друзьям и близким, а так же как благотворительную помощь другим людям. При покупке инвайт кода с Вашего счета будут списаны средства в сумме 1.10$, с учетом комиссии проекта 10%. Средства будут отправлены на счёт выбранного системой участника.</p>
-          <div class="form-group text-center">
-            <label for="invites_email">Ввести email</label>
-            <input type="email" class="form-control" id="invites_email">
-            <button type="submit" class="btn">Отправить</button>
-          </div>
-            </div>
-          </div>
-          <div class="row d-none">
-            <div class="col-4 offset-4">
-              <p class="text-center">Поздравляем, инвайт код для активации платформы: <span class="platform-type"><strong>Personal</strong></span> отправлен на email: Uolsh@gmail.com. <span class="invite-code"><strong>5454 J445 K55K 4KK5</strong></span> С Вашего счёта списана сумма, в размере: <span class="debited"><strong>1.10$</strong></span> с учётом комиссии проекта 10%. Средства переведены участнику: Татьяна Королёва, номер счёта:  <span class="amount-number"><strong>Р110020034</strong></span> Информация о транзакции находится в разделе финансы, благодарим за участие.</p>
-            </div>
-          </div>
-        <!--invite codes tab-->
-
-        <!--platforms tab-->
-        <div class="tab-pane" id="platforms" role="tabpanel" aria-labelledby="platforms-tab">
-
-        </div>
-        <!--platforms tab-->
-
-        <!--messages tab-->
-        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-
-        </div>
-        <!--messages tab-->
-
-        <!--settings tab-->
-        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-
-        </div>
-        <!--settings tab-->
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        </div>
-        <!--invite codes tab-->
-
-        <div class="tab-pane" id="platforms" role="tabpanel" aria-labelledby="platforms-tab">
-          <p>Платформы</p>
-          <div class="row">
-            <div class="col">
-              <p class="table-heading">
-                Personal 1$
+        <nav class="sidebar col-2 wesota-bg pt-3 d-flex flex-column align-items-stretch justify-content-around position-fixed h-100">
+          <div class="user-card d-none d-xl-block">
+            <div class="user-info text-white d-flex flex-column align-items-center">
+              <img src="img/photo.jpeg" alt="User avatar" class="user-avatar rounded-circle mb-3" width="120px" height="120px">
+              <p class="user-name my-0 h5">Павел</p>
+              <p class="user-surname my-0 h5">Канищев</p>
+              <p class="user-location text-md-center">
+                <span class="user-country">Россия,</span>
+                <span class="user-city">Москва</span>
+                <span class="country-icon"><img src="img/rus.png" alt="icon: country" width="15px" height="15px" class="rounded-circle"></span>
               </p>
-              <div class="level d-flex">
-                <div class="profit border rounded-circle">
-                  <p>93%</p>
-                  <p>Доход</p>
-                  <p>35.000$</p>
-                </div>
-                <div class="level-info">
-                  <p>Активация уровня</p>
-                  <p>1000$</p>
-                  <p>Доход уровня</p>
-                  <p>20000$</p>
-                  <p>Уровни</p>
-                  <p>1 2 3 4 5 6 7</p>
-                  <button type="button" disabled class="btn">Активировать</button>
-                </div>
-              </div>
             </div>
-            <div class="col">
-              <p class="table-heading">
-                Pro 10$
-              </p>
-              <div class="level d-flex">
-                <div class="profit border rounded-circle">
-                  <p>27%</p>
-                  <p>Доход</p>
-                  <p>4.600$</p>
-                </div>
-                <div class="level-info">
-                  <p>Активация уровня</p>
-                  <p>500$</p>
-                  <p>Доход уровня</p>
-                  <p>5000$</p>
-                  <p>Уровни</p>
-                  <p>1 2 3 4 5 6 </p>
-                  <button type="button" disabled class="btn">Активировать</button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <p class="table-heading">
-                Team 100$
-              </p>
-              <div class="level d-flex">
-                <div class="profit border rounded-circle">
-                  <p>0%</p>
-                  <p>Доход</p>
-                  <p>0$</p>
-                </div>
-                <div class="level-info">
-                  <p>Активация уровня</p>
-                  <p>0$</p>
-                  <p>Доход уровня</p>
-                  <p>0$</p>
-                  <p>Уровни</p>
-                  <p>1 2 3 4 5</p>
-                  <button type="button" class="btn">Активировать</button>
-                </div>
-              </div>
+            <div class="rewards d-flex justify-content-between mt-3 px-2 py-2 reward-border shadow">
+            <img src="icons/achievement.png" alt="icon: achievement">
+            <img src="icons/achievement.png" alt="icon: achievement">
+            <img src="icons/achievement.png" alt="icon: achievement">
             </div>
           </div>
-        </div>
-        <!--platforms tab-->
-
-        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-          <div class="row d-flex justify-content-between">
-            <p>Сообщения</p>
-            <div class="checkbox-group">
-              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <input class="messages-checkbox position-static" type="checkbox" value="selectAll">
-              </button>
-            </div>
-          </div>
-          <div class="messages-cards">
-            <div class="row message-card">
-              <div class="col-1">img</div>
-              <div class="col-2 text-wrap">Имя Фамилия</div>
-              <div class="col">Name, перевод поступил, спасибо</div>
-              <div class="col-2">12 авг.</div>
-              <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
-            </div>
-            <div class="row message-card">
-              <div class="col-1">img</div>
-              <div class="col-2 text-wrap">Имя Фамилия</div>
-              <div class="col">Name, перевод поступил, спасибо</div>
-              <div class="col-2">12 авг.</div>
-              <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
-            </div>
-            <div class="row message-card">
-              <div class="col-1">img</div>
-              <div class="col-2 text-wrap">Имя Фамилия</div>
-              <div class="col">Name, перевод поступил, спасибо</div>
-              <div class="col-2">12 авг.</div>
-              <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
-            </div>
-            <div class="row message-card">
-              <div class="col-1">img</div>
-              <div class="col-2 text-wrap">Имя Фамилия</div>
-              <div class="col">Name, перевод поступил, спасибо</div>
-              <div class="col-2">12 авг.</div>
-              <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
-            </div>
-            <div class="row message-card">
-              <div class="col-1">img</div>
-              <div class="col-2 text-wrap">Имя Фамилия</div>
-              <div class="col">Name, перевод поступил, спасибо</div>
-              <div class="col-2">12 авг.</div>
-              <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
-            </div>
-            <div class="row message-card">
-              <div class="col-1">img</div>
-              <div class="col-2 text-wrap">Имя Фамилия</div>
-              <div class="col">Name, перевод поступил, спасибо</div>
-              <div class="col-2">12 авг.</div>
-              <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
-            </div>
-            <div class="row message-card">
-              <div class="col-1">img</div>
-              <div class="col-2 text-wrap">Имя Фамилия</div>
-              <div class="col">Name, перевод поступил, спасибо</div>
-              <div class="col-2">12 авг.</div>
-              <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
-            </div>
-            <div class="row message-card">
-              <div class="col-1">img</div>
-              <div class="col-2 text-wrap">Имя Фамилия</div>
-              <div class="col">Name, перевод поступил, спасибо</div>
-              <div class="col-2">12 авг.</div>
-              <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
-            </div>
-            <div class="row message-card">
-              <div class="col-1">img</div>
-              <div class="col-2 text-wrap">Имя Фамилия</div>
-              <div class="col">Name, перевод поступил, спасибо</div>
-              <div class="col-2">12 авг.</div>
-              <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
-            </div>
-          </div>
-        </div>
-        <!--messages tab-->
-
-        <div class="tab-pane active" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-          <p>Настройки</p>
-          <div class="row">
-            <ul class="nav nav-pills" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-general-tab" data-toggle="pill" href="#pills-general" role="tab" aria-controls="pills-general" aria-selected="true">Общие</a>
+          <!--user card-->
+          <div class="sidebar-menu mb-auto mt-xl-5">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item my-1 d-xl-none">
+                <a class="nav-link text-white pr-5" data-toggle="tab" href="#profile">
+                  <img src="icons/menu-white/profile.png" alt="icon: profile" class="menu-icon profile mr-1">
+                  <span>Профиль</span>
+                </a>
               </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-security-tab" data-toggle="pill" href="#pills-security" role="tab" aria-controls="pills-security" aria-selected="false">Безопасность</a>
+              <li class="nav-item my-1">
+                <a class="nav-link active text-white pr-5" data-toggle="tab" href="#statistic">
+                  <img src="icons/menu-white/statistic.png" alt="icon: statistic" class="mr-1">
+                  <span>Статистика</span>
+                </a>
               </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-finance-tab" data-toggle="pill" href="#pills-finance" role="tab" aria-controls="pills-finance" aria-selected="false">Финансы</a>
+              <li class="nav-item my-1">
+                <a class="nav-link text-white pr-5" data-toggle="tab" href="#finance">
+                  <img src="icons/menu-white/finance.png" alt="icon: finance" class="mr-1" >
+                  <span>Финансы</span>
+                </a>
               </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-integration-tab" data-toggle="pill" href="#pills-integration" role="tab" aria-controls="pills-integration" aria-selected="false">Интеграция</a>
+              <li class="nav-item my-1">
+                <a class="nav-link text-white pr-5" data-toggle="tab" href="#invites">
+                  <img src="icons/menu-white/invite.png" alt="icon: invite codes" class="mr-1">
+                  <span>Инвайт коды</span>
+                </a>
               </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link" id="pills-instructions-tab" data-toggle="pill" href="#pills-instructions" role="tab" aria-controls="pills-instructions" aria-selected="false">Инструкции</a>
+              <li class="nav-item my-1">
+                <a class="nav-link text-white pr-5" data-toggle="tab" href="#platforms">
+                  <img src="icons/menu-white/platform.png" alt="icon: platforms" class="mr-1"> 
+                  <span>Платформы</span>
+                </a>
+              </li>
+              <li class="nav-item my-1">
+                <a class="nav-link text-white pr-5" data-toggle="tab" href="#messages">
+                  <img src="icons/menu-white/message.png" alt="icon: messages" class="mr-1">
+                  <span>Сообщения</span>
+                </a>
+              </li>
+              <li class="nav-item my-1">
+                <a class="nav-link text-white pr-5" data-toggle="tab" href="#settings">
+                  <img src="icons/menu-white/settings.png" alt="icon: settings" class="mr-1">
+                  <span>Настройки</span>
+                </a>
               </li>
             </ul>
-            <!-- /settings nav-pills -->
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade" id="pills-general" role="tabpanel" aria-labelledby="pills-general-tab">
-                <div class="general-settings">
-                  <p>Общие настройки</p>
-                  <div class="avatar">
-                    <img src="img/" alt="user avatar">
-                    <button class="btn" type="button">
-                      Загрузить 
-                      <img src="icons/load.png" alt="icon: load">
-                    </button>
-                    <button class="btn" type="button">
-                      Удалить
-                      <img src="icons/delete.png" alt="icon: delete">
-                    </button>
+          </div>
+          <!--navigation tabs-->
+        </nav>
+  
+        <main class="col-10 offset-2 mb-5">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="statistic">
+              <div class="profile-statistics">
+                <p class="shadow-sm border-bottom py-1 m-0">Статистика профиля</p>
+                <div class="row d-flex shadow-sm border-bottom py-2 px-2">
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Закрыто платформ</p>
+                    <p class="font-weight-bolder h3">12M</p>
                   </div>
-                  <form name ="userSettings" class="d-flex flex-column align-items-stretch"  action="#" enctype="application/x-www-form-urlencoded" method="POST">
-                    <div class="form-group">
-                      <label for="userSettings_nameInput">Имя</label>
-                      <input type="text" class="form-control text-center" id="userSettings_nameInput">
-                    </div>
-                    <div class="form-group">
-                      <label for="userSettings_surnameInput">Фамилия</label>
-                      <input type="password" class="form-control text-center" id="userSettings_surnameInput">
-                    </div>
-                    <div class="form-group">
-                      <select class="form-control" id="userSettings_countrySelect">
-                        <option value="country" selected disabled>Страна</option>
-                      </select>
-                      <select class="form-control" id="userSettings_citySelect">
-                        <option value="city" selected disabled>Город</option>
-                      </select>
-                      <select class="form-control" id="userSettings_langSelect">
-                        <option value="language" selected disabled>Язык</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label class="d-block">Пол</label>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
-                        <label class="form-check-label" for="male">Мужской</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                        <label class="form-check-label" for="female">Женский</label>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="userSettings_yearSelect"></label>
-                      <select class="form-control" id="userSettings_yearSelect">
-                        <option value="year" selected disabled>1990</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="userSettings_emailInput">Почта</label>
-                      <input type="email" class="form-control text-center" id="userSettings_emailInput">
-                      <label for="userSettings_phoneInput">Телефон</label>
-                      <input type="tel" class="form-control text-center" id="userSettings_phoneInput">
-                    </div>
-                    <button type="submit" class="btn">Сохранить</button>
-                  </form>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Общий доход</p>
+                    <p class="font-weight-bolder h3">5M</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Дата регистрации</p>
+                    <p class="font-weight-bold">03.04.2019</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Время в проекте</p>
+                    <p class="font-weight-bold">7 мес.</p>
+                  </div>
+                  <div class="col text-center">
+                    <p class="table-heading font-weight-normal">Статус</p>
+                    <p class="font-weight-bold">Партнер</p>
+                  </div>
                 </div>
-                <!--general settings-->
+                <div class="row d-flex shadow-sm border-bottom py-2 px-2">
+                  <div class="col-3 d-flex flex-column align-items-center justify-content-between border-right">
+                    <div class="d-flex justify-content-between align-self-stretch">
+                      <span class="currency d-inline-block">USD</span>
+                      <span class="account-number d-inline-block">P11000121</span>
+                    </div>
+                    <p class="amount font-weight-bolder h1">$ 200K</p>
+                    <button type="button" class="btn btn-light border shadow-sm">Пополнить</button>
+                  </div>
+                  <div class="col-3 border-right">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="personal-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="statisticSG" y2="45%">
+                            <stop offset="10%" stop-color="#6633cc"/>
+                            <stop offset="35%" stop-color="#3366cc"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#ffcc66"/>
+                            <stop offset="100%" stop-color="#ff3366"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="personal-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#statisticSG)" stroke-linecap="round"/>
+                        <text class="personal-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">93%</text>
+                        <text class="personal-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Personal 10$</text>
+                        <line class="personal-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="personal-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="personal-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">35000$</text>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-3 border-right">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="pro-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="statisticSG" y2="45%">
+                            <stop offset="10%" stop-color="#ff3366"/>
+                            <stop offset="35%" stop-color="#ffcc66"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#3366cc"/>
+                            <stop offset="100%" stop-color="#6633cc"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="pro-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#statisticSG)" stroke-linecap="round"/>
+                        <text class="pro-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">27%</text>
+                        <text class="pro-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Pro 10$</text>
+                        <line class="pro-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="pro-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="pro-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">18000$</text>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="team-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="statisticSG" y2="45%">
+                            <stop offset="10%" stop-color="#ff3366"/>
+                            <stop offset="35%" stop-color="#ffcc66"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#3366cc"/>
+                            <stop offset="100%" stop-color="#6633cc"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="team-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#statisticSG)" stroke-linecap="round"/>
+                        <text class="team-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">0%</text>
+                        <text class="team-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Team 10$</text>
+                        <line class="team-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="team-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="team-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">0$</text>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--profile statistics-->
+              <div class="project-statistics">
+                <p class="shadow-sm border-bottom py-1 m-0">Статистика проекта</p>
+                <div class="row shadow-sm border-bottom py-2 px-2">
+                  <div class="col-4 text-center border-right">
+                    <p class="table-heading font-weight-normal">Платформы</p>
+                    <div class="row d-flex">
+                      <div class="col-6">
+                        <p class="font-weight-bolder h3 mb-0">3M</p>
+                        <p class="mb-0 active-state states-dot position-relative d-inline-block">Активные</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="font-weight-bolder h3 mb-0">700K</p>
+                        <p class="mb-0 close-state states-dot position-relative d-inline-block">Закрытые</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4 text-center border-right">
+                    <p class="table-heading font-weight-normal">Участники проекта</p>
+                    <div class="row d-flex">
+                      <div class="col-6">
+                      <p class="font-weight-bolder h3 mb-0">2M</p>
+                      <p class="mb-0 active-state states-dot position-relative d-inline-block">Активные</p>
+                    </div>
+                      <div class="col-6">
+                      <p class="font-weight-bolder h3 mb-0">50M</p>
+                      <p class="mb-0 all-state states-dot position-relative d-inline-block">Всего</p>
+                    </div>
+                    </div>
+                </div>
+                  <div class="col-4 text-center">
+                    <p class="table-heading font-weight-normal">Общий доход системы</p>
+                    <p class="font-weight-bolder h3 mb-0">200BL</p>
+                </div>
+                </div>
+              </div>
+              <!--project statistics-->
+              <div class="platforms-statistics">
+                <div class="table-heading">
+                  <div class="row text-center shadow-sm border-bottom py-2 px-2">
+                    <div class="col-4">Платформа</div>
+                    <div class="col-2">Доход</div>
+                    <div class="col-3">Дата открытия</div>
+                    <div class="col-3">Дата закрытия</div>
+                  </div>
+                </div>
+                <div class="platforms-statistics-cards text-center">
+                  <div class="row font-weight-bolder h4 my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-4"><span class="border border-dark circle-border mr-5">1</span> Personal</div>
+                    <div class="col-2">35700$</div>
+                    <div class="col-3">01.09.2020</div>
+                    <div class="col-3">12.11.2020</div>
+                  </div>
+                  <div class="row font-weight-bolder h4 my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-4"><span class="border border-dark circle-border mr-5">2</span> Personal</div>
+                    <div class="col-2">35700$</div>
+                    <div class="col-3">01.09.2020</div>
+                    <div class="col-3">12.11.2020</div>
+                  </div>
+                  <div class="row font-weight-bolder h4 my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-4"><span class="border border-dark circle-border mr-5">...</span> Personal</div>
+                    <div class="col-2">35700$</div>
+                    <div class="col-3">01.09.2020</div>
+                    <div class="col-3">12.11.2020</div>
+                  </div>
+                  <div class="row font-weight-bolder h4 my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-4"><span class="border border-dark circle-border mr-5">49</span> Personal</div>
+                    <div class="col-2">35700$</div>
+                    <div class="col-3">01.09.2020</div>
+                    <div class="col-3">12.11.2020</div>
+                  </div>
+                  <div class="row font-weight-bolder h4 my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-4"><span class="border border-dark circle-border mr-5">50</span> Personal</div>
+                    <div class="col-2">35700$</div>
+                    <div class="col-3">01.09.2020</div>
+                    <div class="col-3">12.11.2020</div>
+                  </div>
+                </div>
+              </div>
+              <!--platforms statistics-->
+            </div>
+            <!--statistis tab-->
+
+            <div class="tab-pane fade" id="finance">
+              <div class="profile-statistics">
+                <p class="shadow-sm border-bottom py-1 m-0">Статистика профиля</p>
+                <div class="row d-flex shadow-sm border-bottom py-2 px-2">
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Закрыто платформ</p>
+                    <p class="font-weight-bolder h3">12M</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Общий доход</p>
+                    <p class="font-weight-bolder h3">5M</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Дата регистрации</p>
+                    <p class="font-weight-bold">03.04.2019</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Время в проекте</p>
+                    <p class="font-weight-bold">7 мес.</p>
+                  </div>
+                  <div class="col text-center">
+                    <p class="table-heading font-weight-normal">Статус</p>
+                    <p class="font-weight-bold">Партнер</p>
+                  </div>
+                </div>
+                <div class="row d-flex shadow-sm border-bottom py-2 px-2">
+                  <div class="col-3 d-flex flex-column align-items-center justify-content-between border-right">
+                    <div class="d-flex justify-content-between align-self-stretch">
+                      <span class="currency d-inline-block">USD</span>
+                      <span class="account-number d-inline-block">P11000121</span>
+                    </div>
+                    <p class="amount font-weight-bolder h1">$ 200K</p>
+                    <button type="button" class="btn btn-light border shadow-sm">Пополнить</button>
+                  </div>
+                  <div class="col-3 border-right">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="f-personal-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="financeSG" y2="45%">
+                            <stop offset="10%" stop-color="#6633cc"/>
+                            <stop offset="35%" stop-color="#3366cc"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#ffcc66"/>
+                            <stop offset="100%" stop-color="#ff3366"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="f-personal-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#financeSG)" stroke-linecap="round"/>
+                        <text class="f-personal-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">93%</text>
+                        <text class="f-personal-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Personal 10$</text>
+                        <line class="f-personal-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="f-personal-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="f-personal-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">35000$</text>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-3 border-right">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="f-pro-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="financeSG" y2="45%">
+                            <stop offset="10%" stop-color="#ff3366"/>
+                            <stop offset="35%" stop-color="#ffcc66"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#3366cc"/>
+                            <stop offset="100%" stop-color="#6633cc"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="f-pro-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#financeSG)" stroke-linecap="round"/>
+                        <text class="f-pro-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">27%</text>
+                        <text class="f-pro-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Pro 10$</text>
+                        <line class="f-pro-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="f-pro-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="f-pro-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">18000$</text>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="f-team-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="financeSG" y2="45%">
+                            <stop offset="10%" stop-color="#ff3366"/>
+                            <stop offset="35%" stop-color="#ffcc66"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#3366cc"/>
+                            <stop offset="100%" stop-color="#6633cc"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="f-team-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#financeSG)" stroke-linecap="round"/>
+                        <text class="f-team-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">0%</text>
+                        <text class="f-team-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Team 10$</text>
+                        <line class="f-team-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="f-team-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="f-team-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">0$</text>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--profile statistics-->
+              <div class="row">
+                <div class="col-4 wesota-bg py-5 d-none">
+                  <div class="checks d-flex flex-column">
+                    <div class="check bg-white shadow-lg d-flex flex-column align-items-center justify-content-between p-3">
+                      <button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
+                      <div class="check-heading text-center mb-3">
+                      <p class="check-wesota font-weight-bolder h4">WESOTA</p>
+                      <p class="check-type font-weight-lighter h5">Входящий платеж</p>
+                      </div>
+                      <div class="check-info text-center mb-3">
+                        <p class="check-receiver mb-0">Получатель:</p>
+                        <p class="check-receiver-name font-weight-lighter h5">Павел Канишев</p>
+                      </div>
+                      <div class="check-body">
+                      <p class="check-account-number mb-1">Счет: <span class="d-inline-block ml-2 font-weight-lighter h5">Р11002100</span></p>
+                      <p class="check-amount mb-1">Сумма: <span class="d-inline-block ml-2 font-weight-lighter h5">1$</span></p>
+                      <p class="check-sender mb-1">От: <span class="d-inline-block ml-2 font-weight-lighter h5">Джон Уолш</span></p>
+                      <p class="check-sender-account mb-1">Со счета: <span class="d-inline-block ml-2 font-weight-lighter h5">Р1101122</span></p>
+                      <p class="check-date mb-1">Дата: <span class="d-inline-block ml-2 font-weight-lighter h5">12.11.2020</span></p>
+                      <p class="check-time mb-2">Время: <span class="d-inline-block ml-2 font-weight-lighter h5">20:20</span></p>
+                      </div>
+                      <div class="copy-check text-center cursor-pointer">
+                      Скопировать чек <img src="icons/clip.png" alt="icon: clip">
+                      </div>
+                    </div>
+                    <div class="check bg-white shadow-lg d-flex flex-column align-items-center justify-content-between p-3">
+                      <button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
+                      <div class="check-heading text-center mb-3">
+                      <p class="check-wesota font-weight-bolder h4">WESOTA</p>
+                      <p class="check-type font-weight-lighter h5">Исходящий платеж</p>
+                      </div>
+                      <div class="check-info text-center mb-3">
+                        <p class="check-receiver mb-0">Получатель:</p>
+                        <p class="check-receiver-name font-weight-lighter h5">Павел Канишев</p>
+                      </div>
+                      <div class="check-body">
+                      <p class="check-account-number mb-1">Счет: <span class="d-inline-block ml-2 font-weight-lighter h5">Р11002100</span></p>
+                      <p class="check-amount mb-1">Сумма: <span class="d-inline-block ml-2 font-weight-lighter h5">1$</span></p>
+                      <p class="check-sender mb-1">От: <span class="d-inline-block ml-2 font-weight-lighter h5">Джон Уолш</span></p>
+                      <p class="check-sender-account mb-1">Со счета: <span class="d-inline-block ml-2 font-weight-lighter h5">Р1101122</span></p>
+                      <p class="check-date mb-1">Дата: <span class="d-inline-block ml-2 font-weight-lighter h5">12.11.2020</span></p>
+                      <p class="check-time mb-2">Время: <span class="d-inline-block ml-2 font-weight-lighter h5">20:20</span></p>
+                      </div>
+                      <div class="copy-check text-center cursor-pointer">
+                      Скопировать чек <img src="icons/clip.png" alt="icon: clip">
+                      </div>
+                    </div>
+                  </div>
+    
+                </div>
+                <div class="col">
+                  <p class="shadow-sm border-bottom py-1 m-0">Финансы</p>
+                  <div class="finance-cards">
+                  <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-1 offset-md-1">
+                    <img src="img/payeer.png" alt="logo: payeer">
+                    </div>
+                    <div class="col">
+                    <div class="transactions d-flex align-items-center">
+                    <span class="value font-weight-lighter h4 text-danger mr-5">-1$</span>
+                    <span class="comission ml-5 h6 small">Комиссия: 0.10$</span>
+                    </div>
+                    <div class="transaction-details d-flex justify-content-between">
+                    <span>Кому: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                    <span><img src="icons/wallet.png" alt="icon: wallet" height="14px"> P11002100</span>
+                    <span>03 апр. 2020, 10:00</span>
+                    </div>
+                    </div>
+                    <div class="col-1">
+                    <img src="img/done.png" alt="logo: done">
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                  <!--finance-card-->
+                  <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-1 offset-md-1">
+                    <img src="img/payeer.png" alt="logo: payeer">
+                    </div>
+                    <div class="col">
+                    <div class="transactions d-flex align-items-center">
+                    <span class="value font-weight-lighter h4 text-success mr-5">+10$</span>
+                    <span class="comission ml-5 d-none h6 small">Комиссия: 0.10$</span>
+                    </div>
+                    <div class="transaction-details d-flex justify-content-between">
+                    <span>От кого: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                    <span><img src="icons/wallet.png" alt="icon: wallet" height="14px"> P11002100</span>
+                    <span>10 июн. 2020, 12:00</span>
+                    </div>
+                    </div>
+                    <div class="col-1">
+                    <img src="img/done.png" alt="logo: done">
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                  <!--finance-card-->
+                  <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-1 offset-md-1">
+                    <img src="img/payeer.png" alt="logo: payeer">
+                    </div>
+                    <div class="col">
+                    <div class="transactions d-flex align-items-center">
+                    <span class="value font-weight-lighter h4 text-danger mr-5">-1$</span>
+                    <span class="comission ml-5 h6 small">Комиссия: 0.10$</span>
+                    </div>
+                    <div class="transaction-details d-flex justify-content-between">
+                    <span>Кому: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                    <span><img src="icons/wallet.png" alt="icon: wallet" height="14px">  P11002100</span>
+                    <span>03 апр. 2020, 10:00</span>
+                    </div>  
+                    </div>
+                    <div class="col-1">
+                    <img src="img/done.png" alt="logo: done">
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                  <!--finance-card-->
+                  <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-1 offset-md-1">
+                    <img src="img/payeer.png" alt="logo: payeer">
+                    </div>
+                    <div class="col">
+                    <div class="transactions d-flex align-items-center">
+                    <span class="value font-weight-lighter h4 text-success mr-5">+10$</span>
+                    <span class="comission ml-5 d-none h6 small">Комиссия: 0.10$</span>
+                    </div>
+                    <div class="transaction-details d-flex justify-content-between">
+                    <span>От кого: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                    <span><img src="icons/wallet.png" alt="icon: wallet" height="14px">  P11002100</span>
+                    <span>10 июн. 2020, 12:00</span>
+                    </div>
+                    </div>
+                    <div class="col-1">
+                    <img src="img/done.png" alt="logo: done">
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                  <!--finance-card-->
+                  <div class="row finance-card my-2 py-2 border-bottom shadow-sm">
+                    <div class="col-1 offset-md-1">
+                    <img src="img/payeer.png" alt="logo: payeer">
+                    </div>
+                    <div class="col">
+                    <div class="transactions d-flex align-items-center">
+                    <span class="value font-weight-lighter h4 text-success mr-5">+10$</span>
+                    <span class="comission ml-5 d-none h6 small">Комиссия: 0.10$</span>
+                    </div>
+                    <div class="transaction-details d-flex justify-content-between">
+                    <span>От кого: <img src="icons/user-send.png" alt="icon: user sender" class="cursor-pointer"></span>
+                    <span><img src="icons/wallet.png" alt="icon: wallet" height="14px">  P11002100</span>
+                    <span>10 июн. 2020, 12:00</span>
+                    </div>
+                    </div>
+                    <div class="col-1">
+                    <img src="img/done.png" alt="logo: done">
+                    </div>
+                    <div class="col-1"></div>
+                  </div>
+                  <!--finance-card-->
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--finance tab-->
+
+            <div class="tab-pane fade" id="invites">
+              <div class="profile-statistics">
+                <p class="shadow-sm border-bottom py-1 m-0">Статистика профиля</p>
+                <div class="row d-flex shadow-sm border-bottom py-2 px-2">
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Закрыто платформ</p>
+                    <p class="font-weight-bolder h3">12M</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Общий доход</p>
+                    <p class="font-weight-bolder h3">5M</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Дата регистрации</p>
+                    <p class="font-weight-bold">03.04.2019</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Время в проекте</p>
+                    <p class="font-weight-bold">7 мес.</p>
+                  </div>
+                  <div class="col text-center">
+                    <p class="table-heading font-weight-normal">Статус</p>
+                    <p class="font-weight-bold">Партнер</p>
+                  </div>
+                </div>
+                <div class="row d-flex shadow-sm border-bottom py-2 px-2">
+                  <div class="col-3 d-flex flex-column align-items-center justify-content-between border-right">
+                    <div class="d-flex justify-content-between align-self-stretch">
+                      <span class="currency d-inline-block">USD</span>
+                      <span class="account-number d-inline-block">P11000121</span>
+                    </div>
+                    <p class="amount font-weight-bolder h1">$ 200K</p>
+                    <button type="button" class="btn btn-light border shadow-sm">Пополнить</button>
+                  </div>
+                  <div class="col-3 border-right">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="i-personal-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="inviteSG" y2="45%">
+                            <stop offset="10%" stop-color="#6633cc"/>
+                            <stop offset="35%" stop-color="#3366cc"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#ffcc66"/>
+                            <stop offset="100%" stop-color="#ff3366"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="i-personal-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#inviteSG)" stroke-linecap="round"/>
+                        <text class="i-personal-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">93%</text>
+                        <text class="i-personal-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Personal 10$</text>
+                        <line class="i-personal-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="i-personal-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="i-personal-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">35000$</text>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-3 border-right">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="i-pro-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="inviteSG" y2="45%">
+                            <stop offset="10%" stop-color="#ff3366"/>
+                            <stop offset="35%" stop-color="#ffcc66"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#3366cc"/>
+                            <stop offset="100%" stop-color="#6633cc"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="i-pro-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#inviteSG)" stroke-linecap="round"/>
+                        <text class="i-pro-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">27%</text>
+                        <text class="i-pro-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Pro 10$</text>
+                        <line class="i-pro-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="i-pro-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="i-pro-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">18000$</text>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="i-team-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="inviteSG" y2="45%">
+                            <stop offset="10%" stop-color="#ff3366"/>
+                            <stop offset="35%" stop-color="#ffcc66"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#3366cc"/>
+                            <stop offset="100%" stop-color="#6633cc"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="i-team-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#inviteSG)" stroke-linecap="round"/>
+                        <text class="i-team-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">0%</text>
+                        <text class="i-team-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Team 10$</text>
+                        <line class="i-team-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="i-team-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="i-team-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">0$</text>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--profile statistics-->
+              <p class="text-center mt-5">Инвайт коды</p>
+              <div class="row">
+                <div class="col-8 offset-2">
+                  <p class="text-justify mt-3">Инвайт коды Вы можете использовать для подарка друзьям и близким, а так же как благотворительную помощь другим людям. При покупке инвайт кода с Вашего счета будут списаны средства в сумме <strong class="font-weight-bold">1.10$</strong>, с учетом комиссии проекта 10%. Средства будут отправлены на счёт выбранного системой участника.</p>
+                  <div class="form-group text-center">
+                    <label for="invites_email">Ввести email</label>
+                    <input type="email" class="form-control" id="invites_email">
+                    <button type="submit" class="btn btn-light border shadow-sm mt-3">Отправить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8 offset-2 d-none">
+                  <p class="text-justify mt-3">Поздравляем, инвайт код для активации платформы: <span class="platform-type"><strong class="font-weight-bold">Personal</strong></span> отправлен на email: Uolsh@gmail.com. <span class="invite-code"><strong class="font-weight-bold">5454 J445 K55K 4KK5</strong></span> С Вашего счёта списана сумма, в размере: <span class="debited"><strong class="font-weight-bold">1.10$</strong></span> с учётом комиссии проекта 10%. Средства переведены участнику: Татьяна Королёва, номер счёта:  <span class="amount-number"><strong class="font-weight-bold">Р110020034</strong></span> Информация о транзакции находится в разделе финансы, благодарим за участие.</p>
+                </div>
               </div>
 
-              <div class="tab-pane fade" id="pills-security" role="tabpanel" aria-labelledby="pills-security-tab">
-                <div class="security-settings">
-                  <p>Безопасность</p>
-                  <form name ="securitySettings" class="d-flex flex-column align-items-stretch"  action="#" enctype="application/x-www-form-urlencoded" method="POST">
-                    <div class="form-group">
-                      <label for="securitySettings_newPasswordInput">Новый пароль</label>
-                      <input type="password" class="form-control text-center" id="securitySettings_newPasswordInput">
-                      <label for="securitySettings_confirmPassword">Подтвердите новый пароль</label>
-                      <input type="password" class="form-control text-center" id="securitySettings_confirmPassword">
-                      <button type="submit" class="btn align-self-center">Изменить</button>
-                    </div>
-                    <div class="form-group">
-                      <label>Двухфакторная идентификация</label>
-                      <button class="btn" type="button">Настроить</button>
-                      <select class="form-control" id="securitySettings_authSelect">
-                        <option value="telegram" selected>Telegram</option>
-                        <option value="mail" selected>Mail</option>
-                        <option value="phone" selected>Телефон</option>
-                        <option value="google" selected>Google аутентификатор</option>
-                      </select>
-                    </div>
-                  </form>
-                </div>
-                <!--security settings-->
-              </div>
 
-              <div class="tab-pane fade" id="pills-finance" role="tabpanel" aria-labelledby="pills-finance-tab">
-                <div class="finance-settings">
-                  <p>Финансы</p>
-                  <form name ="financeSettings" class="d-flex flex-column align-items-stretch"  action="#" enctype="application/x-www-form-urlencoded" method="POST">
-                    <div class="form-group">
-                      <label for="payer">Payer кошелек</label>
-                      <input type="text" class="form-control" id="payer">
-                    </div>
-                    <div class="form-group">
-                      <label for="api-code">Ввести api код</label>
-                      <input type="password" class="form-control" id="api-code">
-                    </div>
-                    <div class="form-group">
-                      <label for="certificate">Загрузите сертификат</label>
-                      <input type="file" class="form-control-file" id="certificate">
-                    </div>
-                    <div class="custom-control custom-switch">
-                      <input type="checkbox" class="custom-control-input" id="autopay">
-                      <label class="custom-control-label" for="autopay">Активировать автоплатеж</label>
-                    </div>
-                    <button class="btn" type="button">Сохранить</button>
-                  </form>
-                </div>
-                <!--finance settings-->
-              </div>
 
-              <div class="tab-pane fade" id="pills-integration" role="tabpanel" aria-labelledby="pills-integration-tab">
-                <div class="integration-settings">
-                  <p>Социальные сети</p>
-                  <form name ="integrationSettings" class="d-flex flex-column align-items-stretch"  action="#" enctype="application/x-www-form-urlencoded" method="POST">
-                      <div class="form-group">
-                        <label for="telegram">Telegram</label>
-                        <input type="text" class="form-control" id="telegram">
-                      </div>
-                      <div class="form-group">
-                        <label for="facebook">Facebook</label>
-                        <input type="text" class="form-control" id="facebook">
-                      </div>
-                      <div class="form-group">
-                        <label for="twitter">Twitter</label>
-                        <input type="text" class="form-control" id="twitter">
-                      </div>
-                      <div class="form-group">
-                        <label for="instagram">Instagram</label>
-                        <input type="text" class="form-control" id="instagram">
-                      </div>
-                      <div class="form-group">
-                        <label for="ok">Одноклассники</label>
-                        <input type="text" class="form-control" id="ok">
-                      </div>
-                      <div class="form-group">
-                        <label for="vk">ВКонтакте</label>
-                        <input type="text" class="form-control" id="vk">
-                      </div>
-                      <div class="form-group">
-                        <label for="linkedin">Linkedin</label>
-                        <input type="text" class="form-control" id="linkedin">
-                      </div>
-                      <div class="form-group">
-                        <label for="wechat">Wechat</label>
-                        <input type="text" class="form-control" id="wechat">
-                      </div>
-                      <div class="form-group">
-                        <label for="weibo">Weibo</label>
-                        <input type="text" class="form-control" id="weibo">
-                      </div>
-                      <div class="form-group">
-                        <label for="tiktok">TikTok</label>
-                        <input type="text" class="form-control" id="tiktok">
-                      </div>
-                      <div class="form-group">
-                        <label for="qq">QQ</label>
-                        <input type="text" class="form-control" id="qq">
-                      </div>
-                      <button class="btn" type="button">Сохранить</button>
-                      <button class="btn d-none" type="button">Изменить</button>
-                    </form>
-                </div>
-                <!--integration settings-->
-              </div>
-
-              <div class="tab-pane fade" id="pills-instructions" role="tabpanel" aria-labelledby="pills-instructions-tab">
-                <div class="instructions">
-                </div>
-                <!--instructions-->
-              </div>
 
             </div>
-            <!-- /settings nav-pills content-->
+            <!--invite codes tab-->
+
+            <div class="tab-pane fade" id="platforms">
+              <div class="profile-statistics">
+                <p class="shadow-sm border-bottom py-1 m-0">Статистика профиля</p>
+                <div class="row d-flex shadow-sm border-bottom py-2 px-2">
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Закрыто платформ</p>
+                    <p class="font-weight-bolder h3">12M</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Общий доход</p>
+                    <p class="font-weight-bolder h3">5M</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Дата регистрации</p>
+                    <p class="font-weight-bold">03.04.2019</p>
+                  </div>
+                  <div class="col border-right text-center">
+                    <p class="table-heading font-weight-normal">Время в проекте</p>
+                    <p class="font-weight-bold">7 мес.</p>
+                  </div>
+                  <div class="col text-center">
+                    <p class="table-heading font-weight-normal">Статус</p>
+                    <p class="font-weight-bold">Партнер</p>
+                  </div>
+                </div>
+                <div class="row d-flex shadow-sm border-bottom py-2 px-2">
+                  <div class="col-3 d-flex flex-column align-items-center justify-content-between border-right">
+                    <div class="d-flex justify-content-between align-self-stretch">
+                      <span class="currency d-inline-block">USD</span>
+                      <span class="account-number d-inline-block">P11000121</span>
+                    </div>
+                    <p class="amount font-weight-bolder h1">$ 200K</p>
+                    <button type="button" class="btn btn-light border shadow-sm">Пополнить</button>
+                  </div>
+                  <div class="col-3 border-right">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="p-personal-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="platformSG" y2="45%">
+                            <stop offset="10%" stop-color="#6633cc"/>
+                            <stop offset="35%" stop-color="#3366cc"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#ffcc66"/>
+                            <stop offset="100%" stop-color="#ff3366"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="p-personal-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#platformSG)" stroke-linecap="round"/>
+                        <text class="p-personal-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">93%</text>
+                        <text class="p-personal-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Personal 10$</text>
+                        <line class="p-personal-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="p-personal-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="p-personal-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">35000$</text>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-3 border-right">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="p-pro-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="platformSG" y2="45%">
+                            <stop offset="10%" stop-color="#ff3366"/>
+                            <stop offset="35%" stop-color="#ffcc66"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#3366cc"/>
+                            <stop offset="100%" stop-color="#6633cc"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="p-pro-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#platformSG)" stroke-linecap="round"/>
+                        <text class="p-pro-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">27%</text>
+                        <text class="p-pro-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Pro 10$</text>
+                        <line class="p-pro-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="p-pro-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="p-pro-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">18000$</text>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <svg class="p-team-progress" viewbox="0 0 200 200" width="140px" height="140px">
+                        <defs>
+                          <linearGradient id="platformSG" y2="45%">
+                            <stop offset="10%" stop-color="#ff3366"/>
+                            <stop offset="35%" stop-color="#ffcc66"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#3366cc"/>
+                            <stop offset="100%" stop-color="#6633cc"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="p-team-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#platformSG)" stroke-linecap="round"/>
+                        <text class="p-team-progress__percent" x="100" y="70" font-family="Roboto" font-size="32px" font-weight="bold" text-anchor="middle">0%</text>
+                        <text class="p-team-progress__platform" x="100" y="90" font-family="Roboto" font-size="16px" text-anchor="middle">Team 10$</text>
+                        <line class="p-team-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="p-team-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="p-team-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">0$</text>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--profile statistics-->
+              <p class="shadow-sm border-bottom py-1 m-0">Платформы</p>
+              <div class="row">
+                <div class="col border-right text-center">
+                  <p class="table-heading pt-2 active-state state-dot position-relative d-inline-block">
+                    Personal 1$
+                  </p>
+                  <div class="level d-flex justify-content-around align-items-center">
+                    <div class="profit">
+                      <svg class="platform-personal-progress" viewbox="0 0 200 200" width="170px" height="170px">
+                        <defs>
+                          <linearGradient id="strokeGrad" y2="45%">
+                            <stop offset="10%" stop-color="#6633cc"/>
+                            <stop offset="35%" stop-color="#3366cc"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#ffcc66"/>
+                            <stop offset="100%" stop-color="#ff3366"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="platform-personal-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#strokeGrad)" stroke-linecap="round"/>
+                        <text class="platform-personal-progress__percent" x="100" y="80" font-family="Roboto" font-size="48px" font-weight="bold" text-anchor="middle">98%</text>
+                        <line class="platform-personal-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="platform-personal-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="platform-personal-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">35000$</text>
+                      </svg>
+                    </div>
+                    <div class="level-info text-left">
+                      <p class="mb-0 text-secondary">Активация уровня</p>
+                      <p class="font-weight-bold h5">1000$</p>
+                      <p class="mb-0 text-secondary">Доход уровня</p>
+                      <p class="font-weight-bold h5">20000$</p>
+                      <p class="mb-0 text-secondary">Уровни</p>
+                      <p class="text-muted">
+                        <span class="level-number text-body">1</span> 
+                        <span class="level-number">2</span> 
+                        <span class="level-number">3</span> 
+                        <span class="level-number">4</span> 
+                        <span class="level-number">5</span> 
+                        <span class="level-number">6</span> 
+                        <span class="level-number active-level">7</span> 
+                        <span class="level-number">8</span>
+                      </p>
+                    </div>
+                  </div>
+                  <button type="button" disabled class="btn btn-light border shadow-sm">Активировать</button>
+                </div>
+                <div class="col border-right text-center">
+                  <p class="table-heading pt-2 active-state state-dot position-relative d-inline-block">
+                    Pro 10$
+                  </p>
+                  <div class="level d-flex justify-content-around align-items-center">
+                    <div class="profit">
+                      <svg class="platform-pro-progress" viewbox="0 0 200 200" width="170px" height="170px">
+                        <defs>
+                          <linearGradient id="strokeGrad" y2="45%">
+                            <stop offset="10%" stop-color="#ff3366"/>
+                            <stop offset="35%" stop-color="#ffcc66"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#3366cc"/>
+                            <stop offset="100%" stop-color="#6633cc"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="platform-pro-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#strokeGrad)" stroke-linecap="round"/>
+                        <text class="platform-pro-progress__percent" x="100" y="80" font-family="Roboto" font-size="48px" font-weight="bold" text-anchor="middle">34%</text>
+                      
+                        <line class="platform-pro-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="platform-pro-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="platform-pro-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">18000$</text>
+                      </svg>
+                    </div>
+                    <div class="level-info text-left">
+                      <p class="mb-0 text-secondary">Активация уровня</p>
+                      <p class="font-weight-bold h5">500$</p>
+                      <p class="mb-0 text-secondary">Доход уровня</p>
+                      <p class="font-weight-bold h5">5000$</p>
+                      <p class="mb-0 text-secondary">Уровни</p>
+                      <p class="text-muted">
+                        <span class="level-number">1</span> 
+                        <span class="level-number">2</span> 
+                        <span class="level-number">3</span> 
+                        <span class="level-number">4</span> 
+                        <span class="level-number">5</span> 
+                        <span class="level-number">6</span> 
+                        <span class="level-number">7</span>
+                      </p>
+                    </div>
+                  </div>
+                  <button type="button" disabled class="btn btn-light border shadow-sm">Активировать</button>
+                </div>
+                <div class="col border-right text-center">
+                  <p class="table-heading pt-2 not-active state-dot position-relative d-inline-block">
+                    Team 100$
+                  </p>
+                  <div class="level d-flex justify-content-around align-items-center">
+                    <div class="profit">
+                      <svg class="platform-team-progress" viewbox="0 0 200 200" width="170px" height="170px">
+                        <defs>
+                          <linearGradient id="strokeGrad" y2="45%">
+                            <stop offset="10%" stop-color="#ff3366"/>
+                            <stop offset="35%" stop-color="#ffcc66"/>
+                            <stop offset="60%" stop-color="#3399cc"/>
+                            <stop offset="85%" stop-color="#3366cc"/>
+                            <stop offset="100%" stop-color="#6633cc"/>
+                          </linearGradient>
+                        </defs>
+                        <circle r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="#ccc" stroke-linecap="round"/>
+                        <circle class="platform-team-progress__circle" r="92" cx="100" cy="100" fill="none" stroke-width="8" stroke="url(#strokeGrad)" stroke-linecap="round"/>
+                        <text class="platform-team-progress__percent" x="100" y="80" font-family="Roboto" font-size="48px" font-weight="bold" text-anchor="middle">5%</text>
+                        <line class="platform-team-progress__line" x1="30" y1="100" x2="170" y2="100" stroke-width="2" stroke="#ccc"/>
+                        <text class="platform-team-progress__income" x="100" y="120" font-family="Roboto" font-size="16px" text-anchor="middle">Доход</text>
+                        <text class="platform-team-progress__amount" x="100" y="150" font-family="Roboto" font-size="24px" font-weight="bold" text-anchor="middle">0$</text>
+                      </svg>
+                    </div>
+                    <div class="level-info text-left">
+                      <p class="mb-0 text-secondary">Активация уровня</p>
+                      <p class="font-weight-bold h5">0$</p>
+                      <p class="mb-0 text-secondary">Доход уровня</p>
+                      <p class="font-weight-bold h5">0$</p>
+                      <p class="mb-0 text-secondary">Уровни</p>
+                      <p class="text-muted">
+                        <span class="level-number">1</span> 
+                        <span class="level-number">2</span> 
+                        <span class="level-number">3</span> 
+                        <span class="level-number">4</span> 
+                        <span class="level-number">5</span>
+                      </p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-light border shadow-sm">Активировать</button>
+                </div>
+              </div>
+            </div>
+            <!--platforms tab-->
+
+            <div class="tab-pane fade" id="messages">
+              <div class="row d-flex justify-content-between shadow-sm border-bottom pl-3 align-items-center">
+                <p class="mb-0">Сообщения</p>
+                <div class="checkbox-group">
+                  <button class="btn dropdown-toggle py-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <input class="messages-checkbox position-static" type="checkbox" value="selectAll">
+                  </button>
+                </div>
+              </div>
+              <div class="messages-cards">
+                <div class="row message-card my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                  <div class="sender-avatar cursor-pointer col-1 offset-md-1"><img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px"></div>
+                  <div class="col-2 text-wrap font-weight-bolder">Имя Фамилия</div>
+                  <div class="col">Name, перевод поступил, спасибо</div>
+                  <div class="col-2">12 авг.</div>
+                  <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
+                </div>
+                <div class="row message-card my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                  <div class="sender-avatar cursor-pointer col-1 offset-md-1"><img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px"></div>
+                  <div class="col-2 text-wrap font-weight-bolder">Имя Фамилия</div>
+                  <div class="col">Name, перевод поступил, спасибо</div>
+                  <div class="col-2">12 авг.</div>
+                  <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
+                </div>
+                <div class="row message-card my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                  <div class="sender-avatar cursor-pointer col-1 offset-md-1"><img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px"></div>
+                  <div class="col-2 text-wrap font-weight-bolder">Имя Фамилия</div>
+                  <div class="col">Name, перевод поступил, спасибо</div>
+                  <div class="col-2">12 авг.</div>
+                  <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
+                </div>
+                <div class="row message-card my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                  <div class="sender-avatar cursor-pointer col-1 offset-md-1"><img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px"></div>
+                  <div class="col-2 text-wrap font-weight-bolder">Имя Фамилия</div>
+                  <div class="col">Name, перевод поступил, спасибо</div>
+                  <div class="col-2">12 авг.</div>
+                  <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
+                </div>
+                <div class="row message-card my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                  <div class="sender-avatar cursor-pointer col-1 offset-md-1"><img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px"></div>
+                  <div class="col-2 text-wrap font-weight-bolder">Имя Фамилия</div>
+                  <div class="col">Name, перевод поступил, спасибо</div>
+                  <div class="col-2">12 авг.</div>
+                  <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
+                </div>
+                <div class="row message-card my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                  <div class="sender-avatar cursor-pointer col-1 offset-md-1"><img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px"></div>
+                  <div class="col-2 text-wrap font-weight-bolder">Имя Фамилия</div>
+                  <div class="col">Name, перевод поступил, спасибо</div>
+                  <div class="col-2">12 авг.</div>
+                  <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
+                </div>
+                <div class="row message-card my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                  <div class="sender-avatar cursor-pointer col-1 offset-md-1"><img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px"></div>
+                  <div class="col-2 text-wrap font-weight-bolder">Имя Фамилия</div>
+                  <div class="col">Name, перевод поступил, спасибо</div>
+                  <div class="col-2">12 авг.</div>
+                  <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
+                </div>
+                <div class="row message-card my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                  <div class="sender-avatar cursor-pointer col-1 offset-md-1"><img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px"></div>
+                  <div class="col-2 text-wrap font-weight-bolder">Имя Фамилия</div>
+                  <div class="col">Name, перевод поступил, спасибо</div>
+                  <div class="col-2">12 авг.</div>
+                  <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
+                </div>
+                <div class="row message-card my-2 py-2 border-bottom shadow-sm d-flex align-items-center">
+                  <div class="sender-avatar cursor-pointer col-1 offset-md-1"><img src="img/photo.jpeg" alt="img: sender avatar" class="rounded-circle" widht="50px" height="50px"></div>
+                  <div class="col-2 text-wrap font-weight-bolder">Имя Фамилия</div>
+                  <div class="col">Name, перевод поступил, спасибо</div>
+                  <div class="col-2">12 авг.</div>
+                  <div class="col-1"><input class="messages-checkbox position-static" type="checkbox" disabled></div>
+                </div>
+              </div>
+            </div>
+            <!--messages tab-->
+
+            <div class="tab-pane fade" id="settings">
+              <p class="h5 mt-1 text-center">Настройки</p>
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#settings-general">Общие</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#settings-security">Безопасность</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#settings-finance">Финансы</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#settings-integration">Интеграция</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#instructions">Инструкции</a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="settings-general">
+                  <div class="general-settings mt-4 d-flex flex-column align-items-center">
+                    <p>Общие настройки</p>
+                    <div class="profile-settings">
+                      <div class="profile-group d-flex flex-column">
+                        <img src="img/photo.jpeg" alt="user avatar" class="user-avatar rounded-circle mb-3 align-self-center" width="120px" height="120px">
+                        <p class="h5 align-self-center">
+                          <span>Павел</span>
+                          <span>Канищев</span>
+                        </p>
+                        <p class="align-self-center">
+                          <span class="user-country">Россия,</span>
+                          <span class="user-city">Москва</span>
+                          <img src="img/rus.png" alt="icon: country" width="15px" height="15px" class="rounded-circle">
+                        </p>
+                        <p class="small mb-0">Возраст</p>
+                        <p>30 лет</p>
+                        <div class="row">
+                          <div class="col">
+                            <p class="small mb-0">Пол</p>
+                            <p>Мужской</p>
+                          </div>
+                          <div class="col">
+                            <p class="small mb-0">Язык</p>
+                            <p>Русский</p>
+                          </div>
+                        </div>
+                        <p class="small mb-0">Почта</p>
+                        <p>KanishevP@mail.ru</p>
+                        <p class="small mb-0">Телефон</p>
+                        <p>+7(999)885-76-45</p>
+                      </div>
+                      <div class="button-group d-flex justify-content-between">
+                        <button type="submit" class="btn btn-edit btn-light border shadow-sm mr-3">Редактировать</button>
+                        <button type="submit" class="btn btn-light btn-delete border shadow-sm ml-3">Удалить</button>
+                      </div>
+                    </div>
+                    <div class="profile-changes d-none flex-column align-items-center">
+                      <div class="avatar d-flex">
+                      	  <img src="img/photo.jpeg" alt="user avatar" class="rounded-circle mx-3" width="80px" height="80px">
+                      	  <div class="button-group d-flex flex-column">
+                      	    <button class="btn btn-light border shadow-sm my-1" type="button">
+                      	      Загрузить 
+                      	      <img src="icons/load.png" alt="icon: load">
+                      	    </button>
+                      	    <button class="btn btn-light border shadow-sm my-1" disabled type="button">
+                      	      Удалить
+                      	      <img src="icons/delete.png" alt="icon: delete" height="20px">
+                      	    </button>
+                      	  </div>
+                      </div>
+                      <form name ="userSettings" class="d-flex flex-column align-items-stretch"  action="#" enctype="application/x-www-form-urlencoded" method="POST">
+                        <div class="form-group">
+                      	    <label for="userSettings_nameInput">Имя</label>
+                      	    <input type="text" class="form-control text-center" id="userSettings_nameInput">
+                        </div>
+                        <div class="form-group">
+                      	    <label for="userSettings_surnameInput">Фамилия</label>
+                      	    <input type="password" class="form-control text-center" id="userSettings_surnameInput">
+                        </div>
+                        <div class="form-group">
+                      	    <select class="form-control my-2" id="userSettings_countrySelect">
+                      	      <option value="country" selected disabled>Страна</option>
+                      	    </select>
+                      	    <select class="form-control my-2" id="userSettings_citySelect">
+                      	      <option value="city" selected disabled>Город</option>
+                      	    </select>
+                      	    <select class="form-control my-2" id="userSettings_langSelect">
+                      	      <option value="language" selected disabled>Язык</option>
+                      	    </select>
+                        </div>
+                        <div class="form-group">
+                      	    <label class="d-block">Пол</label>
+                      	    <div class="form-check form-check-inline">
+                      	      <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                      	      <label class="form-check-label" for="male">Мужской</label>
+                      	    </div>
+                      	    <div class="form-check form-check-inline">
+                      	      <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                      	      <label class="form-check-label" for="female">Женский</label>
+                      	    </div>
+                        </div>
+                        <div class="form-group">
+                      	    <label for="userSettings_yearSelect">Год рождения</label>
+                      	    <select class="form-control" id="userSettings_yearSelect">
+                      	      <option value="year" selected>1990</option>
+                      	      <option value="year">1991</option>
+                      	      <option value="year">1992</option>
+                      	      <option value="year">1993</option>
+                      	    </select>
+                        </div>
+                        <div class="form-group">
+                      	    <label for="userSettings_emailInput">Почта</label>
+                      	    <input type="email" class="form-control text-center" id="userSettings_emailInput">
+                        </div>
+                        <div class="form-group">
+                      	    <label for="userSettings_phoneInput">Телефон</label>
+                      	    <input type="tel" class="form-control text-center" id="userSettings_phoneInput">
+                        </div>
+                        <button type="submit" class="btn btn-save btn-light border shadow-sm align-self-center">Сохранить</button>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+                <!--general settings-->
+
+                <div class="tab-pane fade" id="settings-security">
+                  <div class="security-settings mt-4 d-flex flex-column align-items-center">
+                    <p>Безопасность</p>
+                    <form name ="securitySettings" class="d-flex flex-column align-items-stretch"  action="#" enctype="application/x-www-form-urlencoded" method="POST">
+                      <div class="form-group">
+                        <label for="securitySettings_newPasswordInput">Новый пароль</label>
+                        <input type="password" class="form-control text-center" id="securitySettings_newPasswordInput">
+                      </div>
+                      <div class="form-group">
+                        <label for="securitySettings_confirmPassword">Подтвердите новый пароль</label>
+                        <input type="password" class="form-control text-center" id="securitySettings_confirmPassword">
+                      </div>
+                      <button type="submit" class="btn btn-light border shadow-sm align-self-center">Изменить</button>
+                      <div class="form-group mt-4">
+                        <label>Двухфакторная идентификация</label>
+                        <button class="btn btn-light border shadow-sm btn-sm" type="button">Настроить</button>
+                        <select class="form-control mt-2" id="securitySettings_authSelect">
+                          <option value="telegram" selected>Telegram</option>
+                          <option value="mail">Mail</option>
+                          <option value="phone">Телефон</option>
+                          <option value="google">Google аутентификатор</option>
+                        </select>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!--security settings-->
+
+                <div class="tab-pane fade" id="settings-finance">
+                  <div class="finance-settings mt-4 d-flex flex-column align-items-center">
+                    <p>Финансы</p>
+                    <form name ="financeSettings" class="d-flex flex-column align-items-stretch"  action="#" enctype="application/x-www-form-urlencoded" method="POST">
+                      <div class="form-group">
+                        <label for="payer">Payer кошелек</label>
+                        <input type="text" class="form-control" id="payer">
+                      </div>
+                      <div class="form-group">
+                        <label for="api-code">Ввести api код</label>
+                        <input type="password" class="form-control" id="api-code">
+                      </div>
+                      <div class="form-group">
+                        <label for="certificate">Загрузите сертификат</label>
+                        <input type="file" class="form-control-file" id="certificate">
+                      </div>
+                      <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="autopay">
+                        <label class="custom-control-label" for="autopay">Активировать автоплатеж</label>
+                      </div>
+                      <button class="btn btn-light border shadow-sm align-self-center mt-2" type="button">Сохранить</button>
+                    </form>
+                  </div>
+                </div>
+                <!--finance settings-->
+
+                <div class="tab-pane fade" id="settings-integration">
+                  <div class="integration-settings mt-4 d-flex flex-column align-items-center">
+                    <p>Социальные сети</p>
+                    <div class="socials d-flex flex-column align-items-center">
+                      <div class="group-social d-flex align-items-center mb-2">
+                        <img src="icons/socials/telegram.png" alt="icon: telegram" class="mr-4">
+                        <div class="socials-body">
+                        <p class="social-name mb-0">Telegram</p>
+                        <p class="social-username mb-0 h6">@KanishevP</p>
+                        </div>
+                      </div>
+                      <div class="group-social d-flex align-items-center mb-2">
+                        <img src="icons/socials/twitter.png" alt="icon: twitter" class="mr-4">
+                        <div class="socials-body">
+                        <p class="social-name mb-0">Twitter</p>
+                        <p class="social-username mb-0 h6">@KanishevP</p>
+                        </div>
+                      </div>
+                      <div class="group-social d-flex align-items-center mb-2">
+                        <img src="icons/socials/inst.png" alt="icon: instagram" class="mr-4">
+                        <div class="socials-body">
+                        <p class="social-name mb-0">Instagram</p>
+                        <p class="social-username mb-0 h6">@KanishevP</p>
+                        </div>
+                      </div>
+                      <div class="group-social d-flex align-items-center mb-2">
+                        <img src="icons/socials/tiktok.png" alt="icon: tiktok" class="mr-4">
+                        <div class="socials-body">
+                        <p class="social-name mb-0">TikTok</p>
+                        <p class="social-username mb-0 h6">@KanishevP</p>
+                        </div>
+                      </div>
+                      <button class="btn btn-change btn-light border shadow-sm align-self-center mt-4" type="button">Изменить</button>
+                    </div>
+                    <form name ="integrationSettings" class="form-integration d-none flex-column align-items-stretch"  action="#" enctype="application/x-www-form-urlencoded" method="POST">
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/telegram.png" alt="icon: telegram" class="mr-4">
+                          <div class="form-group">
+                            <label for="telegram">Telegram</label>
+                            <input type="text" class="form-control" id="telegram">
+                          </div>
+                          <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/fb.png" alt="icon: fb" class="mr-4">
+                          <div class="form-group">
+                            <label for="facebook">Facebook</label>
+                            <input type="text" class="form-control" id="facebook">
+                          </div>
+                        <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/twitter.png" alt="icon: twitter" class="mr-4">
+                          <div class="form-group">
+                            <label for="twitter">Twitter</label>
+                            <input type="text" class="form-control" id="twitter">
+                          </div>
+                        <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/inst.png" alt="icon: instagram" class="mr-4">
+                          <div class="form-group">
+                            <label for="instagram">Instagram</label>
+                            <input type="text" class="form-control" id="instagram">
+                          </div>
+                        <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/ok.png" alt="icon: ok" class="mr-4">
+                          <div class="form-group">
+                            <label for="ok">Одноклассники</label>
+                            <input type="text" class="form-control" id="ok">
+                          </div>
+                        <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/vk.png" alt="icon: vk" class="mr-4">
+                          <div class="form-group">
+                            <label for="vk">ВКонтакте</label>
+                            <input type="text" class="form-control" id="vk">
+                          </div>
+                        <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/linkedin.png" alt="icon: linkedin" class="mr-4">
+                          <div class="form-group">
+                            <label for="linkedin">Linkedin</label>
+                            <input type="text" class="form-control" id="linkedin">
+                          </div>
+                        <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/wechat.png" alt="icon: wechat" class="mr-4">
+                          <div class="form-group">
+                            <label for="wechat">Wechat</label>
+                            <input type="text" class="form-control" id="wechat">
+                          </div>
+                        <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/weibo.png" alt="icon: weibo" class="mr-4">
+                          <div class="form-group">
+                            <label for="weibo">Weibo</label>
+                            <input type="text" class="form-control" id="weibo">
+                          </div>
+                        <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/tiktok.png" alt="icon: tiktok" class="mr-4">
+                          <div class="form-group">
+                            <label for="tiktok">TikTok</label>
+                            <input type="text" class="form-control" id="tiktok">
+                          </div>
+                        <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <div class="group-social d-flex align-items-center">
+                          <img src="icons/socials/qq.png" alt="icon: qq" class="mr-4">
+                          <div class="form-group">
+                            <label for="qq">QQ</label>
+                            <input type="text" class="form-control" id="qq">
+                          </div>
+                        <button type="reset" class="btn d-none">
+                            <img src="icons/reset.png" alt="icon: reset">
+                          </button>
+                        </div>
+                        <button class="btn btn-save btn-light border shadow-sm align-self-center" type="button">Сохранить</button>
+                      </form>
+                  </div>
+                </div>
+                <!--integration settings-->
+
+                <div class="tab-pane fade" id="instructions">
+                  <div class="instructions mt-4 d-flex flex-column align-items-center">
+                    <p>Инструкции</p>
+                    <div class="slider w-75">
+                      <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="19"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="20"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="21"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="22"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="23"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="24"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="25"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="img-fluid" src="img/instructions/1.jpg" alt="instruction: 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/2.jpg" alt="instruction: 2">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/3.jpg" alt="instruction: 3">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/4.jpg" alt="instruction: 4">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/5.jpg" alt="instruction: 5">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/6.jpg" alt="instruction: 6">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/7.jpg" alt="instruction: 7">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/8.jpg" alt="instruction: 8">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/9.jpg" alt="instruction: 9">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/10.jpg" alt="instruction: 10">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/11.jpg" alt="instruction: 11">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/12.jpg" alt="instruction: 12">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/13.jpg" alt="instruction: 13">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/14.jpg" alt="instruction: 14">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/15.jpg" alt="instruction: 15">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/16.jpg" alt="instruction: 16">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/17.jpg" alt="instruction: 17">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/18.jpg" alt="instruction: 18">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/19.jpg" alt="instruction: 19">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/20.jpg" alt="instruction: 20">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/21.jpg" alt="instruction: 21">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/22.jpg" alt="instruction: 22">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/23.jpg" alt="instruction: 23">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/24.jpg" alt="instruction: 24">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/25.jpg" alt="instruction: 25">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid" src="img/instructions/26.jpg" alt="instruction: 26">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Предыдущий</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Следующий</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="download align-self-start mt-4">
+                      <a href="download/instruktsia.pdf" download class="text-decoration-none text-body">Скачать инструкцию PDF <img src="icons/clip.png" alt="icon: clip"></a>
+                    </div>
+                    
+
+                  </div>
+                </div>
+                <!--instructions-->
+                </div>
+              <!--tab content-->
+            </div>
+            <!--settings tab-->
+
+          </div>
+          <!--navigation tabs content-->
+        </main>
+
+      </div>
+
+
+      <!--modal windows-->
+      <!--support-->
+      <div class="support-window mod-window-right mod-border d-none wesota-bg">
+        <div class="header-mod d-flex align-items-center justify-content-around text-white wesota-bg border-0 pt-2 pb-0 position-fixed" style="width: 51vh;">
+          <img src="img/logo.png" alt="logo: wesota" height="50px">
+          <p class="support-header text-center">WESOTA </br> Администрация</p>
+          <div class="arrow"><img src="icons/arrow.png" alt="icon: arrow"></div>
+        </div>
+        <div class="mod-body p-0 pt-5 mt-3">
+          <div class="chat-field bg-white p-2 mod-border overflow-auto">
+            <div class="date text-center mb-1">4 октября 2020</div>
+            <div class="support-messages d-flex flex-column">
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+              <div class="support-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+                <div class="support-message p-2 rounded align-self-start shadow" >
+                  <p class="font-weight-bolder mb-0" style="color: #6666cc;">Администрация</p>
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="support-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+                <div class="support-message p-2 rounded align-self-start shadow">
+                  <p class="font-weight-bolder mb-0" style="color: #6666cc;">Администрация</p>
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="support-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+                <div class="support-message p-2 rounded align-self-start shadow">
+                  <p class="font-weight-bolder mb-0" style="color: #6666cc;">Администрация</p>
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="support-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+                <div class="support-message p-2 rounded align-self-start shadow">
+                  <p class="font-weight-bolder mb-0" style="color: #6666cc;">Администрация</p>
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="support-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+                <div class="support-message p-2 rounded align-self-start shadow">
+                  <p class="font-weight-bolder mb-0" style="color: #6666cc;">Администрация</p>
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="support-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+                <div class="support-message p-2 rounded align-self-start shadow">
+                  <p class="font-weight-bolder mb-0" style="color: #6666cc;">Администрация</p>
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="support-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+                <div class="support-message p-2 rounded align-self-start shadow">
+                  <p class="font-weight-bolder mb-0" style="color: #6666cc;">Администрация</p>
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="support-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+                <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+                <div class="support-message p-2 rounded align-self-start shadow">
+                  <p class="font-weight-bolder mb-0" style="color: #6666cc;">Администрация</p>
+                  <div class="message-text">Перевод прошел?</div>
+                  <div class="message-time small text-right">00:00</div>
+                </div>
+              </div>
+              <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+                <div class="message-text">Да, спасибо большое</div>
+                <div class="message-time small text-right">00:00</div>
+              </div>
+            </div>
+          </div>
+          <div class="answer-field mod-border">
+            <textarea name="support-send-answer" id="textareaSupport" class="w-100 border-0"></textarea>
+          </div>
+          <div class="button-group d-flex align-items-center justify-content-between wesota-bg mod-border">
+            <button class="btn"><img src="icons/smile.png" alt="icon: smile"></button>
+            <button class="btn btn-light"><img src="icons/send.png" alt="icon: send"> Отправить</button>
           </div>
         </div>
-        <!--settings tab-->
+      </div>
 
 
-<!--tab content-->
-      </main>
-      <!--main-->
+      <!--notifications-->
+      <div class="notifications-window mod-window-right mod-border bg-white d-none">
+  <div class="notification-heading d-flex justify-content-between align-items-center px-3 py-1 border-bottom shadow">
+    <p class="mb-0">Оповещения</p>
+    <button class="btn border-dark rounded-0 px-2 py-0" type="button">&#215;</button>
+  </div>
+  <div class="notification-cards overflow-auto">
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
     </div>
-      <footer class="footer">
-        <div class="row wesota-bg">
-          <div class="col-1 offset-col-8">
-            <button class="btn text-white" type="button">
-              Свернуть
-              <img src="icons/rollup.png" alt="icon: roll up">
-            </button>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+    <div class="notification-card border-bottom shadow my-1">
+      <div class="row">
+        <div class="col-8 pl-4">
+          <p class="mb-0">
+            Подтвердите активацию уровня 10$, Платформы Personal
+          </p>
+        </div>
+        <div class="col-4 pl-1">
+          <p class="small mb-0">4 октября 2020</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      </div>
+
+      <!--chat-->
+      <div class="entry-window mod-window-right wesota-bg d-none">
+        <div class="text-white d-flex flex-column align-items-center wesota-bg py-5">
+        <img src="img/logo.png" alt="Wesota logo" class="mt-5 pt-5 mb-3">
+          <p class="text-wrap text-center mt-2 mx-5 mb-4">Добро пожаловать  в международное сообщество проекта  WESOTA</p>
+          <form name="entryForm" class="d-flex flex-column align-items-stretch" action="#" enctype="application/x-www-form-urlencoded" method="POST">
+            <div class="form-group">
+              <label for="loginForm_faSelect">Выберите страну</label>
+              <select class="form-control" id="loginForm_faSelect">
+                <option value="russia" selected>Россия</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="loginForm_faSelect">Выберите город</label>
+              <select class="form-control" id="loginForm_faSelect">
+                <option value="moscow" selected>Москва</option>
+              </select>
+            </div>
+        <button type="submit" class="btn btn-enter align-self-center btn-light border shadow-sm mb-5 mt-3">Войти</button>
+            </form>
+        </div>
+      </div>
+
+      <div class="chat-window mod-window-right wesota-bg d-none">
+  <div class="header-mod d-flex align-items-center justify-content-around text-white wesota-bg border-0 pb-0">
+    <div class="arrow"><img src="icons/arrow-left.png" alt="icon: arrow"></div>
+    <img src="img/rus.png" alt="logo: rus" height="50px" width="50px" class="rounded-circle">
+    <p class="support-header text-center">Российская Федерация</br> <small>Москва, 1299 чел</small></p>
+    
+  </div>
+  <div class="mod-body p-0">
+    <div class="chat-field bg-white p-2 mod-border">
+      <div class="date text-center mb-1">4 октября 2020</div>
+      <div class="chat-messages d-flex flex-column">
+        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+          <div class="message-text">Да, спасибо большое</div>
+          <div class="message-time small text-right">00:00</div>
+        </div>
+        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+          <div class="message-text">Да, спасибо большое</div>
+          <div class="message-time small text-right">00:00</div>
+        </div>
+        <div class="chat-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+          <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+          <div class="chat-message p-2 rounded align-self-start shadow" >
+            <p class="font-weight-bolder mb-0" style="color: #6666cc;">Виктор Семенов</p>
+            <div class="message-text">Перевод прошел?</div>
+            <div class="message-time small text-right">00:00</div>
           </div>
-          <div class="col-1 offset-col-2">
-            <button class="btn text-white" type="button">
+        </div>
+        <div class="chat-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+          <img src="img/logo.png" alt="logo: wesota" class="mr-3" height="45px">
+          <div class="chat-message p-2 rounded align-self-start shadow">
+            <p class="font-weight-bolder mb-0" style="color: #6666cc;">Сергей Иванов</p>
+            <div class="message-text">Перевод прошел?</div>
+            <div class="message-time small text-right">00:00</div>
+          </div>
+        </div>
+        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+          <div class="message-text">Да, спасибо большое</div>
+          <div class="message-time small text-right">00:00</div>
+        </div>
+        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+          <div class="message-text">Да, спасибо большое</div>
+          <div class="message-time small text-right">00:00</div>
+        </div>
+        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+          <div class="message-text">Да, спасибо большое</div>
+          <div class="message-time small text-right">00:00</div>
+        </div>
+        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+          <div class="message-text">Да, спасибо большое</div>
+          <div class="message-time small text-right">00:00</div>
+        </div>
+        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+          <div class="message-text">Да, спасибо большое</div>
+          <div class="message-time small text-right">00:00</div>
+        </div>
+      </div>
+    </div>
+    <div class="answer-field mod-border">
+      <textarea name="support-send-answer" id="textareaSupport" class="w-100 border-0"></textarea>
+    </div>
+    <div class="button-group d-flex align-items-center justify-content-between wesota-bg mod-border">
+      <button class="btn"><img src="icons/smile.png" alt="icon: smile"></button>
+      <button class="btn btn-light"><img src="icons/send.png" alt="icon: send"> Отправить</button>
+    </div>
+  </div>
+      </div>
+
+      <!--messenger-->
+      <div class="messenger-window mod-window-right d-none">
+  <div class="header-mod d-flex align-items-center justify-content-around text-white wesota-bg border-0 pb-0">
+    <img src="img/receiver.jpeg" alt="photo: user" height="65px" width="65px" class="rounded-circle">
+    <p class="support-header text-center"><strong class="font-weight-bold">Джон Уолш</strong></br> 
+      <small>
+        <img src="img/usa.jpg" alt="icon: country" width="15px" height="15px" class="rounded-circle">
+        CША, Нью-Йорк
+      </small>
+    </p>
+    <img src="icons/reset.png" alt="icon: close" class="align-self-start">
+  </div>
+  <div class="mod-body p-0">
+    <div class="messenger-field bg-white p-2 mod-border">
+      <div class="date text-center mb-1">4 октября 2020</div>
+      <div class="messenger-messages d-flex flex-column">
+        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+          <div class="message-text">Да, спасибо большое</div>
+          <div class="message-time small text-right">00:00</div>
+        </div>
+        <div class="user-message p-2 text-white rounded align-self-end mb-2 shadow" style="background-color: #6666cc; max-width: 80%;">
+          <div class="message-text">Да, спасибо большое</div>
+          <div class="message-time small text-right">00:00</div>
+        </div>
+        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+          <div class="messenger-message p-2 rounded align-self-start shadow" >
+            <div class="message-text">Перевод прошел?</div>
+            <div class="message-time small text-right">00:00</div>
+          </div>
+        </div>
+        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+          <div class="messenger-message p-2 rounded align-self-start shadow" >
+            <div class="message-text">Перевод прошел?</div>
+            <div class="message-time small text-right">00:00</div>
+          </div>
+        </div>
+        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+          <div class="messenger-message p-2 rounded align-self-start shadow" >
+            <div class="message-text">Перевод прошел?</div>
+            <div class="message-time small text-right">00:00</div>
+          </div>
+        </div>
+        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+          <div class="messenger-message p-2 rounded align-self-start shadow" >
+            <div class="message-text">Перевод прошел?</div>
+            <div class="message-time small text-right">00:00</div>
+          </div>
+        </div>
+        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+          <div class="messenger-message p-2 rounded align-self-start shadow" >
+            <div class="message-text">Перевод прошел?</div>
+            <div class="message-time small text-right">00:00</div>
+          </div>
+        </div>
+        <div class="messenger-answer d-flex align-items-center mb-2" style="max-width: 80%;">
+          <div class="messenger-message p-2 rounded align-self-start shadow" >
+            <div class="message-text">Перевод прошел?</div>
+            <div class="message-time small text-right">00:00</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="answer-field mod-border">
+      <textarea name="support-send-answer" id="textareaSupport" class="w-100 border-0"></textarea>
+    </div>
+    <div class="button-group d-flex align-items-center justify-content-between wesota-bg mod-border">
+      <button class="btn"><img src="icons/smile.png" alt="icon: smile"></button>
+      <button class="btn btn-light"><img src="icons/send.png" alt="icon: send"> Отправить</button>
+    </div>
+  </div>
+      </div>
+
+      <!--settings: payeer sertificate-->
+      <div class="payeer-success bg-white mod-window-left flex-column align-items-center justify-content-around shadow p-4 d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota">
+<p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
+<div class="congrats-text text-justify pb-4">Платёжная система Payeer по Вашему номеру: <strong>Р01119901</strong> успешно подключена. Функция автоплатёж подключена. Сертификат Payeer merchant подтвержден. Желаем Вам успехов в проекте WESOTA.
+</div>
+      </div>
+
+      <div class="payeer-warning bg-white mod-window-left flex-column align-items-center justify-content-between shadow p-4 d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota">
+<p class="warning h5 font-weight-lighter my-4">Сожалеем, <strong>Павел</strong>!</p>
+<div class="warning-text text-justify pb-4">Сертификат не подтвержден. Использование платформы WESOTA невозможно. Просим Вас заполнить все необходимые поля  и подтвердить сертификат платежной системы Payeer.
+</div>
+      </div>
+
+      <!--settings: security-->
+      <div class="fa-warning bg-white mod-window-left flex-column align-items-center justify-content-between shadow p-4 d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota">
+<p class="warning h5 font-weight-lighter my-4">Сожалеем, <strong>Павел</strong>!</p>
+<div class="warning-text text-justify pb-4">fa идентификация Telegram не подтверждена. Код подтверждения не верен.
+</div>
+      </div>
+
+      <div class="fa-success bg-white mod-window-left flex-column align-items-center justify-content-between shadow p-4 d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota">
+<p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
+<div class="congrats-text text-justify pb-4">fa идентификация  Telegram  успешно активирована.
+</div>
+      </div>
+
+      <div class="fa-settings bg-white mod-window-left flex-column align-items-center justify-content-between shadow p-4 d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota">
+<p class="confirm h5 font-weight-lighter my-4">Уважаемый <strong>Павел</strong>!</p>
+<div class="confirm-text text-justify pb-4">
+Вы подключаете fa идентификацию, пожалуйста, подтвердите код идентификации выбранной Вами системы Telegram.
+</div>
+<div class="form-group">
+<label for="settingsfa">Вставьте код идентификации</label>
+<input type="text" class="form-control" id="settingsfa">
+</div>
+<button type="submit" class="btn btn-light border shadow-sm">Подтвердить</button>
+      </div>
+
+      <div class="change-password bg-white mod-window-left flex-column align-items-center justify-content-between shadow p-4 d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota">
+<p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
+<div class="congrats-text text-justify pb-4">
+Ваш пароль успешно изменен. Не сообщайте пароль от личного кабинета посторонним лицам и не пересылайте его публично в социальных сетях.
+</div>
+      </div>
+
+      <!--platform activation-->
+      <div class="platform-activation mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota" class="mt-5">
+<p class="platform-activation h5 font-weight-lighter my-4 font-weight-bolder">Активация платформы Personal</p>
+<div class="form-group">
+  <label for="invite-activate">Активация инвайт кодом:</label>
+  <input type="text" class="form-control text-center" id="invite-activate" placeholder="Введите инвайт код">
+</div>
+<button type="submit" class="btn btn-light border shadow-sm">Активировать</button>
+<div class="standart-activation mt-3 text-center">
+<p class="text-center">Стандартная активация:</p>
+<p class="small">Стоимость активации: <span class="h6">1$</span></p>
+<p class="small">Комиссия проекта: <span>10%</span></p>
+<p class="mt-3">Итого к оплате: <span class="h6">1.10$</span></p>
+</div>
+<button type="submit" class="btn btn-light border shadow-sm">Активировать</button>
+      </div>
+
+      <div class="activation-success mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota" class="mt-5 pt-5">
+<p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
+<div class="congrats-text text-center">
+<p class="congrats">
+  Активация платформы Personal  выполнена успешно!
+</p>
+<p class="code h4 font-weight-lighter">D767 787V HH66 78GH</p>
+<p class="small mt-4">Секретный ключ инвайт кода подтвержден</p>
+<p class="key">v66B77nm78HJ6778nm78HJ6778</p>
+</div>
+      </div>
+
+      <div class="activation-warning mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota" class="mt-5">
+<p class="warning h5 font-weight-lighter my-4">Извините, <strong>Павел</strong>!</p>
+<div class="warning-text text-center">
+<p class="warning">Активация платформы Personal не выполнена.</p>
+<p class="code h4 font-weight-lighter">D767 787V HH66 78GH</p>
+<p class="mt-4">Инвайт код не действителен. Секретный ключ не подтвержден</p>
+</div>
+      </div>
+
+      <div class="account-lack mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota" class="mt-5">
+<p class="warning h5 font-weight-lighter my-4">Извините, <strong>Павел</strong>!</p>
+<div class="warning-text text-center">
+<p>Активация платформы Personal не выполнена,  на вашем счёте недостаточно средств</p>
+<p class="account-number h4 font-weight-lighter">Р11000511</p>
+<p class="mt-4">Пожалуйста, пополните ваш счёт</p>
+<button type="button" class="btn btn-light border shadow-sm">Пополнить</button>
+</div>
+      </div>
+
+      <div class="transaction-warning mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota" class="mt-5">
+<p class="warning h5 font-weight-lighter my-4">Извините, <strong>Павел</strong>!</p>
+<div class="warning-text text-center">
+<p>Активация уровня 5$, платформы Personal не выполнена. Для активации необходимо подтвердить транзакцию</p>
+<p class="h4 font-weight-lighter">Подвердить транзакцию?</p>
+<div class="buttons d-flex justify-content-around mt-3">
+  <button type="button" class="btn btn-light border shadow-sm">Да</button>
+  <button type="button" class="btn btn-light border shadow-sm">Нет</button>
+</div>
+</div>
+      </div>
+
+      <div class="transaction-confirm mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota" class="mt-5">
+<p class="confirm h5 font-weight-lighter my-4">Уважаемый <strong>Павел</strong>!</p>
+<div class="confirm-text text-center">
+<p>
+  Для перехода на уровень 5$, платформы Personal, с Вашего личного счёта <strong>Р11000551118</strong> будет списана сумма в размере:  <strong>5.10$</strong> с учётом комиссии. Будет выполнена транзакция на счёт участника <strong>Р01119901</strong> 
+</p>
+<p class="h4 font-weight-lighter">Подвердить транзакцию?</p>
+<div class="buttons d-flex justify-content-around mt-3">
+  <button type="button" class="btn btn-light border shadow-sm">Да</button>
+  <button type="button" class="btn btn-light border shadow-sm">Нет</button>
+</div>
+</div>
+      </div>
+
+      <div class="transaction-success mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+<button class="btn border-dark rounded-0 px-2 py-0 align-self-end mb-0" type="button">&#215;</button>
+<img src="img/logo.png" alt="logo: wesota" class="mt-5">
+<p class="congrats h5 font-weight-lighter my-4">Поздравляем, <strong>Павел</strong>!</p>
+<div class="congrats-text text-center">
+<p>Активация уровня 5$,  платформы Personal выполнена успешно!</p>
+<p class="small">Средства в размере 5$ переведены на счёт  участника: </p>
+<p class="h6 mb-0">Р01119901</p>
+<div class="user-receiver">
+  <img src="img/receiver.jpeg" alt="photo: user" height="65px" width="65px" class="rounded-circle my-2">
+    <p class="text-center">Джон Уолш</br> 
+      <small>
+        CША, Нью-Йорк
+        <img src="img/usa.jpg" alt="icon: country" width="15px" height="15px" class="rounded-circle">
+      </small>
+    </p>
+</div>
+<button type="button" class="btn btn-light border shadow-sm">Написать</button>
+</div>
+      </div>
+
+      <!--settings: general-->
+      <div class="fill-success mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+        <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+        <div class="body d-flex flex-column align-items-center mt-5 pt-5">
+        <img src="img/logo.png" alt="logo: wesota">
+          <p class="congrats h5 font-weight-lighter my-4">Благодарим, <strong>Павел</strong>!</p>
+          <div class="congrats-text text-center">
+  <p class="congrats">
+    Ваш профиль заполнен, желаем Вам успехов в проекте  WESOTA
+  </p>
+  <p class="small mt-4">С уважением,  администрация проекта</p>
+          </div>
+        </div>
+      </div>
+      <div class="delete-success mod-window-left flex-column align-items-center p-4 bg-white shadow-lg border-light d-none">
+      <button class="btn btn-close border-dark rounded-0 px-2 py-0 align-self-end mb-5" type="button">&#215;</button>
+      <img src="img/logo.png" alt="logo: wesota" class="mt-5 pt-5">
+      <p class="confirm h5 font-weight-lighter my-4">Уважаемый <strong>Павел</strong>!</p>
+      <div class="confirm-text text-center">
+        <p class="confirm">
+          Ваш профиль успешно удалён все Ваши данные были полностью очищены. 
+        </p>
+        <p>Надеемся, что Вы еще вернётесь к нам</p>
+        <p class="small mt-4">С уважением,  администрация проекта</p>
+        </div>
+      </div>
+
+      <!--user card-->
+      <div class="user-card-mod mod-window-left flex-column align-items-center justify-content-between shadow py-4 login-bg text-white shadow d-none">
+        <button class="btn-close btn border-white rounded-0 px-2 py-0 align-self-end text-white mr-4" type="button">&#215;</button>
+        <div class="user-block">
+        <div class="user-info d-flex flex-column align-items-center">
+          <img src="img/receiver.jpeg" alt="receiver avatar" class="user-avatar rounded-circle mb-3" width="120px" height="120px">
+          <p class="user-name my-0 h3 font-weight-lighter">Джон Уолш</p>
+          <p class="user-location mb-0">
+          <span class="user-country">США,</span>
+          <span class="user-city">Нью-Йорк</span>
+          <span class="country-icon"><img src="img/usa.jpg" alt="icon: country" width="15px" height="15px" class="rounded-circle"></span>
+          </p>
+          <p class="user-age">57 лет</p>
+        </div>
+        </div>
+        <div class="message-block w-100 text-center login-bg">
+        <p class="shadow wesota-bg reward-border px-5 mb-0"><span style="color:#033848;">text</span></p>
+        <button type="button" class="btn btn-light border shadow-sm my-3"><img src="icons/message-dark.png" alt="icon: message"> НАПИСАТЬ</button>
+        </div>
+        <div class="socials-block w-100 text-center login-bg">
+<p class="shadow wesota-bg reward-border px-5 mb-0 text-left">Социальные сети</p>
+<div class="social-links my-3 d-flex justify-content-around">
+  <a href="#"><img src="icons/socials-white/telegram.png" alt="icon: telegram"></a>
+  <a href="#"><img src="icons/socials-white/linkedin.png" alt="icon: linkedin"></a>
+  <a href="#"><img src="icons/socials-white/twitter.png" alt="icon: twitter"></a>
+  <a href="#"><img src="icons/socials-white/fb.png" alt="icon: facebook"></a>
+</div>
+        </div>
+        <div class="rewards-block w-100 text-center login-bg">
+<p class="shadow wesota-bg reward-border px-5 mb-0 text-left">Достижения</p>
+<div class="rewards my-3 d-flex justify-content-around">
+  <figure class="figure text-center mb-0">
+    <img src="img/reward.png" alt="icon: achievement">
+    <figcaption class="figure-caption text-center">Personal: 1</figcaption>
+  </figure>
+  <figure class="figure text-center mb-0">
+    <img src="img/reward.png" alt="icon: achievement">
+    <figcaption class="figure-caption text-center">Pro: 1</figcaption>
+  </figure>
+  <figure class="figure text-center mb-0">
+    <img src="img/reward.png" alt="icon: achievement">
+    <figcaption class="figure-caption text-center">Team: 1</figcaption>
+  </figure>
+  </div>
+        </div>
+        <div class="account-block w-100 text-center login-bg">
+        <p class="shadow wesota-bg reward-border px-5 mb-0 text-left">Счет</p>
+        <p class="account-number h5 my-3">P1010100110</p>
+        </div>
+      </div>
+
+      <!--profile card-->
+      <div class="profile-card-mod mod-window-left flex-column align-items-center shadow pt-4 login-bg text-white shadow d-none">
+        <div class="profile-info d-flex align-items-center px-1 mb-3">
+          <img src="img/photo.jpeg" alt="user avatar" class="user-avatar rounded-circle mr-3" width="120px" height="120px">
+          <div class="profile-info text-center ml-3">
+            <p class="h5 mb-0">
+              <span>Павел</span>
+              <span>Канищев</span>
+            </p>
+            <p class="mb-0">
+              <span class="user-country">Россия,</span>
+              <span class="user-city">Москва</span>
+              <img src="img/rus.png" alt="icon: country" width="15px" height="15px" class="rounded-circle">
+            </p>
+            <p class="mb-0">30 лет</p>
+          </div>
+        </div>
+        <div class="rewards-info w-100 text-center login-bg">
+        <div class="shadow wesota-bg reward-border mb-0 d-flex justify-content-between px-1">
+          <p class="mb-0">Награды:</p>
+          <p class="mb-0">Закрыто: <span>3</span> платформы</p>
+        </div>
+        <div class="rewards my-3 d-flex justify-content-around px-3">
+          <figure class="figure text-center mb-0">
+            <img src="img/reward.png" alt="icon: achievement">
+            <figcaption class="figure-caption text-center font-weight-bolder">Personal: 1</figcaption>
+          </figure>
+          <figure class="figure text-center mb-0">
+            <img src="img/reward.png" alt="icon: achievement">
+            <figcaption class="figure-caption text-center font-weight-bolder">Pro: 1</figcaption>
+          </figure>
+          <figure class="figure text-center mb-0">
+            <img src="img/reward.png" alt="icon: achievement">
+            <figcaption class="figure-caption text-center font-weight-bolder">Team: 1</figcaption>
+          </figure>
+        </div>
+        </div>
+        <div class="statistic-info w-100 text-center login-bg">
+        <p class="shadow wesota-bg reward-border mb-0 text-left px-1">Статистика проекта:</p>
+        <div class="row text-white text-center d-flex align-items-center px-3">
+            <div class="col my-1" style="font-size: 0.6rem;">Активные платформы</div>
+            <div class="col my-1" style="font-size: 0.6rem;">Участники проекта</div>
+            <div class="col my-1" style="font-size: 0.6rem;">Доход проекта</div>
+        </div>
+        <div class="row text-white text-center px-3">
+            <div class="col h4">100М</div>
+            <div class="col h4">790М</div>
+            <div class="col h4">7.9BL</div>
+        </div>
+        </div>
+        <div class="account-info w-100 text-center login-bg">
+          <p class="shadow wesota-bg reward-border mb-0 text-left px-1">Мой счёт:</p>
+          <div class="px-3 py-1">
+            <p class="text-right mb-0">P1010100110</p>
+            <p class="mb-0 h1 font-weight-lighter text-left">$ <span>690К</span></p>
+            <p class="text-right mb-0 h5 font-weight-lighter">USD</p>
+          </div>
+        </div>
+        <div class="invite-code w-100 text-center login-bg">
+        <p class="shadow wesota-bg reward-border px-1 mb-0 text-left">Инвайт код:</p>
+        <div class="form-group px-3 mb-0 pt-3">
+          <input type="email" placeholder="Введите Email..." class="form-control wesota-bg" aria-label="Large">
+          <button type="button" class="btn btn-light border shadow-sm mt-3"><img src="icons/message-black.png" alt="icon: message" height="20px"> ОТПРАВИТЬ</button>
+        </div>
+        </div>
+      </div>
+      <!--modal windows-->
+
+      <footer class="footer fixed-bottom">
+        <div class="row wesota-bg px-3">
+          <div class="col-3">
+            <div class="neural">
+              <img src="icons/ai.svg" alt="icon: ai">
+              <span class="ai text-white position-relative">Нейросеть</span>
+            </div>
+          </div>
+          <div class="col-2 offset-md-7">
+            <button class="chat-btn btn btn-block text-white" type="button">
               Чат
-              <img src="icons/chat.png" alt="icon: chat">
+              <img src="icons/chat.png" alt="icon: chat" height="26px">
             </button>
           </div>
         </div>
       </footer>
       <!--footer-->
     </div>
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!--container-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <script src="js/jquery.mask.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/modals.js"></script>
   </body>
 </html>
