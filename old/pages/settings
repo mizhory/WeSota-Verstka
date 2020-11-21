@@ -1,0 +1,216 @@
+          <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <div class="row">
+              <p class="h6">Настройки профиля</p>
+            </div>
+            <div class="row">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="pills-general-tab" data-toggle="pill" href="#pills-general" role="tab" aria-controls="pills-general" aria-selected="true">Общие</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-security-tab" data-toggle="pill" href="#pills-security" role="tab" aria-controls="pills-security" aria-selected="false">Безопасность</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-finance-tab" data-toggle="pill" href="#pills-finance" role="tab" aria-controls="pills-finance" aria-selected="false">Финансы</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="pills-inegration-tab" data-toggle="pill" href="#pills-inegration" role="tab" aria-controls="pills-inegration" aria-selected="false">Интеграция</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-general" role="tabpanel" aria-labelledby="pills-general-tab">
+                  <p class="h6">Личная информация</p>
+                  <form class="general-form">
+                    <div class="form-group">
+                      <label for="name">Имя</label>
+                      <input type="text" class="form-control" id="name" placeholder="Пшек">
+                    </div>
+                    <div class="form-group">
+                      <label for="surname">Фамилия</label>
+                      <input type="text" class="form-control" id="surname" placeholder="Пшчичевич">
+                    </div>
+                    <div class="form-group">
+                      <label for="nickname">Никнейм</label>
+                      <input type="text" class="form-control" id="nickname" placeholder="Живе Польска">
+                    </div>
+                    <div class="form-group">
+                      <label for="country">Страна</label>
+                      <select class="form-control" id="country">
+                        <option checked>Польша</option>
+                        <option>Россия</option>
+                        <option>Украина</option>
+                        <option>Латвия</option>
+                        <option>Литва</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="city">Город</label>
+                      <select class="form-control" id="city">
+                        <option checked>Варшава</option>
+                        <option>Краков</option>
+                        <option>Лодзь</option>
+                        <option>Вроцлав</option>
+                        <option>Гданьск</option>
+                      </select>
+                    </div>
+                    <label>Пол</label>
+                    <div class="form-group">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
+                        <label class="form-check-label" for="inlineRadio1">Мужской</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="inlineRadio2">Женский</label>
+                      </div>
+                    </div>
+                    <label>Возраст</label>
+                    <div class="form-group">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="age" id="to25" value="to25">
+                        <label class="form-check-label" for="inlineRadio1">от 18 до 25</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="age" id="to50" value="to50">
+                        <label class="form-check-label" for="inlineRadio1">от 25 до 50</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="age" id="more50" value="more50" checked>
+                        <label class="form-check-label" for="inlineRadio2">от 50 и более</label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Почта</label>
+                      <input type="email" class="form-control" id="email" placeholder="garnuihlopec@mail.ru">
+                    </div>
+                    <div class="form-group">
+                      <label for="pnone">Телефон</label>
+                      <input type="pnone" class="form-control" id="phone" placeholder="8(800)555-35-35">
+                    </div>
+                    <button class="btn" type="button">Изменить</button>
+                    <button class="btn" type="button">Сохранить</button>
+                    <button class="btn" type="button">Удалить анкету</button>
+                  </form>
+                </div>
+<!-- general tab -->
+                <div class="tab-pane fade" id="pills-security" role="tabpanel" aria-labelledby="pills-security-tab">
+                  <p class="h6">Безопасность</p>
+                  <form class="security-form">
+                    <div class="form-group">
+                      <label for="newPassword">Новый пароль</label>
+                      <input type="email" class="form-control" id="newPassword">
+                    </div>
+                    <div class="form-group">
+                      <label for="confirmPassword">Подтвердите новый пароль</label>
+                      <input type="password" class="form-control" id="confirmPassword">
+                    </div>
+                    <button type="button" class="btn btn-primary">Сменить</button>
+                    <div class="form-group">
+                      <label>Двухфакторная идентификация</label>
+                      <button type="button" class="btn">Настроить</button>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="auth" id="mailRadio" value="mail" checked>
+                        <label class="form-check-label" for="mailRadio">
+                          Mail
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="auth" id="phoneRadio" value="phone">
+                        <label class="form-check-label" for="phoneRadio">
+                          Телефон
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="auth" id="telegramRadio" value="telegram">
+                        <label class="form-check-label" for="telegramRadio">
+                          Telegram
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="auth" id="googleRadio" value="google">
+                        <label class="form-check-label" for="googleRadio">
+                          Google-аутентификатор
+                        </label>
+                      </div>
+                    </div>
+                    <button class="btn" type="button">Изменить</button>
+                    <button class="btn" type="button">Сохранить</button>
+                  </form>
+                </div>
+<!-- security tab -->
+                <div class="tab-pane fade" id="pills-finance" role="tabpanel" aria-labelledby="pills-finance-tab">
+                  <p class="h6">Финансы</p>
+                  <form class="finance-form">
+                    <div class="form-group">
+                      <label for="payer">Payer кошелек</label>
+                      <input type="text" class="form-control" id="payer">
+                    </div>
+                    <div class="form-group">
+                      <label for="apiCode">Ввести api код</label>
+                      <input type="text" class="form-control" id="apiCode">
+                    </div>
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="autopay">
+                      <label class="custom-control-label" for="autopay">Активировать автоплатеж</label>
+                    </div>
+                    <button class="btn" type="button">Изменить</button>
+                    <button class="btn" type="button">Сохранить</button>
+                  </form>
+                </div>
+<!-- finance tab -->  
+                <div class="tab-pane fade" id="pills-inegration" role="tabpanel" aria-labelledby="pills-inegration-tab">
+                  <p class="h6">Социальные сети</p>
+                  <form class="integration-form">
+                    <div class="form-group">
+                      <label for="telegram">Telegram</label>
+                      <input type="text" class="form-control" id="telegram">
+                    </div>
+                    <div class="form-group">
+                      <label for="facebook">Facebook</label>
+                      <input type="text" class="form-control" id="facebook">
+                    </div>
+                    <div class="form-group">
+                      <label for="twitter">Twitter</label>
+                      <input type="text" class="form-control" id="twitter">
+                    </div>
+                    <div class="form-group">
+                      <label for="instagram">Instagram</label>
+                      <input type="text" class="form-control" id="instagram">
+                    </div>
+                    <div class="form-group">
+                      <label for="ok">Одноклассники</label>
+                      <input type="text" class="form-control" id="ok">
+                    </div>
+                    <div class="form-group">
+                      <label for="vk">ВКонтакте</label>
+                      <input type="text" class="form-control" id="vk">
+                    </div>
+                    <div class="form-group">
+                      <label for="linkedin">Linkedin</label>
+                      <input type="text" class="form-control" id="linkedin">
+                    </div>
+                    <div class="form-group">
+                      <label for="wechat">Wechat</label>
+                      <input type="text" class="form-control" id="wechat">
+                    </div>
+                    <div class="form-group">
+                      <label for="weibo">Weibo</label>
+                      <input type="text" class="form-control" id="weibo">
+                    </div>
+                    <div class="form-group">
+                      <label for="tiktok">TikTok</label>
+                      <input type="text" class="form-control" id="tiktok">
+                    </div>
+                    <div class="form-group">
+                      <label for="qq">QQ</label>
+                      <input type="text" class="form-control" id="qq">
+                    </div>
+                    <button class="btn" type="button">Изменить</button>
+                    <button class="btn" type="button">Сохранить</button>
+                  </form>
+                </div>
+<!-- integration tab -->
+              </div>
+            </div>
+          </div>
+<!-- profile settings -->

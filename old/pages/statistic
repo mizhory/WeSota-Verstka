@@ -1,0 +1,33 @@
+<div class="tab-pane active" id="statistic" role="tabpanel" aria-labelledby="statistic-tab">
+  <div id="profileStatistic" class="row">
+    <p class="h6">Статистика профиля</p>
+  </div>
+  <div class="row">
+    <div class="col-md">
+      RUB
+    </div>
+    <div class="col-md">
+      Платформа 1$
+    </div>
+    <div class="col-md">
+      Уровень 1$
+    </div>
+</div>
+<!-- profile statistic -->
+<div id="systemStatistic" class="row">
+  <p class="h6">Статистика системы</p>
+</div>
+<div class="row">
+  <div class="col-4">
+    Платформы
+  </div>
+  <div class="col-4">
+    Участники проекта
+  </div>
+  <div class="col-4">
+    Общий доход системы
+  </div>
+</div>
+<!-- system statistic -->
+</div>
+<!-- statistic-tab -->

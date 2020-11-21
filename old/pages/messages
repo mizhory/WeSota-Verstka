@@ -1,0 +1,139 @@
+          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+            <div class="row">
+              1-3 из 3
+              <nav aria-label="messages-navigation">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&lsaquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&rsaquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <input type="checkbox" name="selectAll" id="selectAll">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Выбрать все</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-1">avatar</div>
+              <div class="col-2">Name</div>
+              <div class="col">Name, перевод поступил, спасибо</div>
+              <div class="col-1">12 авг.</div>
+              <div class="col-1"><input type="checkbox" name="message-check" id="checkMessage"></div>
+            </div>
+            <div class="row">
+              <div class="col-1">avatar</div>
+              <div class="col-2">Name</div>
+              <div class="col">Name, перевод поступил, спасибо</div>
+              <div class="col-1">12 авг.</div>
+              <div class="col-1"><input type="checkbox" name="message-check" id="checkMessage"></div>
+            </div>
+            <div class="row">
+              <div class="col-1">avatar</div>
+              <div class="col-2">Name</div>
+              <div class="col">Name, перевод поступил, спасибо</div>
+              <div class="col-1">12 авг.</div>
+              <div class="col-1"><input type="checkbox" name="message-check" id="checkMessage"></div>
+            </div>
+<!-- messages list -->
+            <div class="row">
+              &#8592; Назад
+            </div>
+            <div class="row">
+              <div class="col-4 side">
+                <div class="row">
+                  <form class="message-search">
+                  <div class="form-group">
+                    <input type="text" placeholder="Поиск...">
+                  </div>
+                  </form>
+                </div>
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="row nav-link active" id="v-pills-name-tab" data-toggle="pill" href="#v-pills-name" role="tab" aria-controls="v-pills-name" aria-selected="true">
+                    <div class="col-sm-3">
+                      <img>
+                    </div>
+                    <div class="col">
+                      <div class="row message-sender">Name Name</div>
+                      <div class="row message-preview">Привет</div>
+                    </div>
+                    <div class="col-sm-3">
+                      дд.мм.гг
+                    </div>
+                    </div>
+                    <div class="row nav-link" id="v-pills-name-tab" data-toggle="pill" href="#v-pills-name" role="tab" aria-controls="v-pills-name" aria-selected="false">
+                      <div class="col-sm-3">
+                        <img>
+                      </div>
+                      <div class="col">
+                        <div class="row message-sender">Name Name</div>
+                        <div class="row message-preview">Привет</div>
+                      </div>
+                      <div class="col-sm-3">
+                        дд.мм.гг
+                      </div>
+                    </div>
+                    <div class="row nav-link" id="v-pills-name-tab" data-toggle="pill" href="#v-pills-name" role="tab" aria-controls="v-pills-name" aria-selected="false">
+                      <div class="col-sm-3">
+                        <img>
+                      </div>
+                      <div class="col">
+                        <div class="row message-sender">Name Name</div>
+                        <div class="row message-preview">Привет</div>
+                      </div>
+                      <div class="col-sm-3">
+                        дд.мм.гг
+                      </div>
+                    </div>
+                  </div>
+              </div>
+  <!-- recievers list -->
+              <div class="col-8 conversation">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active" id="v-pills-name" role="tabpanel" aria-labelledby="v-pills-name-tab">
+                    <div class="row message" id="conversation">
+                      <div class="row message-body">
+                          <div class="receiver">
+                            <div class="message-text">
+                            Привет, перевод получил
+                            </div>
+                            <span class="message-time pull-right">
+                              чч.мм
+                            </span>
+                          </div>
+                      </div>
+                      <div class="row message-body">
+                          <div class="sender">
+                            <div class="message-text">
+                              Привет
+                            </div>
+                            <span class="message-time pull-right">
+                              чч.мм
+                            </span>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row reply">
+                        <textarea class="form-control" rows="1" id="messageText" placeholder="Введите сообщение..."></textarea>
+                        <div class="col-sm-1 col-xs-1 reply-emojis">
+                          smile-face
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Отправить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  <!-- conversation -->
+            </div>
+<!-- chat window -->
+          </div>
+<!-- messages -->

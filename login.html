@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wesota - Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="login-form">
+        <div class="row">
+          <div class="col d-flex flex-column align-items-center">
+            <img src="img/logo.png" alt="Wesota logo">
+            <p class="text-wrap text-center" style="width: 12rem;">Добро пожаловать  в международный проект  WESOTA</p>
+            <form name="loginForm" class="d-flex flex-column align-items-stretch" action="#" enctype="application/x-www-form-urlencoded" method="POST">
+              <div class="form-group">
+                <label for="loginForm_loginInput">Логин</label>
+                <input type="text" class="form-control text-center" id="loginForm_loginInput">
+              </div>
+              <div class="form-group">
+                <label for="loginForm_passwordInput">Пароль</label>
+                <input type="password" class="form-control text-center" id="loginForm_passwordInput">
+              </div>
+              <div class="form-group">
+                <label for="loginForm_faSelect">Выберите 2FA</label>
+                <select class="form-control" id="loginForm_faSelect">
+                  <option value="Telegram" selected>Telegram</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+                <div class="form-group d-none flex-column align-items-center">
+                  <input type="text" class="form-control text-center" id="faCode">
+                  <button type="submit" class="btn">Подтвердить</button>
+                </div>
+              <button type="submit" class="btn align-self-center">Вход</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>
